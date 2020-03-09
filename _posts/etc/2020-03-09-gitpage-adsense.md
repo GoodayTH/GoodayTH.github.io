@@ -1,6 +1,8 @@
 ---
 title: "(gitpage) google adsense 붙이기"
 date: 2020-03-09 00:00:00 -0000
+comments: true
+categories: 
 ---
 
 > 역시 [google adsense](https://www.google.com/adsense/)가입이 필요<br>
