@@ -19,3 +19,10 @@ sample:
     children:
       - title: "Sample Sub"
         url: /sample/page-sample/
+
+# sidebar navigation list sample
+sidebar-sample:
+  - title: "Parent Page A"
+    children:
+      - title: "Child Page A1"
+        url: /
