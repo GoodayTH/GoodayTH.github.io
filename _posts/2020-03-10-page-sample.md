@@ -16,6 +16,16 @@ page 123
 
 page 123 123
 
+## link 
+
+* [link](/gitpage-adsense/)
+
+```
+[link](/gitpage-adsense/)
+```
+
+## edit navigation
+
 ```yml
 # navigation.yml link
 

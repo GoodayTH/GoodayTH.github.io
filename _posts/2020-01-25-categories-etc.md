@@ -104,7 +104,7 @@ comments: true
 
 * [google analytics 붙이기](https://goodayth.github.io/gitpage-analysis/)
 * [google adsense 붙이기](https://goodayth.github.io/gitpage-adsense/)
-* [sample-page](https://goodayth.github.io//sample/page-sample/)
+* [sample-page](https://goodayth.github.io/sample/page-sample/)
 
 ---
 
