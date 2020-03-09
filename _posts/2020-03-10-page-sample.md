@@ -62,7 +62,7 @@ docs:
 ```yml
 # _config.yml
     
-# _docs
+# sample page
   - scope:
       path: ""
       type: docs
@@ -70,8 +70,8 @@ docs:
       layout: single
       read_time: false
       author_profile: false
-      share: false
-      comments: false
+      share: true
+      comments: true
       sidebar:
-        nav: "docs"
+        nav: "sample"
 ```
