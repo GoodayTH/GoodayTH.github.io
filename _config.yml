@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -109,14 +109,14 @@ analytics:
 author:
   name             : "김태형"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "매일 제가 학습한 프로그래밍과 관련된 지식을 정리한 홈페이지입니다. 홈페이지 이전을 최근에 해서 더 많은 정보는 제 위키 페이지에 있습니다! 참고바랍니다!"
+  bio              : "매일 제가 학습한 프로그래밍과 관련된 지식을 정리한 홈페이지입니다. 홈페이지를 최근에 이전 해서 더 많은 정보는 제 위키 페이지에 있습니다! 참고바랍니다!"
   location         : "판교"
   email            : "taehyeong77@naver.com"
   links:
     #- label: "Email"
       #icon: "fas fa-fw fa-envelope-square"
       #url: mailto:taehyeong77@naver.com
-    - label: "Git Wiki""
+    - label: "Git Wiki"
       icon: "fas fa-fw fa-link"
       url: "https://github.com/GoodayTH/RobotMentor/wiki/"
     #- label: "Twitter"
