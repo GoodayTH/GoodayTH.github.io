@@ -15,7 +15,7 @@ main:
 
 # documentation links
 sample:
-  - title: Sample Page
+  - title: "Sample Page"
     children:
       - title: "Sample Sub"
         url: /sample/page-sample/
