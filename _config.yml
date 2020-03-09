@@ -107,7 +107,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "김태형"
+  name             : "좋은 하루 되세요!"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "매일 제가 학습한 프로그래밍과 관련된 지식을 정리한 홈페이지입니다. 홈페이지를 최근에 이전 해서 더 많은 정보는 제 위키 페이지에 있습니다! 참고바랍니다!"
   location         : "판교"
