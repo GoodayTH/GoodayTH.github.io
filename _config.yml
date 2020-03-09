@@ -295,3 +295,16 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# sample page
+  - sample:
+      path: ""
+      type: sample
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: true
+      sidebar:
+        nav: "sample"

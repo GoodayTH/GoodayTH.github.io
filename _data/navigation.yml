@@ -13,6 +13,8 @@ main:
   - title: "etc"
     url: /categories-etc/
 
+
+# 아래는 반영안되는 듯 ...
 # documentation links
 sample:
   - title: "Sample Page"

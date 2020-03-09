@@ -7,6 +7,7 @@ categories:                     # for categories
 date: 2020-03-10 00:00:00 -0000
 last_modified_at: 2020-03-25 00:00:00 -0000
 teaser: "/file/image/test_image.png"
+og_imgae: "/file/image/test_image.png"
 ---
 
 ## sub title 1
@@ -25,7 +26,7 @@ page 123 123
 [link](/gitpage-adsense/)
 ```
 
-## edit navigation
+## edit side bar navigation
 
 ```yml
 # navigation.yml link
@@ -56,4 +57,21 @@ docs:
         url: /docs/authors/
       - title: "Layouts"
         url: /docs/layouts/
+```
+
+```yml
+# _config.yml
+    
+# _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
 ```
