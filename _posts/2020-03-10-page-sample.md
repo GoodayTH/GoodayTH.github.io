@@ -26,6 +26,8 @@ page 123 123
 
 ## edit side bar navigation
 
+적용안되는 듯...
+
 ```yml
 # navigation.yml link
 
