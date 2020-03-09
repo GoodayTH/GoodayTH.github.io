@@ -1,6 +1,7 @@
 ---
 title: "etc"
 date: 2020-01-04 00:00:00 -0000
+comments: true
 ---
 
 ## 목차
