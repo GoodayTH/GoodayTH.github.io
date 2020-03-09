@@ -297,9 +297,9 @@ defaults:
       related: true
 
 # sample page
-  - sample:
+  - scope:
       path: ""
-      type: sample
+      type: docs
     values:
       layout: single
       read_time: false
