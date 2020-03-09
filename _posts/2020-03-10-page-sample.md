@@ -6,8 +6,8 @@ comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-10 00:00:00 -0000
 last_modified_at: 2020-03-25 00:00:00 -0000
-teaser: "/file/image/test_image.png"
-og_imgae: "/file/image/test_image.png"
+#teaser: "/file/image/test_image.png"
+#og_imgae: "/file/image/test_image.png"
 ---
 
 ## sub title 1

@@ -292,7 +292,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
 
@@ -304,7 +304,7 @@ defaults:
       layout: single
       read_time: false
       author_profile: false
-      share: false
+      share: true
       comments: true
       sidebar:
         nav: "sample"
