@@ -65,7 +65,7 @@ docs:
 # sample page
   - scope:
       path: ""
-      type: docs
+      type: sample
     values:
       layout: single
       read_time: false
