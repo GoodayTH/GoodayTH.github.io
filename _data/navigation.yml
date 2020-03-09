@@ -12,3 +12,10 @@ main:
     url: /categories-JS/
   - title: "etc"
     url: /categories-etc/
+
+# documentation links
+sample:
+  - title: Sample Page
+    children:
+      - title: "Sample Sub"
+        url: /sample/page-sample/
