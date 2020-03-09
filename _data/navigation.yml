@@ -1,12 +1,14 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "HOME"
+    url: https://goodayth.github.io/
+  - title: "Electron"
+    url: /categories-Electron/
+  - title: "Qt"
+    url: /categories-Qt/
+  - title: "C++"
+    url: /categories-C++/
+  - title: "JavaScript"
+    url: /categories-JS/
+  - title: "etc"
+    url: /categories-etc/
