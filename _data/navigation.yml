@@ -12,6 +12,8 @@ main:
     url: /categories-JS/
   - title: "obs"
     url: /categories-obs/
+  - title: "webrtc"
+    url: /webrtc/
   - title: "etc"
     url: /categories-etc/
 
@@ -25,6 +27,12 @@ sample:
         url: /sample/page-sample/
 obs:
   - title: "obs 분석"
+    children:
+    - title: "Child page"
+      url: /
+
+obs:
+  - title: "webrtc 분석"
     children:
     - title: "Child page"
       url: /

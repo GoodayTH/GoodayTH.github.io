@@ -322,3 +322,16 @@ defaults:
       comments: true
       sidebar:
         nav: "obs"
+
+    # webrtc page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: true
+      comments: true
+      sidebar:
+        nav: "webrtc"
