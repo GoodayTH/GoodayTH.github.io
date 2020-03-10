@@ -18,7 +18,7 @@ last_modified_at: 2020-03-25 00:00:00 -0000
 
 * [사전사항](/webrtc/basicapp_00/) : 소스클론 및 개발환경 세팅
 * [WebRTC 기초 다지기](/webrtc/basicapp_01/) : nvm 설치 + `getUserMedia`으로 web에서 비디오/오디오 정보 받기
-* [WebRTC Signaling 이론](/webrtc/basicapp_02/)
+* [WebRTC Signaling 이론](/webrtc/basicapp_02/) : 결국 [WebRTC 이론적 부분](/webrtc/basic/)과 비슷한 설명임.
 
 ---
 
