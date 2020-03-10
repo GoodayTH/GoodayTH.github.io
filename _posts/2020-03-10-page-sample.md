@@ -62,10 +62,10 @@ docs:
 ```yml
 # _config.yml
     
-# sample page
+  # sample page
   - scope:
-      path: "sample"
-      type: sample
+      path: ""
+      type: posts
     values:
       layout: single
       read_time: false

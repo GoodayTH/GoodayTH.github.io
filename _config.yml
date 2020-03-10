@@ -297,10 +297,10 @@ defaults:
       share: true
       related: true
 
-# sample page
+  # sample page
   - scope:
-      path: "sample"
-      type: sample
+      path: ""
+      type: posts
     values:
       layout: single
       read_time: false
@@ -309,3 +309,16 @@ defaults:
       comments: true
       sidebar:
         nav: "sample"
+
+    # obs page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: true
+      comments: true
+      sidebar:
+        nav: "obs"

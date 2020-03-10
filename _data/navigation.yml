@@ -10,6 +10,8 @@ main:
     url: /categories-C++/
   - title: "JavaScript"
     url: /categories-JS/
+  - title: "obs"
+    url: /obs/
   - title: "etc"
     url: /categories-etc/
 
@@ -21,6 +23,11 @@ sample:
     children:
       - title: "Sample Sub"
         url: /sample/page-sample/
+obs:
+  - title: "obs 분석"
+  children:
+    - title: "Child page"
+      url: /
 
 # sidebar navigation list sample
 sidebar-sample:
