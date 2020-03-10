@@ -26,8 +26,6 @@ page 123 123
 
 ## edit side bar navigation
 
-적용안되는 듯...
-
 ```yml
 # navigation.yml link
 
@@ -65,7 +63,7 @@ docs:
   # sample page
   - scope:
       path: ""
-      type: posts
+      type: posts       # 어디폴더 아래있는지 적어야함 (_posts 아래라 posts적음)
     values:
       layout: single
       read_time: false
