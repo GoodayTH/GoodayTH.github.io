@@ -15,7 +15,6 @@ comments: true
 * [curl](https://goodayth.github.io/categories-etc/#curl)
 * [websocket](https://goodayth.github.io/categories-etc/#websocket)
 * [stomp](https://goodayth.github.io/categories-etc/#stomp)
-* [obs](https://goodayth.github.io/categories-etc/#obs)
 * [powershell 7](https://goodayth.github.io/categories-etc/#powershell-7)
 * [Github.io](https://goodayth.github.io/categories-etc/#githubio)
 
@@ -257,14 +256,6 @@ $ curl https://goodayth.github.io
 > websocket에서 사용되며 특정 규약에 맞춰 보낼시 파싱<br>
 
 > * [참고사이트](https://swiftymind.tistory.com/tag/Websocket%20%2B%20STOMP)
-
----
-
-## obs
-
-* [obs build](https://goodayth.github.io/obs-build/)
-* [sourcetree를 통해 본 model and view 구현](https://goodayth.github.io/obs-sourcetree-model-view/)
-* [rtmp 동작에 관해서](https://goodayth.github.io/obs-rtmp/)
 
 ---
 

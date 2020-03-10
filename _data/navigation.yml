@@ -11,7 +11,7 @@ main:
   - title: "JavaScript"
     url: /categories-JS/
   - title: "obs"
-    url: /obs/
+    url: /categories-obs/
   - title: "etc"
     url: /categories-etc/
 
@@ -25,7 +25,7 @@ sample:
         url: /sample/page-sample/
 obs:
   - title: "obs 분석"
-  children:
+    children:
     - title: "Child page"
       url: /
 
