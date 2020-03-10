@@ -16,8 +16,9 @@ last_modified_at: 2020-03-25 00:00:00 -0000
 
 ## 간단한 WebRTC 어플리케이션 만들어보기
 
-* [사전사항](/webrtc/basicapp_00) : 소스클론 및 개발환경 세팅
-* [WebRTC 기초 다지기](/webrtc/basicapp_01) : nvm 설치 + `getUserMedia`으로 web에서 비디오/오디오 정보 받기
+* [사전사항](/webrtc/basicapp_00/) : 소스클론 및 개발환경 세팅
+* [WebRTC 기초 다지기](/webrtc/basicapp_01/) : nvm 설치 + `getUserMedia`으로 web에서 비디오/오디오 정보 받기
+* [WebRTC Signaling 이론](/webrtc/basicapp_02/)
 
 ---
 
@@ -35,7 +36,6 @@ last_modified_at: 2020-03-25 00:00:00 -0000
 
 ## 미정리
 
-* [WebRTC Signaling 이론](https://goodayth.github.io/webrtc-signaling/)
 * [WebRTC Signaling 실습(Setting Up Socket.io)](https://goodayth.github.io/webrtc-signaling2/)
 * [WebRTC Signaling 실습(Implementing Signaling)](https://goodayth.github.io/webrtc-Implementing-Signaling/) : 설명은 생략, 코드를 살펴보면 됨. - 강의에서도 다른 코드를 보며 자세한 WebRTC Connection과정에 대해 설명하는데 필요할 경우 참고
 * [WebRTC For Data Exchange(이론)](https://goodayth.github.io/webrtc-data-exchange/)
