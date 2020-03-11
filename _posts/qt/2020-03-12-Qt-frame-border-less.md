@@ -164,3 +164,11 @@ bool Frameless::event(QEvent *event)
 	return QWidget::event(event);
 }
 ```
+
+---
+
+> * [참고사이트1](https://github.com/deimos1877/BorderlessWindow)
+> * [참고사이트2](https://github.com/JJPPeters/clTEM/blob/9d2f52f0ce556b1e1f4b70ac40cbfebc438d6f23/src/gui/controls/borderlessdialog.cpp)
+> * [참고사이트3](https://github.com/Jorgen-VikingGod/Qt-Frameless-Window-DarkStyle)
+
+사실 참고사이트에서 내가 많이 수정했기때문에 정말 참고용으로만 볼 것
