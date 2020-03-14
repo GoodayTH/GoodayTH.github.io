@@ -30,21 +30,20 @@ sidebar-sample:
 cpp:
   - title: "C++ 목차"
     url: /cpp/
+  - title: "Basic C++(11이전) 문법"
+    url: /cpp/
+  - title: "Modern C++(11이후) 문법"
+    url: /cpp/
+  - title: "Design Pattern"
+    url: /cpp/
+  - title: "Template"
+    url: /cpp/
+  - title: "STL"
+    url: /cpp/
+  - title: "코딩테스트 준비"
+    url: /cpp/
     children:
-      - title: "Basic C++(11이전) 문법"
-        url:
-      - title: "Modern C++(11이후) 문법"
-        url:
-      - title: "Design Pattern"
-        url:
-      - title: "Template"
-        url:
-      - title: "STL"
-        url:
-      - title: "코딩테스트 준비"
-        url:
-        children:
-          - title: "문제 풀이"
-            url: 
-          - title: "Good Pattern"
-            url: 
+      - title: "문제 풀이"
+        url: /cpp/
+      - title: "Good Pattern"
+        url: /cpp/
