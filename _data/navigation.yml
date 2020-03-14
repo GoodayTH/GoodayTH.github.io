@@ -5,7 +5,7 @@ main:
   - title: "Electron"
     url: /categories-Electron/
   - title: "Qt"
-    url: /categories-Qt/
+    url: /qt/
   - title: "C++"
     url: /cpp/
   - title: "JavaScript"
