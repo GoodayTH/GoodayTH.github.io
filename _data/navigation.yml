@@ -7,7 +7,7 @@ main:
   - title: "Qt"
     url: /categories-Qt/
   - title: "C++"
-    url: /categories-C++/
+    url: /cpp/
   - title: "JavaScript"
     url: /categories-JS/
   - title: "obs"
@@ -25,3 +25,23 @@ sidebar-sample:
     children:
       - title: "Child Page A1"
         url: /
+
+# sidebar navigation list sample
+cpp:
+  - title: "Basic C++(11이전) 문법"
+    url:
+  - title: "Modern C++(11이후) 문법"
+    url:
+  - title: "Design Pattern"
+    url:
+  - title: "Template"
+    url:
+  - title: "STL"
+    url:
+  - title: "코딩테스트 준비"
+    url:
+    children:
+      - title: "문제 풀이"
+        url: 
+      - title: "Good Pattern"
+        url: 
