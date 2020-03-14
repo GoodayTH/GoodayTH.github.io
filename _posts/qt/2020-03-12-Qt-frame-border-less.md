@@ -5,7 +5,7 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-12 00:00:00 -0000
-last_modified_at: 2020-03-12 00:00:00 -0000
+last_modified_at: 2020-03-14 00:00:00 -0000
 ---
 
 > * [Github](https://github.com/GoodayTH/VS_Frameless_Widget)
@@ -126,7 +126,35 @@ bool Frameless::event(QEvent *event)
 	switch (event->type())
 	{
 	case QEvent::MouseButtonPress:
-		// 여기서 mousepress event 처리하면 안먹음.
+		ReleaseCapture();
+		if (x < 50 && y > size.height() - 50) {
+				this->setCursor(QCursor(Qt::SizeBDiagCursor));
+				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMLEFT, 0);
+			}
+			else if (x > size.width() - 50 && y > size.height() - 50) {
+				this->setCursor(QCursor(Qt::SizeFDiagCursor));
+				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMRIGHT, 0);
+			}
+			else if (x < 50) {
+				this->setCursor(QCursor(Qt::SizeHorCursor));
+				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTLEFT, 0);
+			}
+			else if (y > size.height() - 50) {
+				this->setCursor(QCursor(Qt::SizeVerCursor));
+				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOM, 0);
+			}
+			else if (x > size.width() - 50) {
+				this->setCursor(QCursor(Qt::SizeHorCursor));
+				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTRIGHT, 0);
+			}
+			else if (y < 50) {		// 여기가 titlebar가 된다.
+				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTCAPTION, 0);
+			}
+		}
+		return true;
+		break;
+	// 참고로 DbouleClick Event는 동작하지 않음, 참고할 것.
+	// 더블클릭 처리하고 싶다면 Timer(QSingleshot)를 쓸것
 	case QEvent::HoverEnter:
 	case QEvent::HoverMove:
 		qDebug() << "\n\n HoverEnter \n\n";
