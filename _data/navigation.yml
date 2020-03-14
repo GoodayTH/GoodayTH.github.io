@@ -26,7 +26,6 @@ sidebar-sample:
       - title: "Child Page A1"
         url: /
 
-# sidebar navigation list sample
 cpp:
   - title: "Basic C++(11이전) 문법"
     url: /cpp/basic/
@@ -47,3 +46,13 @@ cpp:
         url: /cpp/coding-quize/
       - title: "Good Pattern"
         url: /cpp/good-pattern/
+
+qt:
+  - title: "Core"
+    url: /qt/core/
+  - title: "UI"
+    url: /qt/ui/
+  - title: "Thread"
+    url: /qt/thread/
+  - title: "Etc"
+    url: /qt/etc/

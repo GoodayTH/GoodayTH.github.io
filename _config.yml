@@ -348,3 +348,16 @@ defaults:
       comments: true
       sidebar:
         nav: "cpp"
+
+  # qt page
+  - scope:
+      path: ""
+      type: _posts
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: true
+      comments: true
+      sidebar:
+        nav: "qt"
