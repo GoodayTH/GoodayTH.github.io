@@ -20,6 +20,13 @@ main:
 
 # 아래는 반영안되는 듯 ...
 # documentation links
+sidebar:
+  - title: "Sample Page"
+    children:
+      - title: "Sample Sub"
+        url: /sample/page-sample/
+    nav: sample
+
 sample:
   - title: "Sample Page"
     children:
