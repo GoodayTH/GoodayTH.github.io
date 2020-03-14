@@ -28,8 +28,8 @@ sidebar-sample:
 
 # sidebar navigation list sample
 cpp:
-  - title: "Basic C++(11이전) 문법"
-    url:
+  - title: "C++ 목차"
+    url: /cpp/
     children:
       - title: "Basic C++(11이전) 문법"
         url:
