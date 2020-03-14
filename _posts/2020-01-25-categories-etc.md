@@ -59,6 +59,7 @@ comments: true
 * [master, develop, hofix 등 git flow 정리](https://goodayth.github.io/git-flow/)
 * [Sourcetree로 cherry pick하기](https://goodayth.github.io/git-cherry-pick/)
 * [과거 commit 버전간 비교](https://goodayth.github.io/git-compare-past-commit/)
+* [sourcetree이용 스태시와 특정 커밋 비교](/git/stash-compare/)
 
 ### fetch --nohooks 명령
 
