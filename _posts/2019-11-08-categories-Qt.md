@@ -11,6 +11,8 @@ sidebar:
   nav: qt
 ---
 
+![](/file/image/qt-main.jpg)
+
 * [Qt Core](/qt/core/)
 * [Qt UI](/qt/ui/)
 * [Qt Thread](/qt/thread/)
