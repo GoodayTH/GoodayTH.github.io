@@ -6,6 +6,9 @@ comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-10 00:00:00 -0000
 last_modified_at: 2020-03-25 00:00:00 -0000
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-sample
 ---
 
 될 수 있은면 이 첫 줄에 페이지 내용을 간결하게 정리하여 적는게 좋다.
