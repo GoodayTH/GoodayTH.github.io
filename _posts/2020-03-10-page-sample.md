@@ -29,7 +29,7 @@ page 123 123
 ## edit side bar navigation
 
 ```yml
-# navigation.yml link
+# \data\navigation.yml link
 
 # documentation links
 docs:
