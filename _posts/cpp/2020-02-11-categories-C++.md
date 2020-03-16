@@ -13,9 +13,9 @@ sidebar:
 
 ![](/file/image/cpp-main.jpg)
 
-### [Basic C++(11이전) 문법](/cpp/basic/)
-### [Modern C++(11이후) 문법](/cpp/modern/)
-### [Design Pattern](/cpp/desing-pattern/)
-### [Thread](/cpp/thread/)
-### [코딩테스트 : 문제 풀이](/cpp/coding-quize/)
-### [코딩테스트 : Good Pattern](/cpp/good-pattern/)
+#### [Basic C++(11이전) 문법](/cpp/basic/)
+#### [Modern C++(11이후) 문법](/cpp/modern/)
+#### [Design Pattern](/cpp/desing-pattern/)
+#### [Thread](/cpp/thread/)
+#### [코딩테스트 : 문제 풀이](/cpp/coding-quize/)
+#### [코딩테스트 : Good Pattern](/cpp/good-pattern/)
