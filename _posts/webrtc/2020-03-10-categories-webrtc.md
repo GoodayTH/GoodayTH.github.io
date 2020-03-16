@@ -91,6 +91,10 @@ sendMessage.addEventListener('click', function(ev){
 
 3. Signaling - Client측에서 Signaling Server에 접속하여 통신하고자 하는 Client의 정보를 받는다.
 
+* webkitRTCPeerConnection : Signal Server에게 내 정보를 송신(Offer SDP)
+* RTCSessionDescription : 상대방의 정보를 수신 (Receive SDP)
+* RTCIceCandidate : 후보군 정보를 수신
+
 ---
 
 ## WebRTC Native
