@@ -1,10 +1,18 @@
 ---
 title: "(C++) Explicit casting 명시적형변환"
+#permalink: /cpp/basic/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-01-07 00:00:00 -0000
+last_modified_at: 2020-03-16 00:00:00 -0000
+sidebar:
+  title: "C++ 목차"
+  nav: cpp
 ---
 
-> * C : void* → 다른 타입의 포인터로 암시적 변환 허용
-> * C++ : void* → 다른 타입의 포인터로 암시적 변환 허용 안함.
+* C : void* → 다른 타입의 포인터로 암시적 변환 허용
+* C++ : void* → 다른 타입의 포인터로 암시적 변환 허용 안함.
 
 ```cpp
 #include <iostream>
@@ -20,29 +28,25 @@ int main()
 }
 ```
 
----
+## C++ 명시적 형변환 종류
 
-### C++ 명시적 형변환 종류
+### static_cast 
 
-#### static_cast 
+가장 기본 적인 캐스팅 연산자<br>
+정수와 실수 사이의 변환, 열거형과 정수 사이의 변환 등<br>
 
-> 가장 기본 적인 캐스팅 연산자
-> 
-> 정수와 실수 사이의 변환, 열거형과 정수 사이의 변환 등
+### reinterpret_cast
 
-#### reinterpret_cast
+서로 다른 포인터 타입 끼리의 변환<br>
 
-> 서로 다른 포인터 타입 끼리의 변환
+### const_cast
 
-#### const_cast
+포인터와 참조형 상수성과 volatilie 속성을 제거하는데 사용<br>
 
-> 포인터와 참조형 상수성과 volatilie 속성을 제거하는데 사용
+### dynamic_cast
 
-#### dynamic_cast
-
-> 안전한 다운캐스팅(기반 클래스 포인터를 안전하게 파생 클래스 타입의 포인터로 캐스팅할때 사용)
->
-> 실행 시간 캐스팅 - 실행 시간 오버헤드 존재
+안전한 다운캐스팅(기반 클래스 포인터를 안전하게 파생 클래스 타입의 포인터로 캐스팅할때 사용)<br>
+실행 시간 캐스팅 - 실행 시간 오버헤드 존재<br>
 
 ---
 

@@ -1,9 +1,17 @@
 ---
 title: "(C++) up/down casting"
+#permalink: /cpp/basic/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-01-07 00:00:00 -0000
+last_modified_at: 2020-03-16 00:00:00 -0000
+sidebar:
+  title: "C++ 목차"
+  nav: cpp
 ---
 
-### upcasting
+## upcasting
 
 * 기반 클래스 타입의 포인터로 파생 클래스를 가리킬 수 있다.
 * 기반 클래스 타입의 참조로 파생 클래스를 가리킬 수 있다.
@@ -67,7 +75,7 @@ int main()
 
 ---
 
-### upcasting Example
+## upcasting Example
 
 ```cpp
 class Shape
@@ -118,7 +126,7 @@ int main()
 }
 ```
 
-#### downcasting과 캐스팅 연산자
+## downcasting과 캐스팅 연산자
 
 * static_cast - 잘못된 downcasting을 조사할 수 없다. (컴파일 시간에 캐스팅하기에 오버헤드 없음)
 * dynamic_cast - 잘못된 downcasting을 하면 0을 반환(런타임 캐스팅하기에 오버헤드 발생)

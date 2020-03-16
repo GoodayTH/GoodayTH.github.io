@@ -1,9 +1,17 @@
 ---
 title: "(C++) 상수 멤버 함수"
+#permalink: /cpp/basic/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-01-07 00:00:00 -0000
+last_modified_at: 2020-03-16 00:00:00 -0000
+sidebar:
+  title: "C++ 목차"
+  nav: cpp
 ---
 
-> 상수 객체는 상수 멤버 함수만 사용할 수 있다.
+상수 객체는 상수 멤버 함수만 사용할 수 있다.
 
 ```cpp
 #include <iostream>
@@ -40,7 +48,7 @@ void print() const
 
 ---
 
-### 상수 멤버 함수의 필요성
+## 상수 멤버 함수의 필요성
 
 ```cpp
 class Rect
@@ -69,7 +77,7 @@ int main()
 }
 ```
 
-> 객체의 상태를 변경하지 않는 모든 멤버 함수는 반드시 상수 멤버 함수로 만들어야 한다.
+객체의 상태를 변경하지 않는 모든 멤버 함수는 반드시 상수 멤버 함수로 만들어야 한다.
 
 ---
 

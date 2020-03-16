@@ -1,9 +1,17 @@
 ---
 title: "(C++) static memeber"
+#permalink: /cpp/basic/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-01-07 00:00:00 -0000
+last_modified_at: 2020-03-16 00:00:00 -0000
+sidebar:
+  title: "C++ 목차"
+  nav: cpp
 ---
 
-### 정적 멤버 데이터(static member data)
+## 정적 멤버 데이터(static member data)
 
 * static이 붙은 멤버 데이터
 * 모든 객체가 공유할 수 있다.
@@ -36,7 +44,7 @@ int main()
 
 ---
 
-### another example
+## another example
 
 ```cpp
 class Test
@@ -60,7 +68,7 @@ int Test::sdata1 = 0;
 
 ---
 
-### 정적 멤버 함수(static member function)
+## 정적 멤버 함수(static member function)
 
 ```cpp
 class Car

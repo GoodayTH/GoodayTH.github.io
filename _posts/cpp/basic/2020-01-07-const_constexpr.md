@@ -1,9 +1,17 @@
 ---
 title: "(C++) const와 constexpr"
-date: 2020-01-07 00:00:00 -0000
+#permalink: /cpp/basic/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
+date: 2020-01-06 00:00:00 -0000
+last_modified_at: 2020-03-16 00:00:00 -0000
+sidebar:
+  title: "C++ 목차"
+  nav: cpp
 ---
 
-> `constexpr`은 컴파일 시간 상수 만 넣을 수 있다. (컴파일 할 당시 상수인 것)
+`constexpr`은 컴파일 시간 상수 만 넣을 수 있다. (컴파일 할 당시 상수인 것)<br>
 
 ```cpp
 int n = 10;

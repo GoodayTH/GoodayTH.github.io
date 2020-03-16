@@ -2,12 +2,12 @@
 main:
   - title: "HOME"
     url: https://goodayth.github.io/
-  - title: "Electron"
-    url: /categories-Electron/
   - title: "Qt"
     url: /qt/
   - title: "C++"
     url: /cpp/
+  - title: "Electron"
+    url: /categories-Electron/
   - title: "JavaScript"
     url: /categories-JS/
   - title: "obs"
