@@ -17,5 +17,5 @@ sidebar:
 #### [Modern C++(11이후) 문법](/cpp/modern/)
 #### [Design Pattern](/cpp/desing-pattern/)
 #### [Thread](/cpp/thread/)
-#### [코딩테스트 : 문제 풀이](/cpp/coding-quize/)
+#### [코딩테스트 : 문제 풀이](/cpp/quize/)
 #### [코딩테스트 : Good Pattern](/cpp/good-pattern/)
