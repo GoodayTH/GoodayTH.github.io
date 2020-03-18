@@ -1,19 +1,27 @@
 ---
 title: "(Qt) Model과 View에 관한 사항 정리"
-date: 2020-03-02 00:00:00 -0000
+permalink: /qt/ui/model_view/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
+date: 2020-03-18 00:00:00 -0000
+last_modified_at: 2020-03-18 00:00:00 -0000
+sidebar:
+  title: "Qt 목차"
+  nav: qt
 ---
 
 ## 목차
 
-* [시작]((https://goodayth.github.io/obs-sourcetree-model-view/#시작/)
-* [모델 세팅](https://goodayth.github.io/obs-sourcetree-model-view/#모델-세팅/)
-* [아이템 세팅](https://goodayth.github.io/obs-sourcetree-model-view/#아이템-세팅/)
+* [모델 세팅의 기본](https://goodayth.github.io/obs-sourcetree-model-view/#모델-세팅의-기본/)
+* [커스텀 모델 세팅](https://goodayth.github.io/obs-sourcetree-model-view/#커스텀-모델-세팅/)
+* [커스텀 delegate 지정](https://goodayth.github.io/obs-sourcetree-model-view/#커스텀-delegate-지정/)
 
 ---
 
-## 시작
+## 모델 세팅의 기본
 
-> 우선 Model이 어떻게 사용되는지 먼저 보기 위해 다음의 예제를 사용한다.
+우선 Model이 어떻게 사용되는지 먼저 보기 위해 다음의 예제를 사용한다.
 
 * [56. QStringListModel 사용](https://goodayth.github.io/Qt-GDI-S6-56/)
 
@@ -21,7 +29,37 @@ date: 2020-03-02 00:00:00 -0000
 
 * [Github](https://github.com/GoodayTH/QStringListModel)
 
+사용법은 간단하다 특정 widget에 setmodel을 지정하면 model이 선정!<br>
+우선 여기선 model을 setmodel로 지정한다만을 이해하자<br>
+
 ```cpp
+QStringListModel * model;                        // 모델을 만들고
+model  = new QStringListModel(colorList,this);   // 모델에 데이터를 넣고
+ui->listView->setModel(model);                   // 위젯에 모델을 지정
+```
+
+```cpp
+// Widget.h
+class Widget : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit Widget(QWidget *parent = nullptr);
+    ~Widget();
+
+private slots:
+    void on_listView_clicked(const QModelIndex &index);
+
+private:
+    Ui::Widget *ui;
+    QStringListModel * model;
+    QStringList colorList;
+};
+```
+
+```cpp
+// Widget.cpp
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
@@ -32,22 +70,29 @@ Widget::Widget(QWidget *parent) :
     model  = new QStringListModel(colorList,this);
 
     ui->listView->setModel(model);      
-    // 사용법은 간단하다 특정 widget에 setmodel을 지정하면 model이 선정!
 }
 ```
 
 ---
 
-## 모델 세팅
+## 커스텀 모델 세팅
 
-> 그럼 모델의 수정은 어떻게 하는데?<br>
-> 다음의 예제에서 잘 설명이 된다.
+**핵심) 모델은 데이터를 관리하는데 사용된다.**
 
 * [58. list, table, tree personal view 만들기](https://goodayth.github.io/Qt-GDI-S6-58/)
 
 ![](/file/image/qt-gdi-s6-58-image-1.png)
 
 * [Github](https://github.com/GoodayTH/personalmodel)
+
+```cpp
+PersonModel * model = new PersonModel(this);                // 커스텀 모델을 생성 후
+ui->listView->setModel(model);                              // 간단하게 모델을 세팅하면 된다.
+ui->tableView->setModel(model);
+ui->treeView->setModel(model);
+
+class PersonModel : public QAbstractListModel               // 커스텀 모델은 QAbstractListModel을 상속하면 된다.
+```
 
 ```cpp
 Widget::Widget(QWidget *parent) :
@@ -61,7 +106,6 @@ Widget::Widget(QWidget *parent) :
     ui->listView->setModel(model);
     ui->tableView->setModel(model);
     ui->treeView->setModel(model);
-    // 이 예제에서는 model을 생성 후 각 widget에 모델을 설정하고 어떻게 출력이 되는지 본다.
 }
 ```
 
@@ -140,15 +184,28 @@ QVariant PersonModel::data(const QModelIndex &index, int role) const
 
 ---
 
-## 아이템 세팅
+## 커스텀 delegate 지정
 
-> 아래 예제가 적당하다.
+**핵심) delegate는 아이템에 관한 사항(그림을 그리거나 등)을 정의한다**
 
 * [64. item paint 기능 추가](https://goodayth.github.io/Qt-GDI-S6-64/)
 
 ![](/file/image/qt-gdi-s6-64-image-1.png)
 
 * [Github](https://github.com/GoodayTH/paintitem)
+
+```cpp
+PersonDelegate * personDelegate = new PersonDelegate(this);     // 커스텀 delegate 생성
+model = new PersonModel(this);                                  // 커스텀 model 생성
+
+ui->listView->setModel(model);
+ui->tableView->setModel(model);
+ui->tableView->setItemDelegateForColumn(2,personDelegate);
+ui->treeView->setModel(model);
+ui->treeView->setItemDelegate(personDelegate);
+
+class PersonDelegate : public QStyledItemDelegate               // 커스텀 delegate는 QStyledItemDelegate를 상속
+```
 
 ```cpp
 Widget::Widget(QWidget *parent) :
