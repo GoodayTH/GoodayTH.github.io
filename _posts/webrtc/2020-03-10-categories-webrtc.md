@@ -99,7 +99,7 @@ sendMessage.addEventListener('click', function(ev){
 
 ## WebRTC Native
 
-* [WebRTC Native Build](https://goodayth.github.io/webrtc-native-build/)
+* [WebRTC Native Build](/webrtc/native_build/)
 
 ---
 
