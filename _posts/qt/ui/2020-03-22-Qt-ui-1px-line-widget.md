@@ -13,7 +13,7 @@ sidebar:
 
 특정 위젯아래 라인 그리기
 
-![](/file/images/qt-1px-line-widget.png)
+![](/file/image/qt-1px-line-widget.png)
 
 ```cpp
 void Widget::paintEvent(QPaintEvent *event)
