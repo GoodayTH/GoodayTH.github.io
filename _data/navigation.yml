@@ -6,16 +6,18 @@ main:
     url: /qt/
   - title: "C++"
     url: /cpp/
+  - title: "webrtc"
+    url: /webrtc/
+  - title: "java"
+    url: /java/
   - title: "Electron"
     url: /categories-Electron/
   - title: "JavaScript"
     url: /categories-JS/
   - title: "obs"
     url: /categories-obs/
-  - title: "webrtc"
-    url: /webrtc/
   - title: "etc"
-    url: /categories-etc/
+    url: /etc/
 
 # for sidebar
 

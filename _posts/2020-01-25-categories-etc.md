@@ -1,22 +1,14 @@
 ---
-title: "etc"
+title: "etc 목차"
+permalink: /etc/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-01-04 00:00:00 -0000
-comments: true
----
-
-## 목차
-
-* [Docker](https://goodayth.github.io/categories-etc/#docker)
-* [Jenkins](https://goodayth.github.io/categories-etc/#jenkins)
-* [Git](https://goodayth.github.io/categories-etc/#git)
-* [Visual Studio](https://goodayth.github.io/categories-etc/#visual-studio)
-* [Window](https://goodayth.github.io/categories-etc/#window)
-* [curl](https://goodayth.github.io/categories-etc/#curl)
-* [websocket](https://goodayth.github.io/categories-etc/#websocket)
-* [stomp](https://goodayth.github.io/categories-etc/#stomp)
-* [powershell 7](https://goodayth.github.io/categories-etc/#powershell-7)
-* [Github.io](https://goodayth.github.io/categories-etc/#githubio)
-
+last_modified_at: 2020-03-22 00:00:00 -0000
+sidebar:
+  title: "etc 목차"
+  nav: etc
 ---
 
 ## Docker
@@ -61,19 +53,19 @@ comments: true
 * [과거 commit 버전간 비교](https://goodayth.github.io/git-compare-past-commit/)
 * [sourcetree이용 스태시와 특정 커밋 비교](/git/stash-compare/)
 
-### fetch --nohooks 명령
+**fetch --nohooks 명령**
 
-> git history를 복사하지 않음
+git history를 복사하지 않음
 
-### git branch -r 명령
+**git branch -r 명령**
 
-> * 일단 branch는 브랜치를 보는 명령이고
-> * -r : 원격 저장소 branch의 리스트를본다.
-> * -a : 로컬, 원격 모든 저장소의 branch를 본다.
+* 일단 branch는 브랜치를 보는 명령이고
+* -r : 원격 저장소 branch의 리스트를본다.
+* -a : 로컬, 원격 모든 저장소의 branch를 본다.
 
 > * [참고사이트](https://cjh5414.github.io/get-git-remote-branch/)
 
-### 특정 tag clone 하기
+**특정 tag clone 하기**
 
 ```s
 $ git clone -b <tag> <url>
@@ -85,17 +77,16 @@ $ git clone -b v1.0 git://github.com/source
 
 ## markdown
 
-### (markdown) 링크 찾아가기
+**(markdown) 링크 찾아가기**
 
 ```s
 [네임](#링크명)
 ```
 
-> 위와 같이 링크를 걸면 링크로 들어가는데
->
-> 현재 io에서 링크명을 대문자 영어로 넣으면 링크를 못 찾아감
+위와 같이 링크를 걸면 링크로 들어가는데<br>
+현재 io에서 링크명을 대문자 영어로 넣으면 링크를 못 찾아감<br>
 
-> 아래와 같이 넣을 것!
+아래와 같이 넣을 것!<br>
 
 ```s
 [네임](#링크명(소문자))
@@ -105,15 +96,18 @@ $ git clone -b v1.0 git://github.com/source
 
 ## Window
 
-### 윈도우 버전확인 
+**윈도우 버전확인** 
 
-> 실행 -> winver
+```s
+# cmd
+$ winver
+```
 
 ![](/file/image/winver.png)
 
-### 인바운드, 아웃바운드 규칙
+**인바운드, 아웃바운드 규칙**
 
-> 고급 방화벽에서 확인할 수 있다.
+고급 방화벽에서 확인할 수 있다.
 
 ![](/file/image/win-firewall.PNG)
 
@@ -130,32 +124,32 @@ $ git clone -b v1.0 git://github.com/source
 
 ## Visual Studio
 
-### DLL 디버깅하기 (Break Point 찍기)
+**DLL 디버깅하기 (Break Point 찍기)**
 
-> 이게 참.. 말로 설명하기 힘든데 말로 설명을 해야함... 그렇기에 이해가 잘 되지 않더라도 다시 잘 읽어보며 해보면 될 것...
+이게 참.. 말로 설명하기 힘든데 말로 설명을 해야함... 그렇기에 이해가 잘 되지 않더라도 다시 잘 읽어보며 해보면 될 것...
 
-> 우선 두 개의 프로젝트가 존재한다.<br>
-> 1. DLL 프로젝트<br>
-> 2. DLL 을 사용할 exe를 생성하는 프로젝트<br>
+우선 두 개의 프로젝트가 존재한다.<br>
+1. DLL 프로젝트<br>
+2. DLL 을 사용할 exe를 생성하는 프로젝트<br>
 
-> 우선, DLL 프로젝트에서 다음과 같은 절차를 수행한다.<br>
-> 속성 -> 디버깅 -> 명령 인수에 빌드한 *.dll이 아닌 사용될(exe 바이너리에서 실행할) *.dll이 있는 폴더의 위치를 넣는다.
+우선, DLL 프로젝트에서 다음과 같은 절차를 수행한다.<br>
+속성 -> 디버깅 -> 명령 인수에 빌드한 *.dll이 아닌 사용될(exe 바이너리에서 실행할) *.dll이 있는 폴더의 위치를 넣는다.
 
 ![](/file/image/VS_DLL_Debug_Image_01.png)
 
-> 다음, DLL을 사용할 프로젝트에서 다음과 같은 절차를 수행한다.<br>
-> 릴리즈 바이너리 생성 -> (여기서 주의할 점은 VisualStudio로 바이너리를 실행하면 안됨, 하나의 바이너리에 두 개의 디버거를 붙일 수 없기때문이다.) -> 릴리즈 바이너리 실행
+다음, DLL을 사용할 프로젝트에서 다음과 같은 절차를 수행한다.<br>
+릴리즈 바이너리 생성 -> (여기서 주의할 점은 VisualStudio로 바이너리를 실행하면 안됨, 하나의 바이너리에 두 개의 디버거를 붙일 수 없기때문이다.) -> 릴리즈 바이너리 실행
 
-> 다음, DLL프로젝트에서 다음과 같은 절차를 수행<br>
-> 목록 -> 디버그 -> 프로세스에 연결 -> 실행중인 프로세스를 선택 -> 실행한 바이너리 선택
+다음, DLL프로젝트에서 다음과 같은 절차를 수행<br>
+목록 -> 디버그 -> 프로세스에 연결 -> 실행중인 프로세스를 선택 -> 실행한 바이너리 선택
 
 ![](/file/image/VS_DLL_Debug_Image_02.png)
 
 ---
 
-### Visual Studio 자동 서식변경 설정
+**Visual Studio 자동 서식변경 설정**
 
-> 옵션 -> 텍스트 편집기 -> C/C++ -> 서식 -> 일반
+옵션 -> 텍스트 편집기 -> C/C++ -> 서식 -> 일반
 
 ![](/file/image/VS_Text_edit_Image_01.png)
 
@@ -170,8 +164,8 @@ $ git clone -b v1.0 git://github.com/source
 
 ![](/file/image/curl_image_01.png)
 
-> 받아서 압축을 풀어보면 bin폴더 내에 curl.exe가 있다.<br>
-> 커맨드 라인을 열어서 아래 명령어를 입력해본다.
+받아서 압축을 풀어보면 bin폴더 내에 curl.exe가 있다.<br>
+커맨드 라인을 열어서 아래 명령어를 입력해본다.
 
 ```s
 $ curl https://goodayth.github.io
@@ -197,9 +191,9 @@ $ curl https://goodayth.github.io
 
 ## stomp
 
-> Simple (or Streaming) Text Orientated Messaging Protocol.<br>
-> 말 그대로 메시징 프로토콜이다.<br>
-> websocket에서 사용되며 특정 규약에 맞춰 보낼시 파싱<br>
+Simple (or Streaming) Text Orientated Messaging Protocol.<br>
+말 그대로 메시징 프로토콜이다.<br>
+websocket에서 사용되며 특정 규약에 맞춰 보낼시 파싱<br>
 
 > * [참고사이트](https://swiftymind.tistory.com/tag/Websocket%20%2B%20STOMP)
 
