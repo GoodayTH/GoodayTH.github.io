@@ -1,11 +1,37 @@
 ---
 title: "(Qt) 5. QList vs QVector"
+permalink: /qt/core/QList-QVector/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-03-02 00:00:00 -0000
+last_modified_at: 2020-03-23 00:00:00 -0000
+sidebar:
+  title: "Qt 목차"
+  nav: qt
 ---
+
+## 사용법
+
+```cpp
+// 선언
+QVector<int> vect = QVector<int>();
+QList<int> list = QList<int>();
+
+// 삽입
+vect.append(data);
+list.append(data);
+
+// 선택
+vect.at(i);
+list.at(i);
+```
+
+---
+
+## 전체코드
 
 * [Github](https://github.com/GoodayTH/qtci2-1)
-
----
 
 ```cpp
 #include <QCoreApplication>

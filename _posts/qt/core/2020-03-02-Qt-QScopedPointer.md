@@ -1,11 +1,30 @@
 ---
 title: "(Qt) 3. QScopedPointer"
+permalink: /qt/core/QScopedPointer/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-03-02 00:00:00 -0000
+last_modified_at: 2020-03-23 00:00:00 -0000
+sidebar:
+  title: "Qt 목차"
+  nav: qt
 ---
+
+## 사용법
+
+```cpp
+QScopedPointer<test> mypointer(new test());
+// QScopedPointer<class> name(new class)
+```
+
+delete해 주지 않아도 된다.
+
+---
+
+## 전체코드
 
 * [Github](https://github.com/GoodayTH/qtci1-3)
-
----
 
 ```cpp
 #include <QCoreApplication>

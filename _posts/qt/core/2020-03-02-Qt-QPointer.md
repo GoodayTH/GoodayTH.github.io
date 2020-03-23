@@ -1,11 +1,31 @@
 ---
 title: "(Qt) 2. QPointer"
+permalink: /qt/core/QPointer/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-03-02 00:00:00 -0000
+last_modified_at: 2020-03-23 00:00:00 -0000
+sidebar:
+  title: "Qt 목차"
+  nav: qt
 ---
 
-* [Github](https://github.com/GoodayTH/qtci1-2)
+## 사용법
+
+```cpp
+QPointer<QObject> p(obj);
+// QPointer<class> name(pointer)
+```
+
+동일하게 delete해줘야 함.<br>
+뭐... 사실 딱히 써야할 이유는 잘 모르겠음.
+
+> * [참고사이트](https://doc.qt.io/qt-5/qpointer.html)
 
 ---
+
+## 전체코드
 
 ```cpp
 int main(int argc, char *argv[])
@@ -80,3 +100,5 @@ void test::useWidget()
     widget.data()->setObjectName("used Widget!");
 }
 ```
+
+> * [Github](https://github.com/GoodayTH/qtci1-2)

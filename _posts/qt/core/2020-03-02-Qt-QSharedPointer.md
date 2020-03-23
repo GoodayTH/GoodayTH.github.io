@@ -1,11 +1,46 @@
 ---
 title: "(Qt) 4. QSharedPointer"
+permalink: /qt/core/QScopedPointer/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-03-02 00:00:00 -0000
+last_modified_at: 2020-03-23 00:00:00 -0000
+sidebar:
+  title: "Qt 목차"
+  nav: qt
 ---
+
+## 사용법
+
+```cpp
+QSharedPointer<consumer> c(new consumer, &QObject::deleteLater);
+// QSharedPointer<class> name(new class, deleter);
+QSharedPointer<consumer> c1(c, &QObject::deleteLater);
+c->clear();     // 연결된 pointer가 모두 clear하면 자동 delete
+c1->clear();    // 여기서 delete 된다.
+```
+
+```cpp
+// deleter는 이렇게 구현 가능
+void doDeleteLater(test *obj) {
+    qInfo() << "Deleting: " << obj;
+    obj->deleteLater();
+}
+
+QSharedPointer<test> createPointer() {
+    test *t = new test(); // the bad way!!!
+    t->setObjectName("Test Object");
+    QSharedPointer<test> p(t,doDeleteLater); //&QObject::deleteLater
+    return p;
+}
+```
+
+---
+
+## 전체코드
 
 * [Github](https://github.com/GoodayTH/qtci1-4)
-
----
 
 ```cpp
 #include <QCoreApplication>
