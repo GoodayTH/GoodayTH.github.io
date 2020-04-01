@@ -13,6 +13,15 @@ sidebar:
 
 ![](/file/image/cpp-main.jpg)
 
+## Lecture
+
+* [Basic C++](/cpp/lecture/basic/)
+> * [Basic C++ Github](https://github.com/GoodayTH/cpp_lecture)
+
+---
+
+## 개인적 정리
+
 * [Basic C++(11이전) 문법](/cpp/basic/)
 * [Modern C++(11이후) 문법](/cpp/modern/)
 * [STL](/cpp/stl/)

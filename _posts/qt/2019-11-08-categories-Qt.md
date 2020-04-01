@@ -13,6 +13,15 @@ sidebar:
 
 ![](/file/image/qt-main.jpg)
 
+## Lecture
+
+* [Qt Core](/qt/lecture/core/)
+> * [Qt Core Github](https://github.com/GoodayTH/qt_core_lecture)
+
+---
+
+## 개인 정리
+
 * [Qt Core](/qt/core/)
 * [Qt UI](/qt/ui/)
 * [Qt Thread](/qt/thread/)
