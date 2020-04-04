@@ -114,3 +114,25 @@ int main()
     sum( s.begin(), s.end() );
 }
 ```
+
+---
+
+## C++ 17 문법
+
+```cpp
+#include <iostream>
+#include <list>
+using namespace std;
+
+template<typnname T> class List
+{
+public:
+    List(int sz, T initValue) {}
+};
+
+int main()
+{
+    List<int> s1(10, 0);
+    List      s2(10, 0);        // C++17- ok
+}
+```
