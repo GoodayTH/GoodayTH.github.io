@@ -15,6 +15,9 @@ sidebar:
 
 ## Lecture
 
+* [Lecture Note 만들기 : ideone](/lecturenote-ideone/)
+* [Lecture Note 만들기 : github]()
+
 * [Basic C++](/cpp/lecture/basic/)
 > * [Basic C++ Github](https://github.com/GoodayTH/cpp_lecture)
 
