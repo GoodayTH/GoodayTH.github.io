@@ -38,9 +38,9 @@ cpp:
       - title: "Design Pattern"
         url: /cpp/desing-pattern/
       - title: "Template"
-        url: /cpp/
+        url: /cpp/template/
       - title: "STL"
-        url: /cpp/
+        url: /cpp/stl/
       - title: "Thread"
         url: /cpp/thread/
       - title: "코딩테스트 : 문제 풀이"
