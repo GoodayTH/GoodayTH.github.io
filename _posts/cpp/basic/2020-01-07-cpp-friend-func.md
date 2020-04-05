@@ -7,7 +7,7 @@ categories:                     # for categories
 date: 2020-01-07 00:00:00 -0000
 last_modified_at: 2020-03-16 00:00:00 -0000
 sidebar:
-  title: "C++ 목차"
+  title: "C++"
   nav: cpp
 ---
 

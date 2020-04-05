@@ -29,7 +29,7 @@ sidebar-sample:
         url: /
 
 cpp:
-  - title: "C++ 목차"
+  - title: "목차"
     children:
       - title: "Basic C++(11이전) 문법"
         url: /cpp/basic/
@@ -49,11 +49,13 @@ cpp:
         url: /cpp/good-pattern/
 
 qt:
-  - title: "Core"
-    url: /qt/core/
-  - title: "UI"
-    url: /qt/ui/
-  - title: "Thread"
-    url: /qt/thread/
-  - title: "Etc"
-    url: /qt/etc/
+  - title: "목차"
+    children:
+    - title: "Core"
+      url: /qt/core/
+    - title: "UI"
+      url: /qt/ui/
+    - title: "Thread"
+      url: /qt/thread/
+    - title: "Etc"
+      url: /qt/etc/
