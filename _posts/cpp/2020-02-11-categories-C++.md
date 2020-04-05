@@ -7,7 +7,6 @@ categories:                     # for categories
 date: 2020-03-15 00:00:00 -0000
 last_modified_at: 2020-03-15 00:00:00 -0000
 sidebar:
-  title: "C++ 목차"
   nav: cpp
 ---
 
@@ -19,7 +18,7 @@ sidebar:
 * [Lecture Note 만들기 : github]()
 
 * [Basic C++](/cpp/lecture/basic/)
-> * [Basic C++ Github](https://github.com/GoodayTH/cpp_lecture)
+  * [Basic C++ Github](https://github.com/GoodayTH/cpp_lecture)
 
 ---
 
