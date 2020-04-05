@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "김태형의 매일 코딩"
+title                    : "8BiTs 매일 코딩"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "좋은 하루 되세요!"
-description              : "김태형의 매일 코딩 홈페이지"
+name                     : "8BiTs Daily Coding"
+description              : "8BiTs 매일 코딩 홈페이지"
 url                      : "https://goodayth.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,10 +109,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "좋은 하루 되세요!"
+  name             : "8Bits"
   avatar           : #"/file/avatar/my_avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   # 아바타 이미지 사이즈 안맞으면 촌시러움.
-  bio              : "매일 제가 학습한 프로그래밍과 관련된 지식을 정리한 홈페이지입니다. 홈페이지를 최근에 이전 해서 더 많은 정보는 제 위키 페이지에 있습니다! 참고바랍니다!"
+  bio              : "C++ 언어 위주로 매일 제가 학습한 프로그래밍 지식을 정리한 홈페이지 입니다. 주로 Qt, MFC, C++문법을 정리합니다. MFC와 관련된 사항은 제 위키 페이지에 있습니다~"
   location         : "판교"
   email            : "taehyeong77@naver.com"
   links:
