@@ -11,10 +11,6 @@ sidebar:
   nav: cpp
 ---
 
-## Lecture Note
-
----
-
 우선 single linked list의 iterator를 보자.
 
 ```cpp
