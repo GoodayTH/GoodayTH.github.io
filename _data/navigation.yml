@@ -29,6 +29,8 @@ sidebar-sample:
         url: /
 
 cpp:
+  - title: "C++ 목차"
+    url: /cpp/
   children:
     - title: "Basic C++(11이전) 문법"
       url: /cpp/basic/
