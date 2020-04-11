@@ -73,6 +73,20 @@ $ git clone -b <tag> <url>
 $ git clone -b v1.0 git://github.com/source
 ```
 
+**현재 git 상태 확인 밑 모든파일 스태이지 올리기**
+
+```s
+$ git status
+```
+
+![](/file/image/git_status.png)
+
+```s
+$ git add *
+```
+
+![](/file/image/git_status2.png)
+
 ---
 
 ## markdown
