@@ -13,6 +13,13 @@ sidebar:
 
 ## gradle
 
+* [강의](https://www.youtube.com/watch?v=s-XZ5B15ZJ0&list=PL7mmuO705dG2pdxCYCCJeAgOeuQN1seZz)
+
+* [gradle이란?](/gradle/basic/)
+* [설치](/gradle/install/)
+* [gradle vs maven](/gradle/gradle-maven/)
+* [build](/gradle/build/)
+
 ---
 
 ## spinnaker
@@ -89,21 +96,7 @@ sidebar:
 
 ## curl
 
-* [참고사이트](https://m.blog.naver.com/javaking75/220776461230)
-
-* command URL : 명령어 기반 URL 접근가능하게 해주는 툴이다.
-* 다운로드는 [여기](https://curl.haxx.se/download.html)서 혹은 [여기](https://curl.haxx.se/windows/) 하자
-
-![](/file/image/curl_image_01.png)
-
-받아서 압축을 풀어보면 bin폴더 내에 curl.exe가 있다.<br>
-커맨드 라인을 열어서 아래 명령어를 입력해본다.
-
-```s
-$ curl https://goodayth.github.io
-```
-
-![](/file/image/curl_image_02.png)
+* [설치](/curl/install/)
 
 ---
 
