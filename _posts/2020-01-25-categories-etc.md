@@ -19,6 +19,7 @@ sidebar:
 * [설치](/gradle/install/)
 * [gradle vs maven](/gradle/gradle-maven/)
 * [build](/gradle/build/)
+* [task](/gradle/task/)
 
 ---
 
