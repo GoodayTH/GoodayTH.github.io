@@ -23,7 +23,7 @@ task hello{}
 hello.leftShift(strMsg)
 ```
 
-![](/file/image/gradle-task01.png/)
+![](/file/image/gradle-task01.png)
 
 ```groovy
 // build.gradle
@@ -38,7 +38,7 @@ task gradleTask2{
 }
 ```
 
-![](/file/image/gradle-task02.png/)
+![](/file/image/gradle-task02.png)
 
 * Task에서 doLast로 선언된 부분이 출력됨. -> 실행단계에서 출력
 * gradleTask1은 설정단계에서 출력
@@ -54,7 +54,7 @@ task goodTask{
 goodTask.description = 'Task Execution->'
 ```
 
-![](/file/image/gradle-task03.png/)
+![](/file/image/gradle-task03.png)
 
 ```groovy
 // build.gradle
@@ -69,7 +69,7 @@ task badTask{
 
 * 해당 Task를 정의하기 전이라 에러가 발생한다.
 
-![](/file/image/gradle-task04.png/)
+![](/file/image/gradle-task04.png)
 
 ```groovy
 // build.gradle
@@ -86,7 +86,7 @@ prevTask{
 
 * task를 미리 정의하면 문제를 해결할 수 있다.
 
-![](/file/image/gradle-task05.png/)
+![](/file/image/gradle-task05.png)
 
 ---
 
@@ -113,7 +113,7 @@ task exeTask2{
 
 * gradle의 기능이라기 보단 groovy언어 자체의 기능이다
 
-![](/file/image/gradle-task06.png/)
+![](/file/image/gradle-task06.png)
 
 ```groovy
 // build.gradle
@@ -130,7 +130,7 @@ counter->
 exeTask1.dependsOn exeTask0,exeTask2
 ```
 
-![](/file/image/gradle-task07.png/)
+![](/file/image/gradle-task07.png)
 
 ```groovy
 // build.gradle
@@ -148,7 +148,7 @@ task exeTask(description : "This is gradle description") {
 //}
 ```
 
-![](/file/image/gradle-task08.png/)
+![](/file/image/gradle-task08.png)
 
 ```groovy
 // build.gradle
@@ -167,7 +167,7 @@ exeTask.doLast{
 }
 ```
 
-![](/file/image/gradle-task09.png/)
+![](/file/image/gradle-task09.png)
 
 ```groovy
 // build.gradle
@@ -186,7 +186,7 @@ task exeTask{
 }
 ```
 
-![](/file/image/gradle-task10.png/)
+![](/file/image/gradle-task10.png)
 
 ```groovy
 defaultTasks 'exeTask1','exeTask2','exeTask3'
@@ -210,7 +210,7 @@ task exeTask3{
 }
 ```
 
-![](/file/image/gradle-task11.png/)
+![](/file/image/gradle-task11.png)
 
 ```groovy
 // build.gradle
@@ -225,7 +225,7 @@ confMap.each { svDomain, domainAddr->
 }
 ```
 
-![](/file/image/gradle-task12.png/)
+![](/file/image/gradle-task12.png)
 
 ---
 
@@ -247,9 +247,9 @@ exeTask.onlyIf{
 
 * 그냥 빌드하면 에러출력
 
-![](/file/image/gradle-task13.png/)
+![](/file/image/gradle-task13.png)
 
-![](/file/image/gradle-task14.png/)
+![](/file/image/gradle-task14.png)
 
 ```groovy
 // build.gradle
@@ -276,11 +276,11 @@ exeTask{
 
 * process를 ok로 둔다면 정상빌드
 
-![](/file/image/gradle-task15.png/)
+![](/file/image/gradle-task15.png)
 
 * process를 error로 둔다면 throw가 되며 Build END가 출력안됨.
 
-![](/file/image/gradle-task16.png/)
+![](/file/image/gradle-task16.png)
 
 ---
 
@@ -307,7 +307,7 @@ exeTaskAfter.mustRunAfter exeTaskBefore
 
 * exeTaskBefore를 수행 후 exeTaskAfter를 실행해 달라
 
-![](/file/image/gradle-task17.png/)
+![](/file/image/gradle-task17.png)
 
 ```groovy
 task exeTaskBefore{
@@ -327,4 +327,4 @@ exeTaskAfter.shouldRunAfter exeTaskBefore
 
 * mustRun과 뭔 차이지?? : 동일하다고 생각하자, 예외문제 뭐 등등 있는데 ... 아직은 이해하기 이르다
 
-![](/file/image/gradle-task18.png/)
+![](/file/image/gradle-task18.png)

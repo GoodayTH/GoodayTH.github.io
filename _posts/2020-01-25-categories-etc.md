@@ -20,6 +20,9 @@ sidebar:
 * [gradle vs maven](/gradle/gradle-maven/)
 * [build](/gradle/build/)
 * [task](/gradle/task/)
+* [task graph](/gradle/task-graph/)
+* [객체](/gradle/object/)
+
 
 ---
 
@@ -39,6 +42,8 @@ sidebar:
 
 * [Windows 기반 MSBuild Jenkins 서버만들기](https://goodayth.github.io/jenkins-windows-msbuild/)
 * [Jenkins Window Batch Good Example : MSBuild](/jenkins/windowbatch-goodexample/)
+
+* [Jenkins + gradle plugin]()
 
 ---
 
