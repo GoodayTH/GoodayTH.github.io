@@ -25,6 +25,10 @@ sidebar:
 * [객체](/gradle/object/)
 * [파일관리](/gradle/files/)
 
+여기서 부터는 완전히 정리하지 않음 필요없는 부분이 너무 많음 필요할 경우 찾아서 볼 것
+
+* [의존관계](/gradle/dependencies/)
+
 
 ---
 
