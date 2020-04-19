@@ -276,13 +276,3 @@ task exeTask{
 ```
 
 ![](/file/image/gradle-object-07.png)
-
----
-
-* [강좌](https://www.youtube.com/watch?v=xVS7pJOjSl4&list=PL7mmuO705dG2pdxCYCCJeAgOeuQN1seZz&index=16)
-
-## 기타 객체
-
-```groovy
-
-```

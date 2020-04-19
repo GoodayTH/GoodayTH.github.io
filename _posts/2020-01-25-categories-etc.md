@@ -20,8 +20,10 @@ sidebar:
 * [gradle vs maven](/gradle/gradle-maven/)
 * [build](/gradle/build/)
 * [task](/gradle/task/)
+
 * [task graph](/gradle/task-graph/)
 * [객체](/gradle/object/)
+* [파일관리](/gradle/files/)
 
 
 ---
