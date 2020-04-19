@@ -49,7 +49,7 @@ sidebar:
 * [Windows 기반 MSBuild Jenkins 서버만들기](https://goodayth.github.io/jenkins-windows-msbuild/)
 * [Jenkins Window Batch Good Example : MSBuild](/jenkins/windowbatch-goodexample/)
 
-* [Jenkins + gradle plugin]()
+* [Jenkins + gradle plugin](/jenkins/gradleplugin/)
 
 ---
 
