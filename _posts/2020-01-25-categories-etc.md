@@ -29,6 +29,10 @@ sidebar:
 
 * [의존관계](/gradle/dependencies/)
 
+### Example
+
+* [.bat 파일 실행하기](/gradle/example/startbat/)
+* [delete file and folder](/gradle/example/delete/)
 
 ---
 
