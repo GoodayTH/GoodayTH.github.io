@@ -16,3 +16,6 @@ sidebar:
 * [개념](/cpp/template/basic/)
 * [Instantiation](/cpp/template/Instantiation/) : Instantiation(인스턴스화)
 * [Instantiation2](/cpp/template/Instantiation2/)
+* [Lazy Instantiation](/cpp/template/LazyInstantiation/)
+* [type deduction](/cpp/template/typededuction/)
+    * [배열의 이름은 주소일까?](/cpp/template/arrayname/)
