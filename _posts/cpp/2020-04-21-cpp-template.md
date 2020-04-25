@@ -19,3 +19,11 @@ sidebar:
 * [Lazy Instantiation](/cpp/template/LazyInstantiation/)
 * [type deduction](/cpp/template/typededuction/)
     * [배열의 이름은 주소일까?](/cpp/template/arrayname/)
+
+## Template 기본 문법
+
+* [class template 선언](/cpp/template/class/)
+* [copy constructor](/cpp/template/copycon/)
+* [template과 friend](/cpp/template/friend/)
+* [typename](/cpp/template/typename/)
+* [parameter](/cpp/template/parameter/)
