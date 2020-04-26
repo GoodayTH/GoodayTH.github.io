@@ -31,3 +31,5 @@ sidebar:
 ## type traits
 
 * [type traits](/cpp/template/traits/)
+* [integral_constant](/cpp/template/intcons/)
+* [type modification](/cpp/template/modification/)
