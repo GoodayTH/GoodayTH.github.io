@@ -33,3 +33,6 @@ sidebar:
 * [type traits](/cpp/template/traits/)
 * [integral_constant](/cpp/template/intcons/)
 * [type modification](/cpp/template/modification/)
+* [remove_all_pointer](/cpp/template/remove_all/)
+* [get function result & argument](/cpp/template/get_result/)
+* [정리](/cpp/template/traits_summary/)
