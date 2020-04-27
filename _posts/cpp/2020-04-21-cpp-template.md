@@ -36,3 +36,11 @@ sidebar:
 * [remove_all_pointer](/cpp/template/remove_all/)
 * [get function result & argument](/cpp/template/get_result/)
 * [정리](/cpp/template/traits_summary/)
+
+## Variadic Template
+
+* [Variadic Template](/cpp/template/variadic/)
+* [parameter pack](/cpp/template/parameter/)
+* [pack expansion](/cpp/template/packexpansion/)
+* [using recursive](/cpp/template/recursive/)
+* [fold expression](/cpp/template/foldexpression/)
