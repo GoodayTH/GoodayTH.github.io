@@ -31,3 +31,7 @@ gradle 이름과 설치 위치를 지정<br>
 사용은 item의 build에서 gradle 탭에서 아래를 입력해주면 된다.
 
 ![](/file/image/jenkins-gradle-plugin-04.png)
+
+Task지정 및 Build File지정은 아래와 같이한다.
+
+![](/file/image/jenkins-gradle-plugin-05.png)

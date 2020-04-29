@@ -1,11 +1,11 @@
 ---
-title: "(Qt) VisualStudio 환경 Qt에서 Frameless(Borderless) Widget 만들기"
+title: "Qt - UI : Frameless(Borderless) Widget 만들기"
 permalink: /qt/frameless/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-12 00:00:00 -0000
-last_modified_at: 2020-03-14 00:00:00 -0000
+last_modified_at: 2020-04-29 00:00:00 -0000
 ---
 
 > * [Github](https://github.com/GoodayTH/VS_Frameless_Widget)
@@ -47,6 +47,10 @@ Frameless::Frameless(QWidget *parent)
 {
 	ui.setupUi(this);
 	ui.newTitlebarLayout->setMenuBar(ui.menuBar);
+
+	HWND hwnd = (HWND)this->winId();
+	DWORD style = ::GetWindowLong(hwnd, GWL_STYLE);
+	::SetWindowLong(hwnd, GWL_STYLE, style | WS_MAXIMIZEBOX | WS_THICKFRAME | WS_CAPTION);
 }
 
 bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *result)

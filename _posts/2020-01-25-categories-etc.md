@@ -33,6 +33,11 @@ sidebar:
 
 * [.bat 파일 실행하기](/gradle/example/startbat/)
 * [delete file and folder](/gradle/example/delete/)
+* [특정 폴더에 파일만 복사하기](/gradle/example/copyfiles/)
+
+### gradle plugin
+
+* [gitpublish](/gradle/plugin/gitpublish/)
 
 ---
 
@@ -52,8 +57,8 @@ sidebar:
 
 * [Windows 기반 MSBuild Jenkins 서버만들기](https://goodayth.github.io/jenkins-windows-msbuild/)
 * [Jenkins Window Batch Good Example : MSBuild](/jenkins/windowbatch-goodexample/)
-
 * [Jenkins + gradle plugin](/jenkins/gradleplugin/)
+* [Email Notification](/jenkins/emailnoti/)
 
 ---
 
