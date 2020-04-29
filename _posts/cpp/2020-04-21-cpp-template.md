@@ -44,3 +44,7 @@ sidebar:
 * [pack expansion](/cpp/template/packexpansion/)
 * [using recursive](/cpp/template/recursive/)
 * [fold expression](/cpp/template/foldexpression/)
+
+* [함수 리턴타입구하기](/cpp/template/funcreturntype/)
+* [함수 인자타입구하기](/cpp/template/funcargument/)
+* [tuple](/cpp/template/tuple/)
