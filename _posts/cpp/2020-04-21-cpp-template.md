@@ -51,4 +51,7 @@ sidebar:
 * [tuple get](/cpp/template/tuple-get/)
 * [print_tuple](/cpp/template/print_tuple/)
 
-# Template Design
+## Template Design
+
+* [thin template](/cpp/template/thin_template/)
+* [CRTP](/cpp/template/CRTP/)
