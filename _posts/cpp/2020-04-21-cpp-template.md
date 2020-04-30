@@ -55,3 +55,9 @@ sidebar:
 
 * [thin template](/cpp/template/thin_template/)
 * [CRTP](/cpp/template/CRTP/)
+* [policy-based design](/cpp/template/policy-based-design/)
+* [STL allocator](/cpp/template/stl-allocator/)
+* [rebind](/cpp/template/rebind/)
+
+* [SFINAE](/cpp/template/SFINAE/)
+* [enable_if](/cpp/template/enable_if/)
