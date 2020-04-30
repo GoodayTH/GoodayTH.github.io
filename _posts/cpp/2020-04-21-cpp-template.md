@@ -48,3 +48,7 @@ sidebar:
 * [함수 리턴타입구하기](/cpp/template/funcreturntype/)
 * [함수 인자타입구하기](/cpp/template/funcargument/)
 * [tuple](/cpp/template/tuple/)
+* [tuple get](/cpp/template/tuple-get/)
+* [print_tuple](/cpp/template/print_tuple/)
+
+# Template Design
