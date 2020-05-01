@@ -58,3 +58,42 @@ int main()
     foo(3.4);
 }
 ```
+
+---
+
+## enable_if 위치
+
+```cpp
+// 정수가 아니면 에러를 발생하게 하고 싶다.
+/*
+template<typename T> void foo(T a)
+{
+    static_assert(is_integral<T>::value, "error");
+}
+*/
+template<typename T> 
+typename enable_if<is_integral<T>::value>::type
+foo(T a)
+{
+}
+
+template<typename T> 
+void foo(T a, typename enable_if<is_integral<T>::value>::type* = nullptr)
+{
+}
+
+template<typename T, 
+        typename enable_if<is_integral<T>::value>::type* = nullptr> 
+void foo(T a)
+{
+}
+
+// 정수가 아니면 사용하지 않게 하고 싶다.
+
+void foo(...){}
+
+int main()
+{
+    foo(3.4);
+}
+```
