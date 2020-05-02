@@ -10,6 +10,8 @@ last_modified_at: 2020-03-12 00:00:00 -0000
 
 > 참고 [Github](https://github.com/GoodayTH/webrtc-js-example)의 Chapter 4. SettingUpSocketIO 소스코드 참조
 
+## 개발환경 세팅
+
 우선 Github를 수정해두겠지만 그냥 clone해서 사용하면 안된다<br>
 이전강좌에서도 설명을 해뒀지만 버전을 맞추는 작업을 해야한다.<br>
 
@@ -115,7 +117,14 @@ $ node server
 
 ![](/file/image/webrtc-basicapp-03-image-05.png)
 
-끝이 없군 ...
+끝이 없군 ...<br>
+만약 위와같은 에러가 발생하면 node_modules아래의 express폴더로 들어가서<br>
+
+```s
+$ npm install connect
+```
+
+명령을 통해 직접 connect module을 express안에 설치해 줘야한다.
 
 ```json
 // package.json
@@ -146,6 +155,45 @@ $ node server
 
 음 뭐 대충 채팅을하는 서버인가? 소스코드를 분석해보자.
 
+---
+
+## 코드분석
+
+우선 서버입장에서 말고 웹에 들어온 클라이언트 입장에서 보자<br>
+index.ejs가 호출된다
+
+```html
+<!-- index.ejs -->
+
+<!-- 앞은 생략 -->
+io = io.connect();
+io.emit('ready', ROOM);
+
+<!-- ready를 호출 -->
+```
+
+```js
+// server.js
+
+// 서버에서는 ready를 받으면 announce를 부른다.
+app.io.route('ready', function(req) {
+	req.io.join(req.data)
+	app.io.room(req.data).broadcast('announce', {
+		message: 'New client in the ' + req.data + ' room.'
+	})
+})
+```
+
+```html
+<!-- index.ejs -->
+
+io.on('announce', function(data) {
+	displayMessage(data.message);
+});
+```
+
+### 전체코드
+
 ```js
 // server.js
 var express = require('express.io');
@@ -160,6 +208,7 @@ app.get('/', function(req, res){
 	res.render('index.ejs');                    // ui는 index.ejs로 그려달라
 });
 
+// 새로운 유저가 들어오면 여기가 호출되는 듯 하며
 app.io.route('ready', function(req) {
 	req.io.join(req.data)
 	app.io.room(req.data).broadcast('announce', {
@@ -167,6 +216,7 @@ app.io.route('ready', function(req) {
 	})
 })
 
+// 메시지를 보내면 여기가 호출되는 듯 하며
 app.io.route('send', function(req) {
     app.io.room(req.data.room).broadcast('message', {
         message: req.data.message,
