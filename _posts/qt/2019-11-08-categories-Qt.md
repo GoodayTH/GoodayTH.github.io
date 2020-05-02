@@ -25,4 +25,5 @@ sidebar:
 * [Qt Core](/qt/core/)
 * [Qt UI](/qt/ui/)
 * [Qt Thread](/qt/thread/)
+* [Qt QML](/qt/qml/)
 * [Qt Etc](/qt/etc/)
