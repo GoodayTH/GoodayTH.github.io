@@ -40,6 +40,8 @@ sidebar:
 
 ### Signaling
 
+* [복잡하기에 여기만 보자 대충 동작을 정리했음.](/webrtc/basic_arrange/)
+
 * [socket.io 사용하기](/webrtc/basicapp_03/)
 * [signaling 해보기](/webrtc/basicapp_04/) : `RTCSessionDescription`, `RTCIceCandidate`, `webkitRTCPeerConnection`사용
 * [data channel 사용해보기](/webrtc/basicapp_05/) : 
