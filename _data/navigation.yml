@@ -12,8 +12,8 @@ main:
     url: /java/
   - title: "Electron"
     url: /categories-Electron/
-  - title: "JavaScript"
-    url: /categories-JS/
+  - title: "NodeJS"
+    url: /NodeJS/
   - title: "obs"
     url: /categories-obs/
   - title: "etc"
