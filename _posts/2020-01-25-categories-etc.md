@@ -76,6 +76,7 @@ sidebar:
 * [google adsense 붙이기](https://goodayth.github.io/gitpage-adsense/)
 
 * [sample-page](https://goodayth.github.io/sample/page-sample/) : sample-page + side-bar navigator
+* [sitemap 넣기](/github-io/insert-sitemap/)
 
 ---
 
