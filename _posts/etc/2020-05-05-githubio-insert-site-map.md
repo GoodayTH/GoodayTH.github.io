@@ -53,3 +53,17 @@ layout: null
   {% endfor %}
 </urlset>
 ```
+
+---
+
+## 만약 나처럼 제외된 색인이 너무 많아 블로그 전체를 새로 크롤리하고 싶다면??
+
+실수로 sitemap.xml을 넣지 않아 이런 문제가 발생했다.. 난감...
+
+![](/file/image/insert-site-map.png)
+
+사이트 맵을 새로 신청하면 된다.
+
+/root밑에 sitemap_new.xml을 만들고 위 코드를 그대로 복사이후 다시 사이트맵을 추가한다.
+
+![](/file/image/insert-site-map1.png)
