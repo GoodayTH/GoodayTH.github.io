@@ -1,7 +1,18 @@
 ---
-title: "(Node.js) 파일을 이용해 본문 구현"
-date: 2020-01-07 00:00:00 -0000
+title: "NodeJS Basic 10강 - 파일을 이용해 본문 구현"
+permalink: /NodeJS/basic-10/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
+date: 2020-05-06 00:00:00 -0000
+last_modified_at: 2020-05-06 00:00:00 -0000
+sidebar:
+  title: "NodeJS"
+  nav: NodeJS
 ---
+
+* [강의](https://opentutorials.org/course/3332/21049)
+* [Github](https://github.com/GoodayTH/NodeJS-Lector-10)
 
 ```js
 var http = require('http');
