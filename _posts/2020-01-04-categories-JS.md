@@ -24,9 +24,9 @@ sidebar:
 
 * [JavaScript - Template Literal](https://goodayth.github.io/Nodejs-6/) : or template string
 * [7강 : URL로 입력된 값 사용하기](/NodeJS/basic-07/) : Query String, URL 정의
-* [App - 동적인 웹페이지 만들기](https://goodayth.github.io/Nodejs-8/)
-* [Node.js - 파일 읽기](https://goodayth.github.io/Nodejs-9/)
-* [App - 파일을 이용해 본문 구현](https://goodayth.github.io/Nodejs-10/)
+* [8강 : 동적인 웹페이지 만들기](/NodeJS/basic-08/)
+* [9강 : 파일 읽기](/NodeJS/basic-09/) : `fs.readFile`
+* [10강 : 파일을 이용해 본문 구현](/NodeJS/basic-10/)
 
 * [11강 : Node.js 파일 읽기](/NodeJS/basic-11/) : `readFile`활용
 * [12강 : App 파일을 이용해 본문 구현](/NodeJS/basic-12/) : 
