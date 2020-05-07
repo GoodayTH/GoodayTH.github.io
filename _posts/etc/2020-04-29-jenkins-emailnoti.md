@@ -5,7 +5,7 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-29 00:00:00 -0000
-last_modified_at: 2020-04-29 00:00:00 -0000
+last_modified_at: 2020-05-07 00:00:00 -0000
 sidebar:
   title: "etc"
   nav: etc
@@ -16,3 +16,7 @@ sidebar:
 ![](/file/image/jenkins-email-noti1.png)
 
 ![](/file/image/jenkins-email-noti2.png)
+
+Jenkins → 환경설정 → Jenkins Location
+
+![](/file/image/jenkins-email-noti3.png)
