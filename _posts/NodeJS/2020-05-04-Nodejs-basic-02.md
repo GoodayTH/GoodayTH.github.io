@@ -7,7 +7,7 @@ categories:                     # for categories
 date: 2020-05-04 00:00:00 -0000
 last_modified_at: 2020-05-04 00:00:00 -0000
 header:
-  teaser: /file/image/qt-page-teaser.gif
+  teaser: /file/image/nodejs-page-teaser.gif
 sidebar:
   title: "NodeJS"
   nav: NodeJS
