@@ -46,8 +46,12 @@ header:
 
 * [11강 : Node.js 파일 읽기](/NodeJS/basic-11/) : `readFile`활용
 * [12강 : App 파일을 이용해 본문 구현](/NodeJS/basic-12/)
-* [13강 : JS Boolean]() : `console.log(true);`, `console.log(false);`
-* [14강 : JS 비교연산자]() : 
+* [13강 : JS Boolean](https://opentutorials.org/course/3332/21050) : (별도정리없음) `console.log(true);`, `console.log(false);`
+* [14강 : JS 비교연산자](https://opentutorials.org/course/3332/21059) : (별도정리없음) `console.log(1==1); //true`
+* [15강 : JS 제어문](https://opentutorials.org/course/3332/21060) : (별도정리없음)
+
+* [16강 : JS 조건문](https://opentutorials.org/course/3332/21061) : (별도정리없음) `if(false) // ~`
+* [17강 : NodeJS 콘솔에서의 입력값](/NodeJS/basic-17/)
 
 ---
 

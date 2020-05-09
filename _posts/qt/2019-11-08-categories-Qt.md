@@ -28,25 +28,17 @@ header:
 
 * [Qt Core](/qt/core/)
 
----
-
 ## UI
 
 * [Qt UI](/qt/ui/)
-
----
 
 ## Thread
 
 * [Qt Thread](/qt/thread/)
 
----
-
 ## QML
 
 * [Qt QML](/qt/qml/)
-
----
 
 ## Etc
 

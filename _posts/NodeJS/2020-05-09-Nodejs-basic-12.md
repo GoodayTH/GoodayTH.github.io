@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21049)
-* [Github]()
+* [Github](https://github.com/GoodayTH/NodeJS-Lector-12)
 
 여기서 만들고자 하는 것은 Query String에 따라서 본분이 변경되는 홈페이지 최종 버전을 만들고자 한다.
 
