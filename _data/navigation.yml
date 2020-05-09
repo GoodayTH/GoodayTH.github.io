@@ -1,19 +1,17 @@
 # main links
 main:
-  - title: "HOME"
-    url: https://goodayth.github.io/
   - title: "Qt"
     url: /qt/
   - title: "C++"
     url: /cpp/
   - title: "webrtc"
     url: /webrtc/
+  - title: "NodeJS"
+    url: /NodeJS/
   - title: "java"
     url: /java/
   - title: "Electron"
     url: /categories-Electron/
-  - title: "NodeJS"
-    url: /NodeJS/
   - title: "obs"
     url: /categories-obs/
   - title: "etc"
