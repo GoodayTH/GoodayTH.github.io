@@ -1,5 +1,5 @@
 ---
-title: "Qt 정리 페이지 입니다."
+title: "Qt"
 permalink: /qt/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
@@ -13,12 +13,15 @@ tag:
   - qt
 category:
   - category
-excerpt: ""
+excerpt: "Qt와 관련된 지식을 정리한 홈페이지 입니다."
 header:
   teaser: /file/image/qt-page-teaser.gif
   overlay_image: /file/image/main-page.jpg
   overlay_filter: 0.1 # rgba(255, 0, 0, 0.5)
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
+  actions:
+    - label: "Qt HomePage"
+      url: "https://www.qt.io/"
 ---
 
 ## Core

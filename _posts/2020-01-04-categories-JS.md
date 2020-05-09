@@ -1,5 +1,5 @@
 ---
-title: "NodeJS 정리 페이지 입니다."
+title: "NodeJS"
 permalink: /NodeJS/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
@@ -15,12 +15,15 @@ tag:
   - NodeJS
 category:
   - category
-excerpt: ""
+excerpt: "NodeJS와 관련된 지식을 정리한 페이지 입니다."
 header:
   teaser: /file/image/qt-page-teaser.gif
   overlay_image: /file/image/main-page.jpg
   overlay_filter: 0.1 # rgba(255, 0, 0, 0.5)
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
+  actions:
+    - label: "NodeJS HomePage"
+      url: "https://nodejs.org/"
 ---
 
 ## Node.js 생활 코딩 강의 정리
@@ -42,7 +45,9 @@ header:
 * [10강 : 파일을 이용해 본문 구현](/NodeJS/basic-10/)
 
 * [11강 : Node.js 파일 읽기](/NodeJS/basic-11/) : `readFile`활용
-* [12강 : App 파일을 이용해 본문 구현](/NodeJS/basic-12/) : 
+* [12강 : App 파일을 이용해 본문 구현](/NodeJS/basic-12/)
+* [13강 : JS Boolean]() : `console.log(true);`, `console.log(false);`
+* [14강 : JS 비교연산자]() : 
 
 ---
 
