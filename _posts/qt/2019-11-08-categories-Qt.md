@@ -13,6 +13,7 @@ tag:
   - qt
 category:
   - category
+excerpt: "Qt 정리 페이지 입니다."
 header:
   teaser: /file/image/qt-page-teaser.gif
   overlay_image: /file/image/main-page.jpg
