@@ -1,14 +1,12 @@
 ---
 title: "Lecture Note 만들기 : ideone"
-permalink: /          # link 직접 지정
+permalink: /#lecturenote-ideone/          # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-04 00:00:00 -0000
 last_modified_at: 2020-04-04 00:00:00 -0000
 ---
-
-#lecturenote-ideone/      
 
 웹에서 간단하게 ide를 동작하는 방법은 ideone을 이용하는 것이다<br>
 접속은 [홈페이지](https://ideone.com/)로 접속하면 된다.<br>
