@@ -1,14 +1,24 @@
 ---
-title: "etc 목차"
+title: "기타사항 정리 페이지 입니다."
 permalink: /etc/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-01-04 00:00:00 -0000
-last_modified_at: 2020-03-22 00:00:00 -0000
+last_modified_at: 2020-05-09 00:00:00 -0000
 sidebar:
   title: "etc 목차"
   nav: etc
+tag:
+  - 기타사항
+category:
+  - category
+excerpt: ""
+header:
+  teaser: /file/image/qt-page-teaser.gif
+  overlay_image: /file/image/main-page.jpg
+  overlay_filter: 0.1 # rgba(255, 0, 0, 0.5)
+  caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
 ---
 
 ## gradle
@@ -41,10 +51,6 @@ sidebar:
 
 ---
 
-## spinnaker
-
----
-
 ## Docker
 
 * [Docker file 문법 정리](https://goodayth.github.io/docker-syntax)
@@ -59,6 +65,7 @@ sidebar:
 * [Jenkins Window Batch Good Example : MSBuild](/jenkins/windowbatch-goodexample/)
 * [Jenkins + gradle plugin](/jenkins/gradleplugin/)
 * [Email Notification](/jenkins/emailnoti/)
+* [Jenkins WorkSpace에 관해서]() : 간단하기에 글로 정리 - Jenkins가 설치된 폴더의 workspace가 존재 하며 그 폴더에서 git, svn을 clone하여 프로젝트를 빌드한다. 한번씩 헷갈려서 혹시나 해서 적어둠.
 
 ---
 
