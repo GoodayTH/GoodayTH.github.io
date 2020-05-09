@@ -10,7 +10,9 @@ sidebar:
   title: "Qt"
   nav: qt
 tag:
+  - qt
 category:
+  - category
 ---
 
 ![](/file/image/qt-main.jpg)
