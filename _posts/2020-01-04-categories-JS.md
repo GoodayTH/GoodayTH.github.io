@@ -9,7 +9,7 @@ last_modified_at: 2020-05-04 00:00:00 -0000
 header:
   teaser: /file/image/nodejs-page-teaser.gif
 sidebar:
-  title: "NodeJS"
+  title: "NodeJS" 
   nav: NodeJS
 tag:
   - NodeJS
