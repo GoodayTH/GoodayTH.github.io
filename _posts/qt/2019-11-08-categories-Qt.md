@@ -9,6 +9,8 @@ last_modified_at: 2020-03-15 00:00:00 -0000
 sidebar:
   title: "Qt"
   nav: qt
+tag:
+category:
 ---
 
 ![](/file/image/qt-main.jpg)
