@@ -13,6 +13,22 @@ tag:
   - qt
 category:
   - category
+header:
+  teaser: /file/image/qt-page-teaser.gif
+  overlay_image: /file/image/main-page.jpg
+  overlay_filter: 0.1 # rgba(255, 0, 0, 0.5)
+  caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
+  actions:
+    - label: "Core"
+      url: "/qt/core/"
+    - label: "UI"
+      url: "/qt/ui/"
+    - label: "Thread"
+      url: "/qt/thread/"
+    - label: "QML"
+      url: "/qt/qml/"
+    - label: "Etc"
+      url: "/qt/etc/"
 ---
 
 ![](/file/image/qt-main.jpg)
