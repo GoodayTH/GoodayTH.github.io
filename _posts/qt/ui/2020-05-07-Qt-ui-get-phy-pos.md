@@ -7,7 +7,7 @@ categories:                     # for categories
 date: 2020-05-07 00:00:00 -0000
 last_modified_at: 2020-05-07 00:00:00 -0000
 header:
-  teaser: /file/image/qt-main.jpg
+  teaser: /file/image/qt-page-teaser.gif
 sidebar:
   title: "qt"
   nav: qt
