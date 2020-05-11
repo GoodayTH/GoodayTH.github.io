@@ -52,6 +52,18 @@ header:
 
 * [16강 : JS 조건문](https://opentutorials.org/course/3332/21061) : (별도정리없음) `if(false) // ~`
 * [17강 : NodeJS 콘솔에서의 입력값](/NodeJS/basic-17/)
+* [18강 : Not found 오류 구현](/NodeJS/basic-18/)
+* [19강 : App - 홈페이지 구현](/NodeJS/basic-19/)
+* [20강 : JS 반복문](https://opentutorials.org/course/3332/21119) : (별도정리없음) `while(i < 2)`
+
+* [21강 : JS 배열](https://opentutorials.org/course/3332/21120) : (별도정리없음) `var arr = ['A','B','C','D'];`
+* [22강 : JS 배열과 반복문](/NodeJS/basic-22/)
+* [23강 : NodeJS 파일 목록 알아내기](/NodeJS/basic-23/)
+* [24강 : App - 글목록 출력하기](/NodeJS/basic-24/)
+* [25강 : JS 함수의 기본문법](/NodeJS/basic-25/) : `function f123(){`
+
+* [26강 : JS 함수의 입력](/NodeJS/basic-26/) : 
+* [27강 : JS 함수의 출력](/NodeJS/basic-27/)
 
 ---
 
