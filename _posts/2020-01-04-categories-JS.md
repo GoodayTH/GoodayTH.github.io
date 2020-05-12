@@ -62,8 +62,14 @@ header:
 * [24강 : App - 글목록 출력하기](/NodeJS/basic-24/)
 * [25강 : JS 함수의 기본문법](/NodeJS/basic-25/) : `function f123(){`
 
-* [26강 : JS 함수의 입력](/NodeJS/basic-26/) : 
+* [26강 : JS 함수의 입력](/NodeJS/basic-26/)
 * [27강 : JS 함수의 출력](/NodeJS/basic-27/)
+* [28강 : App - 함수를 이용해서 정리 정돈하기](/NodeJS/basic-28/)
+* [29강 : NodeJS - 동기와 비동기 그리고 콜백](/NodeJS/basic-29/)
+* [30강 : NodeJS - 패키지 매니저와 PM2](/NodeJS/basic-30/) : npm에 대해서
+
+* [31강 : HTML - Form](/NodeJS/basic-31/)
+* [32강 : App - 글생서 UI만들기](/NodeJS/basic-32/)
 
 ---
 
