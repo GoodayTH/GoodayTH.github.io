@@ -13,9 +13,9 @@ tag:
   - 기타사항
 category:
   - category
-excerpt: ""
+excerpt: "기타사항 정리 페이지 입니다"
 header:
-  teaser: /file/image/qt-page-teaser.gif
+  teaser: /file/image/etc-page-teaser.gif
   overlay_image: /file/image/main-page.jpg
   overlay_filter: 0.1 # rgba(255, 0, 0, 0.5)
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"

@@ -9,6 +9,19 @@ last_modified_at: 2020-03-16 00:00:00 -0000
 sidebar:
   title: "webrtc 목차"
   nav: webrtc
+tag:
+  - webrtc
+category:
+  - category
+excerpt: "webrtc와 관련된 지식을 정리한 홈페이지 입니다."
+header:
+  teaser: /file/image/webrtc-page-teaser.gif
+  overlay_image: /file/image/main-page.jpg
+  overlay_filter: 0.1 # rgba(255, 0, 0, 0.5)
+  caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
+  actions:
+    - label: "WebRTC HomePage"
+      url: "https://webrtc.org/"
 ---
 
 ## WebRTC란?
