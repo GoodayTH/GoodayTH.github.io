@@ -84,6 +84,7 @@ header:
 
 * [sample-page](https://goodayth.github.io/sample/page-sample/) : sample-page + side-bar navigator
 * [sitemap 넣기](/github-io/insert-sitemap/)
+* [robots.txt 수정](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/) : `root`아래 robots.txt를 넣으면됨.
 
 ---
 
