@@ -70,9 +70,26 @@ header:
 
 * [31강 : HTML - Form](/NodeJS/basic-31/)
 * [32강 : App - 글생서 UI만들기](/NodeJS/basic-32/)
+* [33강 : App - POST 방식으로 전송된 데이터 받기](/NodeJS/basic-33/)
+
+> 더 이상 정리하지 않음. 필요하다 생각시 추가로 정리할 것.
 
 ---
 
 ## JavaScript 문법 기본강의 정리
 
 * [JavaScript Basic](/NodeJS/JS-basic/)
+
+---
+
+## Intelli-J 단축키 쓰기
+
+* [강의](https://www.youtube.com/watch?v=0D-YYVfUxFM)
+
+우선 Key Promoter X를 다운 받는다.
+
+![](/file/image/Intelli-j.png)
+
+이후 특정동작을 하면 Key Promoter X가 그 동작의 단축키를 알려준다.
+
+![](/file/image/Intelli-j2.png)
