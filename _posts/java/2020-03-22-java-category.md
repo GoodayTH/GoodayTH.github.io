@@ -27,3 +27,4 @@ header:
 ## Java 기초
 
 * [basic 1 : 주석, Console print, 변수할당, 변수이름 규칙](/java/basic-1/)
+* [basic 2 : 자료형 정리, 상수, 자료형변환, 연산자](/java/basic-2/)
