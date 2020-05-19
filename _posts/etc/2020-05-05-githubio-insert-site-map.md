@@ -9,9 +9,13 @@ last_modified_at: 2020-05-05 00:00:00 -0000
 sidebar:
   title: "etc"
   nav: etc
-sitemap :
-  changefreq : daily
-  priority : 1.0
+excerpt: ""
+tag:
+  - Github io
+category:
+  - sitemap
+header:
+  teaser: /file/image/etc-page-teaser.gif
 ---
 
 * [참고사이트](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/)
