@@ -5,7 +5,7 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-10 00:00:00 -0000
-last_modified_at: 2020-03-16 00:00:00 -0000
+last_modified_at: 2020-05-20 00:00:00 -0000
 sidebar:
   title: "webrtc 목차"
   nav: webrtc
@@ -40,11 +40,11 @@ header:
 
 ### Signaling 이론
 
-* 1. 통화를 원하는 A가 Signal Server로 SDP(Session Description Protocol)을 보낸다.
-* 2. Signal Server는 그 정보를 B에게 보내고 B에게서도 SDP를 받는다.
-* 3. A는 B에게서 받은 SDP를 바탕으로 ICE(Internet Connectivity Establishment) 정보를 Signal Server로 주고 서버는 다시 B에게 전달한다.
-* 4. ICE를 받은 B는 자신의 IP를 Server에게 전달한다.
-* 5. IP의 위치에 따라 공통망인지, STUN, TURN을 사용할 것인지 결정후 통신이 시작된다.
+1. 통화를 원하는 A가 Signal Server로 SDP(Session Description Protocol)을 보낸다.
+2. Signal Server는 그 정보를 B에게 보내고 B에게서도 SDP를 받는다.
+3. A는 B에게서 받은 SDP를 바탕으로 ICE(Internet Connectivity Establishment) 정보를 Signal Server로 주고 서버는 다시 B에게 전달한다.
+4. ICE를 받은 B는 자신의 IP를 Server에게 전달한다.
+5. IP의 위치에 따라 공통망인지, STUN, TURN을 사용할 것인지 결정후 통신이 시작된다.
 
 * 너무 길이서 정리하자면 ...
 * SDP -> ICE -> public, STUN, TURN, -> RTC Connection 순서이다.
