@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : Lazy Instantiation"
-permalink: /cpp/template/LazyInstantiation/                # link 직접 지정
+permalink: cpp/template/LazyInstantiation/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
@@ -73,7 +73,7 @@ int main()
 }
 ```
 
-![](/file/image/cpp-template-lazy-instantiation1.png)
+![](/file/imagecpp-template-lazy-instantiation1.png)
 
 * [Run This Code](https://ideone.com/BRX0z6)
 
@@ -92,7 +92,7 @@ int main()
 }
 ```
 
-![](/file/image/cpp-template-lazy-instantiation2.png)
+![](/file/imagecpp-template-lazy-instantiation2.png)
 
 ---
 

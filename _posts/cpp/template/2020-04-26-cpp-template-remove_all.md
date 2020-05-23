@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : remove_all_pointer"
-permalink: /cpp/template/remove_all/                # link 직접 지정
+permalink: cpptemplate/remove_all/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "STL : chrono"
-permalink: /cpp/stl/chrono/                # link 직접 지정
+permalink: cppstl/chrono/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

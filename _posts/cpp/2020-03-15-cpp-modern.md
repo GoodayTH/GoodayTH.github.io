@@ -1,6 +1,6 @@
 ---
 title: "Modern C++(11이후) 문법"
-permalink: /cpp/modern/                # link 직접 지정
+permalink: cpp/modern/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -111,7 +111,7 @@ int main()
 
 > 함수가 예외가 없음(있음)을 표기하는 방법
 
-![](/file/image/cpp-exception-image-01.png)
+![](/file/imagecpp-exception-image-01.png)
 
 > 예외는 왜 표기하나?
 > 

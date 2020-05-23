@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : copy constructor"
-permalink: /cpp/template/copycon/                # link 직접 지정
+permalink: cpptemplate/copycon/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "C++"
-permalink: /cpp/                # link 직접 지정
+permalink: cpp/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
@@ -26,26 +26,26 @@ header:
 
 ## C++ 문법
 
-* [Basic C++(11이전) 문법](/cpp/basic/)
-* [Modern C++(11이후) 문법](/cpp/modern/)
+* [Basic C++(11이전) 문법](cpp/basic/)
+* [Modern C++(11이후) 문법](cpp/modern/)
 
 ## STL
 
-* [STL](/cpp/stl/)
+* [STL](cpp/stl/)
 
 ## Template
 
-* [Template](/cpp/template/)
+* [Template](cpp/template/)
 
 ## Desing Pattern
 
-* [Design Pattern](/cpp/desing-pattern/)
+* [Design Pattern](cpp/desing-pattern/)
 
 ## Thread
 
-* [Thread](/cpp/thread/)
+* [Thread](cpp/thread/)
 
 ## Coding Test
 
-* [코딩테스트 : 문제 풀이](/cpp/quize/)
-* [코딩테스트 : Good Pattern](/cpp/good-pattern/)
+* [코딩테스트 : 문제 풀이](cpp/quize/)
+* [코딩테스트 : Good Pattern](cpp/good-pattern/)

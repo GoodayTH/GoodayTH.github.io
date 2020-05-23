@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : Instantiation2"
-permalink: /cpp/template/Instantiation2/                # link 직접 지정
+permalink: cpp/template/Instantiation2/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

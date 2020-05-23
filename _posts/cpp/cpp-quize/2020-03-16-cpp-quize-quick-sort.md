@@ -1,6 +1,6 @@
 ---
 title: "(C++) quick sort 구현"
-permalink: /cpp/quize/quick-sort/                # link 직접 지정
+permalink: cpp/quize/quick-sort/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
