@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : 함수 리턴타입구하기"
-permalink: /cpp/template/funcreturntype/                # link 직접 지정
+permalink: cpp/template/funcreturntype/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

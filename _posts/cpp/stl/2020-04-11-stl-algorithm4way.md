@@ -1,6 +1,6 @@
 ---
 title: "STL : algorithm 4가지 변형"
-permalink: /cpp/stl/algorithm4way/                # link 직접 지정
+permalink: cppstl/algorithm4way/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

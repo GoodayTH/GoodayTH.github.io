@@ -1,6 +1,6 @@
 ---
 title: "STL : Container Basic"
-permalink: /cpp/stl/container-basic/                # link 직접 지정
+permalink: cppstl/container-basic/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "STL : 사용자 정의 타입과 컨테이너"
-permalink: /cpp/stl/sequence/customtype/                # link 직접 지정
+permalink: cppstl/sequence/customtype/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
