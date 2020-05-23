@@ -24,29 +24,9 @@ header:
       url: "https://webrtc.org/"
 ---
 
-## 다시 정리해 보자.
-
-![](/file/image/webrtc-signaling_image_06.png)
-
-0. 카메라, 오디오 정보를 받아 저장한다
-1. Alice가 SDP를 쏜다. (Send Msg)
-2. Signaling Server는 Alice의 SDP를 Bob에게 전달한다. (Receive Msg)
-3. Bob은 자신의 SDP를 쏜다. (Send Msg)
-4. Alice는 ICE를 쏜다. (Send Msg)
-5. Bob은 자신의 ICE를 쏜다. (Send Msg)
-6. RTC 통신
-
-위 6개의 과정이 어떤 함수를 통해서 호출되는지만 확인하면 된다.
-
----
-
 ## WebRTC란?
 
-* WebRTC(Web Real Time Communication)
-
 * [WebRTC 이론적 부분](/webrtc/basic/)
-
-* [이론(Janus Server(Singnaling)) YouTube](https://www.youtube.com/watch?v=5U6QCttnazQ)
 
 ---
 
