@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtca-5-2)
+> * [Github](https://github.com/8bitscoding/qtca-5-2)
 
 역시 코드만 봐서는 잘 모르겠음...
 

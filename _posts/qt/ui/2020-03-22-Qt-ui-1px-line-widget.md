@@ -33,4 +33,4 @@ void Widget::paintEvent(QPaintEvent *event)
 }
 ```
 
-> * [Github](https://github.com/GoodayTH/1px_line_paint)
+> * [Github](https://github.com/8bitscoding/1px_line_paint)

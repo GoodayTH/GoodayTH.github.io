@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21063)
-* [Github](https://github.com/GoodayTH/NodeJS-Lector-18)
+* [Github](https://github.com/8bitscoding/NodeJS-Lector-18)
 
 하고싶은것은 조건문의 활용이다.
 

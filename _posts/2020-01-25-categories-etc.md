@@ -53,15 +53,15 @@ header:
 
 ## Docker
 
-* [Docker file 문법 정리](https://goodayth.github.io/docker-syntax)
-* [mac기반 Docker 기본적 사용법](https://goodayth.github.io/docker-mac-basic)
-* [Docker WebServer](https://goodayth.github.io/docker-linux-webdav) : WebDav, Transmission(Torrent), Plex Server
+* [Docker file 문법 정리](https://8bitscoding.github.io/docker-syntax)
+* [mac기반 Docker 기본적 사용법](https://8bitscoding.github.io/docker-mac-basic)
+* [Docker WebServer](https://8bitscoding.github.io/docker-linux-webdav) : WebDav, Transmission(Torrent), Plex Server
 
 ---
 
 ## Jenkins
 
-* [Windows 기반 MSBuild Jenkins 서버만들기](https://goodayth.github.io/jenkins-windows-msbuild/)
+* [Windows 기반 MSBuild Jenkins 서버만들기](https://8bitscoding.github.io/jenkins-windows-msbuild/)
 * [Jenkins Window Batch Good Example : MSBuild](/jenkins/windowbatch-goodexample/)
 * [Jenkins + gradle plugin](/jenkins/gradleplugin/)
 * [Email Notification](/jenkins/emailnoti/)
@@ -77,15 +77,17 @@ header:
 
 ## Github.io
 
-* [jekyll로 github page만들기](https://goodayth.github.io/gitpage-make/)
+* [jekyll로 github page만들기](https://8bitscoding.github.io/gitpage-make/)
 * [테스트 이미지 넣기](/githubio/insert-image/)
-* [google analytics 붙이기](https://goodayth.github.io/gitpage-analysis/)
-* [google adsense 붙이기](https://goodayth.github.io/gitpage-adsense/)
+* [google analytics 붙이기](https://8bitscoding.github.io/gitpage-analysis/)
+* [google adsense 붙이기](https://8bitscoding.github.io/gitpage-adsense/)
 
-* [sample-page](https://goodayth.github.io/sample/page-sample/) : sample-page + side-bar navigator
+* [sample-page](https://8bitscoding.github.io/sample/page-sample/) : sample-page + side-bar navigator
 * [sitemap 넣기](/github-io/insert-sitemap/)
 * [robots.txt 수정](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/) : `root`아래 robots.txt를 넣으면됨.
 * [github page 특수문자 넣기](/githubio/special-char/)
+
+* Google Search Console이 제대로 동작하지 않을시 그냥 Github-page를 rename해서 새로 Google Search Console을 등록해 버리는게 차라리 빠름...
 
 ---
 
@@ -93,11 +95,11 @@ header:
 
 * [Git 명령어 정리](/git/command-summary/)
     
-* [git의 difftool 지정하기(beyond compare4)](https://goodayth.github.io/git-difftool/)
-* [Sourcetree로 Git 정리하기](https://goodayth.github.io/git-source-tree/)
-* [master, develop, hofix 등 git flow 정리](https://goodayth.github.io/git-flow/)
-* [Sourcetree로 cherry pick하기](https://goodayth.github.io/git-cherry-pick/)
-* [과거 commit 버전간 비교](https://goodayth.github.io/git-compare-past-commit/)
+* [git의 difftool 지정하기(beyond compare4)](https://8bitscoding.github.io/git-difftool/)
+* [Sourcetree로 Git 정리하기](https://8bitscoding.github.io/git-source-tree/)
+* [master, develop, hofix 등 git flow 정리](https://8bitscoding.github.io/git-flow/)
+* [Sourcetree로 cherry pick하기](https://8bitscoding.github.io/git-cherry-pick/)
+* [과거 commit 버전간 비교](https://8bitscoding.github.io/git-compare-past-commit/)
 
 * [sourcetree이용 스태시와 특정 커밋 비교](/git/stash-compare/)
 

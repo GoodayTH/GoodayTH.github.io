@@ -5,13 +5,13 @@ date: 2020-03-04 00:00:00 -0000
 
 ## 목차
 
-* [move의 개념](https://goodayth.github.io/cpp-im-re-move/#move의-개념)
-* [언제쓰는데?](https://goodayth.github.io/cpp-im-re-move/#언제쓰는데?)
-> * [참고사항 noexcept에 관하여](https://goodayth.github.io/cpp-im-re-move/#참고사항-noexcept에-관하여)
+* [move의 개념](https://8bitscoding.github.io/cpp-im-re-move/#move의-개념)
+* [언제쓰는데?](https://8bitscoding.github.io/cpp-im-re-move/#언제쓰는데?)
+> * [참고사항 noexcept에 관하여](https://8bitscoding.github.io/cpp-im-re-move/#참고사항-noexcept에-관하여)
 
 ---
 
-> * [TOP](https://goodayth.github.io/cpp-im-re-move/#목차)
+> * [TOP](https://8bitscoding.github.io/cpp-im-re-move/#목차)
 
 ## move의 개념
 
@@ -73,7 +73,7 @@ Test& operator=(Test&& t) { return *this; }  // move 대입연산자
 
 ---
 
-> * [TOP](https://goodayth.github.io/cpp-im-re-move/#목차)
+> * [TOP](https://8bitscoding.github.io/cpp-im-re-move/#목차)
 
 ## 언제쓰는데?
 
@@ -127,7 +127,7 @@ Buffer(Buffer&& b) noexcept
 
 ---
 
-> * [TOP](https://goodayth.github.io/cpp-im-re-move/#목차)
+> * [TOP](https://8bitscoding.github.io/cpp-im-re-move/#목차)
 
 ## 참고사항 noexcept에 관하여
 

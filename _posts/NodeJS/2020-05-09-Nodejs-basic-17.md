@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21062)
-* [Github](https://github.com/GoodayTH/NodeJS-Lector-17)
+* [Github](https://github.com/8bitscoding/NodeJS-Lector-17)
 
 ```js
 var args = process.argv;

@@ -8,7 +8,7 @@ date: 2020-03-12 00:00:00 -0000
 last_modified_at: 2020-03-12 00:00:00 -0000
 ---
 
-> 참고 [Github](https://github.com/GoodayTH/webrtc-js-example)의 Chapter 4. Implementing Signaling 소스코드 참조
+> 참고 [Github](https://github.com/8bitscoding/webrtc-js-example)의 Chapter 4. Implementing Signaling 소스코드 참조
 
 ```s
 $ npm install

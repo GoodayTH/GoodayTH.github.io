@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtca-1-3)
+> * [Github](https://github.com/8bitscoding/qtca-1-3)
 
 
 ## qthread 상속
@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 
 ### Example 2
 
-> * [Github](https://github.com/GoodayTH/qtca-1-4)
+> * [Github](https://github.com/8bitscoding/qtca-1-4)
 
 ```cpp
 // main.cpp

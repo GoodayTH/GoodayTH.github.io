@@ -25,7 +25,7 @@ sidebar:
 
 예를들자면 ...
 
-* [52. QListWidgetItem 사용](https://goodayth.github.io/Qt-GDI-S6-52/)
+* [52. QListWidgetItem 사용](https://8bitscoding.github.io/Qt-GDI-S6-52/)
 
 를 들 수 있겠다.
 
@@ -47,8 +47,8 @@ QString fruit = ui->listWidget->currentItem()->data(Qt::DisplayRole).toString();
 
 또다른 예제..
 
-* [53. QTableWidgetItem 사용](https://goodayth.github.io/Qt-GDI-S6-53/)
-* [54. QTreeWidgetItem 사용](https://goodayth.github.io/Qt-GDI-S6-54/)
+* [53. QTableWidgetItem 사용](https://8bitscoding.github.io/Qt-GDI-S6-53/)
+* [54. QTreeWidgetItem 사용](https://8bitscoding.github.io/Qt-GDI-S6-54/)
 
 
 ---
@@ -60,7 +60,7 @@ QString fruit = ui->listWidget->currentItem()->data(Qt::DisplayRole).toString();
 
 QFileSystemModel, QStringListModel, QSortFilterProxyModel 등이 있고 그 중 하나인 QFileSystemModel을 간단히 설명한다.
 
-* [55. QFileSystemModel 사용](https://goodayth.github.io/Qt-GDI-S6-55/)
+* [55. QFileSystemModel 사용](https://8bitscoding.github.io/Qt-GDI-S6-55/)
 
 <center><img src="/file/image/qt-gdi-s6-55-image-1.png" width="50%" height="50%"></center>
 
@@ -101,8 +101,8 @@ Widget::Widget(QWidget *parent) :
 ```
 
 
-* [56. QStringListModel 사용](https://goodayth.github.io/Qt-GDI-S6-56/)
-* [57. QSortFilterProxyModel 사용](https://goodayth.github.io/Qt-GDI-S6-57/)
+* [56. QStringListModel 사용](https://8bitscoding.github.io/Qt-GDI-S6-56/)
+* [57. QSortFilterProxyModel 사용](https://8bitscoding.github.io/Qt-GDI-S6-57/)
 
 
 ---
@@ -112,7 +112,7 @@ Widget::Widget(QWidget *parent) :
 * 그럼 모델을 개발자가 컨트롤해 보고싶다면?
 * SubClassing을 제공해준다.
 
-* [68. view drag and drop](https://goodayth.github.io/Qt-GDI-S6-68/)
+* [68. view drag and drop](https://8bitscoding.github.io/Qt-GDI-S6-68/)
 
 <center><img src="/file/image/qt-gdi-s6-68-image-1.png" width="50%" height="50%"></center>
 
@@ -190,6 +190,6 @@ private:
 
 뭐 만들때 마다 달라질테니 이런식으로 만든다... 정도만 알고 있자.
 
-* [69. 68에 personal model 적용](https://goodayth.github.io/Qt-GDI-S6-69/)
-* [73. personal model treeview](https://goodayth.github.io/Qt-GDI-S6-73/)
-* [77. 73 응용](https://goodayth.github.io/Qt-GDI-S6-77/)
+* [69. 68에 personal model 적용](https://8bitscoding.github.io/Qt-GDI-S6-69/)
+* [73. personal model treeview](https://8bitscoding.github.io/Qt-GDI-S6-73/)
+* [77. 73 응용](https://8bitscoding.github.io/Qt-GDI-S6-77/)

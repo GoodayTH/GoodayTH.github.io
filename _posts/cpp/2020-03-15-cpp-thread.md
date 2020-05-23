@@ -11,4 +11,4 @@ sidebar:
   nav: cpp
 ---
 
-* [thread](https://goodayth.github.io/cpp-thread/)
+* [thread](https://8bitscoding.github.io/cpp-thread/)

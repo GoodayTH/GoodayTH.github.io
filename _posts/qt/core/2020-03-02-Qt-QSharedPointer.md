@@ -40,7 +40,7 @@ QSharedPointer<test> createPointer() {
 
 ## 전체코드
 
-* [Github](https://github.com/GoodayTH/qtci1-4)
+* [Github](https://github.com/8bitscoding/qtci1-4)
 
 ```cpp
 #include <QCoreApplication>

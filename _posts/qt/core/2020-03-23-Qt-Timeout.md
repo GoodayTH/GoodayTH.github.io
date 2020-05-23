@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtci11-2)
+> * [Github](https://github.com/8bitscoding/qtci11-2)
 
 ```cpp
 #ifndef TEST_H

@@ -142,15 +142,15 @@ sendMessage.addEventListener('click', function(ev){
 
 ## 기타사항
 
-* [WebRTC ejs, express에 관하여](https://goodayth.github.io/webrtc-ejs-express/)
+* [WebRTC ejs, express에 관하여](https://8bitscoding.github.io/webrtc-ejs-express/)
 
 ---
 
 ## 미정리
 
-* [WebRTC Signaling 실습(Setting Up Socket.io)](https://goodayth.github.io/webrtc-signaling2/)
-* [WebRTC Signaling 실습(Implementing Signaling)](https://goodayth.github.io/webrtc-Implementing-Signaling/) : 설명은 생략, 코드를 살펴보면 됨. - 강의에서도 다른 코드를 보며 자세한 WebRTC Connection과정에 대해 설명하는데 필요할 경우 참고
-* [WebRTC For Data Exchange(이론)](https://goodayth.github.io/webrtc-data-exchange/)
+* [WebRTC Signaling 실습(Setting Up Socket.io)](https://8bitscoding.github.io/webrtc-signaling2/)
+* [WebRTC Signaling 실습(Implementing Signaling)](https://8bitscoding.github.io/webrtc-Implementing-Signaling/) : 설명은 생략, 코드를 살펴보면 됨. - 강의에서도 다른 코드를 보며 자세한 WebRTC Connection과정에 대해 설명하는데 필요할 경우 참고
+* [WebRTC For Data Exchange(이론)](https://8bitscoding.github.io/webrtc-data-exchange/)
 
 > cannot find module 'coffee-script'에 대해서<br>
 > package.json 파일에 `"coffee-script": "~1.6.3"` 추가 후 `$ node update`

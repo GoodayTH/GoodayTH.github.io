@@ -5,8 +5,8 @@ date: 2020-03-04 00:00:00 -0000
 
 ## 목차
 
-* [perfect forwarding 개념](https://goodayth.github.io/cpp-im-re-pf/#perfect-forwarding-개념)
-* [그래서 언제쓰는데?](https://goodayth.github.io/cpp-im-re-pf/#그래서-언제쓰는데?)
+* [perfect forwarding 개념](https://8bitscoding.github.io/cpp-im-re-pf/#perfect-forwarding-개념)
+* [그래서 언제쓰는데?](https://8bitscoding.github.io/cpp-im-re-pf/#그래서-언제쓰는데?)
 
 ---
 

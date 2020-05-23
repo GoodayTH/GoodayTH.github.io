@@ -12,7 +12,7 @@ date: 2020-02-15 00:00:00 -0000
 ---
 ---
 
-> 우선 git의 difftool을 beyond compare로 설정해야한다. [여기참고](https://goodayth.github.io/git-difftool/)
+> 우선 git의 difftool을 beyond compare로 설정해야한다. [여기참고](https://8bitscoding.github.io/git-difftool/)
 
 ```s
 $ git difftool <commit id> <commit id>

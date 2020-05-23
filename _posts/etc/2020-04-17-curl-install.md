@@ -22,7 +22,7 @@ sidebar:
 커맨드 라인을 열어서 아래 명령어를 입력해본다.
 
 ```s
-$ curl https://goodayth.github.io
+$ curl https://8bitscoding.github.io
 ```
 
 ![](/file/image/curl_image_02.png)

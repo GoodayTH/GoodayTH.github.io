@@ -5,9 +5,9 @@ date: 2020-02-22 00:00:00 -0000
 
 ## 목차
 
-* [inline 기본적 내용](https://goodayth.github.io/cpp-im-inline-func/#inline-기본적-내용)
-* [인라인 함수와 함수 포인터](https://goodayth.github.io/cpp-im-inline-func/#인라인-함수와-함수-포인터)
-* [인라인 함수와 linkage](https://goodayth.github.io/cpp-im-inline-func/#인라인-함수와-linkage)
+* [inline 기본적 내용](https://8bitscoding.github.io/cpp-im-inline-func/#inline-기본적-내용)
+* [인라인 함수와 함수 포인터](https://8bitscoding.github.io/cpp-im-inline-func/#인라인-함수와-함수-포인터)
+* [인라인 함수와 linkage](https://8bitscoding.github.io/cpp-im-inline-func/#인라인-함수와-linkage)
 
 ---
 

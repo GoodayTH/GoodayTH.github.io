@@ -31,7 +31,7 @@ list.at(i);
 
 ## 전체코드
 
-* [Github](https://github.com/GoodayTH/qtci2-1)
+* [Github](https://github.com/8bitscoding/qtci2-1)
 
 ```cpp
 #include <QCoreApplication>

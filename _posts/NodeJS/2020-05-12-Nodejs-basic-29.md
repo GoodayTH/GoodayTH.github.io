@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21132)
-* [Github](https://github.com/GoodayTH/NodeJS-basic-29)
+* [Github](https://github.com/8bitscoding/NodeJS-basic-29)
 
 ```txt
 # sample.txt

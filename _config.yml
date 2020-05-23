@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "8BiTs Daily Coding"
 description              : "8BiTs 매일 코딩 홈페이지"
-url                      : "https://goodayth.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://8bitscoding.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # 티저이미지
@@ -34,7 +34,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "goodayth" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "8bitscoding" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -121,7 +121,7 @@ author:
       #url: mailto:taehyeong77@naver.com
     - label: "Git Wiki"
       icon: "fas fa-fw fa-link"
-      url: "https://github.com/GoodayTH/RobotMentor/wiki/"
+      url: "https://github.com/8bitscoding/RobotMentor/wiki/"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -130,7 +130,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/GoodayTH/"
+      url: "https://github.com/8bitscoding/"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -146,7 +146,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/GoodayTH/"
+      url: "https://github.com/8bitscoding/"
     #- label: "GitLab"
     #  icon: "fab fa-fw fa-gitlab"
       # url:

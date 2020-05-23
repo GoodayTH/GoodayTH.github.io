@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtca-5-5)
+> * [Github](https://github.com/8bitscoding/qtca-5-5)
 
 ```
 18:01:13: Starting C:\GIT\build-qtca-5-5-Desktop_Qt_5_13_2_MSVC2017_64bit-Debug\debug\qtca-5-5.exe ...

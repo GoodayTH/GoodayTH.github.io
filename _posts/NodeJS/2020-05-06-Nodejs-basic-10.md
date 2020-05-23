@@ -14,7 +14,7 @@ sidebar:
 ---
 
 * [강의](https://opentutorials.org/course/3332/21049)
-* [Github](https://github.com/GoodayTH/NodeJS-Lector-10)
+* [Github](https://github.com/8bitscoding/NodeJS-Lector-10)
 
 ```js
 var http = require('http');

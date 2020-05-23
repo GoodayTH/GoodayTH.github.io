@@ -101,4 +101,4 @@ void test::useWidget()
 }
 ```
 
-> * [Github](https://github.com/GoodayTH/qtci1-2)
+> * [Github](https://github.com/8bitscoding/qtci1-2)

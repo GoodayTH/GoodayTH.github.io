@@ -18,13 +18,13 @@ sidebar:
 
 ![](/file/image/qt-gdi-s7-79-image-1.png)
 
-* [79. GraphicsView 핵심 컴포넌트](https://goodayth.github.io/Qt-GDI-S7-79/)
+* [79. GraphicsView 핵심 컴포넌트](https://8bitscoding.github.io/Qt-GDI-S7-79/)
 
 ---
 
 ## 구현
 
-* [80. GraphicsView 활용 mouse 클릭 받으면 네모 출력 위젯 만들기](https://goodayth.github.io/Qt-GDI-S7-80/)
+* [80. GraphicsView 활용 mouse 클릭 받으면 네모 출력 위젯 만들기](https://8bitscoding.github.io/Qt-GDI-S7-80/)
 
 더 상세한 구현편은 직접만들면서 보는게 나을 듯... 따로 정리는 안한다.
 

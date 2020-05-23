@@ -26,7 +26,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "김태형"
 description              : "김태형의 매일 코딩 홈페이지"
-url                      : "https://goodayth.github.io/"
+url                      : "https://8bitscoding.github.io/"
 ```
 
 > _posts 작성
@@ -43,7 +43,7 @@ url                      : "https://goodayth.github.io/"
 # main links
 main:
   - title: "HOME"
-    url: https://goodayth.github.io/
+    url: https://8bitscoding.github.io/
   - title: "Electron"
     url: /categories-Electron/
   - title: "Qt"

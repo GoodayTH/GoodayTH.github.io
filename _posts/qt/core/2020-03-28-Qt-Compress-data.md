@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtci7-1)
+> * [Github](https://github.com/8bitscoding/qtci7-1)
 
 ---
 

@@ -30,15 +30,15 @@ header:
 
 * [**생활코딩 강의 홈페이지**](https://opentutorials.org/course/3332) : 생활코딩 Node.js
 
-* [코드를 정리한 Git](https://github.com/GoodayTH/Nodejs)
-* [1강 : Node.js설치](https://goodayth.github.io/Nodejs-1/) : 설치 및 확인
+* [코드를 정리한 Git](https://github.com/8bitscoding/Nodejs)
+* [1강 : Node.js설치](https://8bitscoding.github.io/Nodejs-1/) : 설치 및 확인
 
 * [2강 : Node.js 웹서버 만들기](/NodeJS/basic-02/) : Node.js Example Server 동작해보기
-* [JavaScript - Data type Number](https://goodayth.github.io/Nodejs-3/) : Number 출력
-* [JavaScript - Data type String](https://goodayth.github.io/Nodejs-4/) : String 출력
-* [JavaScript - 변수](https://goodayth.github.io/Nodejs-5/)
+* [JavaScript - Data type Number](https://8bitscoding.github.io/Nodejs-3/) : Number 출력
+* [JavaScript - Data type String](https://8bitscoding.github.io/Nodejs-4/) : String 출력
+* [JavaScript - 변수](https://8bitscoding.github.io/Nodejs-5/)
 
-* [JavaScript - Template Literal](https://goodayth.github.io/Nodejs-6/) : or template string
+* [JavaScript - Template Literal](https://8bitscoding.github.io/Nodejs-6/) : or template string
 * [7강 : URL로 입력된 값 사용하기](/NodeJS/basic-07/) : Query String, URL 정의
 * [8강 : 동적인 웹페이지 만들기](/NodeJS/basic-08/)
 * [9강 : 파일 읽기](/NodeJS/basic-09/) : `fs.readFile`

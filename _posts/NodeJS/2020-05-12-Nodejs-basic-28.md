@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21127)
-* [Github](https://github.com/GoodayTH/NodeJS-basic-28)
+* [Github](https://github.com/8bitscoding/NodeJS-basic-28)
 
 함수를 이용해서 코드를 정리해 보자.
 

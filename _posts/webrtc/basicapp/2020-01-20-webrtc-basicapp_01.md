@@ -131,7 +131,7 @@ localhost:3000으로 접속해본다.<br>
 
 ![](/file/image/webrtc-baisic_Image_02.png)
 
-> 여기까지가 [GitHub](https://github.com/GoodayTH/webrtc-js-example)에 저장된 Chapter 1.임 
+> 여기까지가 [GitHub](https://github.com/8bitscoding/webrtc-js-example)에 저장된 Chapter 1.임 
 
 ---
 
@@ -180,7 +180,7 @@ $ node server
 웹에서 `localhost:3000`접속<br>
 비디오, 오디오 권한을 허락하면 카메라화면을 볼 수 있다.<br>
 
-> 여기까지가 [GitHub](https://github.com/GoodayTH/webrtc-js-example)에 저장된 Chapter 2.1임 
+> 여기까지가 [GitHub](https://github.com/8bitscoding/webrtc-js-example)에 저장된 Chapter 2.1임 
 
 ---
 
@@ -230,7 +230,7 @@ $ node server
 </html>
 ```
 
-> 여기까지가 [GitHub](https://github.com/GoodayTH/webrtc-js-example)에 저장된 Chapter 2.2임 
+> 여기까지가 [GitHub](https://github.com/8bitscoding/webrtc-js-example)에 저장된 Chapter 2.2임 
 
 * (추가) 스타일을 수정해 보자.
 
@@ -315,7 +315,7 @@ $ node server
 `localhost:3000`접속<br>
 회색으로 화면이 나오게 된다.<br>
 
-> 여기까지가 [GitHub](https://github.com/GoodayTH/webrtc-js-example)에 저장된 Chapter 2.3임 
+> 여기까지가 [GitHub](https://github.com/8bitscoding/webrtc-js-example)에 저장된 Chapter 2.3임 
 
 ---
 

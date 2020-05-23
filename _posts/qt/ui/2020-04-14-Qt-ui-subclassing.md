@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-* [Github](https://github.com/GoodayTH/qtsubclassing)
+* [Github](https://github.com/8bitscoding/qtsubclassing)
 
 Qt Creator에서 Subclassing을 지정할 수 있다.
 

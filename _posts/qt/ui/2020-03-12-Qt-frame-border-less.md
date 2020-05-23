@@ -8,7 +8,7 @@ date: 2020-03-12 00:00:00 -0000
 last_modified_at: 2020-04-29 00:00:00 -0000
 ---
 
-> * [Github](https://github.com/GoodayTH/VS_Frameless_Widget)
+> * [Github](https://github.com/8bitscoding/VS_Frameless_Widget)
 
 ```cpp
 // Frameless.h

@@ -11,6 +11,6 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtca-3-4)
+> * [Github](https://github.com/8bitscoding/qtca-3-4)
 
 그냥 include하는 거

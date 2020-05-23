@@ -13,7 +13,7 @@ last_modified_at: 2020-03-25 00:00:00 -0000
 아래 예제는 `/Chapter 3/GetUserMediaInASingleBrowser/`으로 진행하겠음.
 
 ```s
-$ git clone https://github.com/GoodayTH/webrtc-js-example
+$ git clone https://github.com/8bitscoding/webrtc-js-example
 $ cd ./Chapter 3/GetUserMediaInASingleBrowser/
 
 # check version
@@ -38,7 +38,7 @@ server started가 나온다면 서버는 정상 동작<br>
 
 ## 추가설명
 
-* [Example Github](https://github.com/GoodayTH/webrtc-js-example)
+* [Example Github](https://github.com/8bitscoding/webrtc-js-example)
 
 단순 Clone해서 사용하면 안됨, <br>
 `$ npm show <module name> version` 명령을 통해 자신의 버전과 맞게 package.json를 수정<br>

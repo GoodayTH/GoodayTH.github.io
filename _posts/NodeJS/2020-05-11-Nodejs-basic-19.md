@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21064)
-* [Github](https://github.com/GoodayTH/NodeJS-Lector-19)
+* [Github](https://github.com/8bitscoding/NodeJS-Lector-19)
 
 이제 home을 만들어 보자.
 

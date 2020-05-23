@@ -18,11 +18,11 @@ int m_array = {0, 1, 2, 3};
 int m_array_size = sizeof(m_array) / sizeof(int);
 ```
 
-* [문자열파싱](https://goodayth.github.io/C++-parsing/)
-* [A-B 문자열에서 A,B파싱](https://goodayth.github.io/C++-parsing-A-B/)
-* [문자열 파싱 (A-B)(C-D)라는 문자열에서 A,B,C,D파싱](https://goodayth.github.io/C++-parsing-(A-B)(C-D)/)
-* [Transitivity Relations](https://goodayth.github.io/C++-Transitivity-Relations/)
-* [String Array 길이 찾기](https://goodayth.github.io/C++-string-array-length/)
-* [int형 2차 배열 사용하기](https://goodayth.github.io/C++-int-2D-array-use/)
-* [2차원 string 배열의 문자열을 파싱해서 2차원 int형 배열로 넣기](https://goodayth.github.io/C++-2D-array-example/)
-* [map과 vector, class 잘 사용하기](https://goodayth.github.io/C++-using-map/)
+* [문자열파싱](https://8bitscoding.github.io/C++-parsing/)
+* [A-B 문자열에서 A,B파싱](https://8bitscoding.github.io/C++-parsing-A-B/)
+* [문자열 파싱 (A-B)(C-D)라는 문자열에서 A,B,C,D파싱](https://8bitscoding.github.io/C++-parsing-(A-B)(C-D)/)
+* [Transitivity Relations](https://8bitscoding.github.io/C++-Transitivity-Relations/)
+* [String Array 길이 찾기](https://8bitscoding.github.io/C++-string-array-length/)
+* [int형 2차 배열 사용하기](https://8bitscoding.github.io/C++-int-2D-array-use/)
+* [2차원 string 배열의 문자열을 파싱해서 2차원 int형 배열로 넣기](https://8bitscoding.github.io/C++-2D-array-example/)
+* [map과 vector, class 잘 사용하기](https://8bitscoding.github.io/C++-using-map/)

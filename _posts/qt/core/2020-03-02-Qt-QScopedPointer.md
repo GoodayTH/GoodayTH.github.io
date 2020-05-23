@@ -24,7 +24,7 @@ delete해 주지 않아도 된다.
 
 ## 전체코드
 
-* [Github](https://github.com/GoodayTH/qtci1-3)
+* [Github](https://github.com/8bitscoding/qtci1-3)
 
 ```cpp
 #include <QCoreApplication>

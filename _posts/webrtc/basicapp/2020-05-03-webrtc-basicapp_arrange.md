@@ -14,7 +14,7 @@ sidebar:
 ![](/file/image/webrtc-basic-arrange.png)
 
 뭐 대략 이런데... 위 그림만으론 이해가 힘들다.<br>
-우선 소스코드는 [여기](https://github.com/GoodayTH/webrtc-basic-arrange)를 참고하자
+우선 소스코드는 [여기](https://github.com/8bitscoding/webrtc-basic-arrange)를 참고하자
 
 처음으로 기억할 것은 웹 2개 A, B에서 B는 기존에 접속이 되어있고<br>
 A에서 접속을 시도한다는것을 기억하자.

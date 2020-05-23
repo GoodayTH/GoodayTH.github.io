@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtca-5-6)
+> * [Github](https://github.com/8bitscoding/qtca-5-6)
 
 ```cpp
 #include <QTest>

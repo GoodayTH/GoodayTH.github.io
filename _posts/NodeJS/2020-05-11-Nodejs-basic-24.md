@@ -20,7 +20,7 @@ excerpt: ""
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21123)
-* [Github](https://github.com/GoodayTH/NodeJS-Lector-24)
+* [Github](https://github.com/8bitscoding/NodeJS-Lector-24)
 
 ```js
 var http = require('http');

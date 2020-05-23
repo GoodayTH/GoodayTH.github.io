@@ -11,7 +11,7 @@ sidebar:
   nav: qt
 ---
 
-> * [Github](https://github.com/GoodayTH/qtca-1-2)
+> * [Github](https://github.com/8bitscoding/qtca-1-2)
 
 ## 새로운 thread 생성하기
 
