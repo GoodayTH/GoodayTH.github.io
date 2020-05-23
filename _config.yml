@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "8BiTs Daily Coding"
 description              : "8BiTs 매일 코딩 홈페이지"
-url                      : "https://goodayth.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://goodayth.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # 티저이미지
@@ -79,7 +79,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "1vnF9ntOMMW8sgXjGLEa4CNttaKUBVJfAwgYDDpkZuo"
+google_site_verification : "google6b7f51d66bdc853a.html"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
