@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : 배열의 이름은 주소일까?"
-permalink: cpp/template/arrayname/                # link 직접 지정
+permalink: /cpp/template/arrayname/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
