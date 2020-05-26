@@ -68,6 +68,7 @@ header:
 * [Jenkins WorkSpace에 관해서]() : 간단하기에 글로 정리 - Jenkins가 설치된 폴더의 workspace가 존재 하며 그 폴더에서 git, svn을 clone하여 프로젝트를 빌드한다. 한번씩 헷갈려서 혹시나 해서 적어둠.
 
 * [item Build Count reset](/jenkins/reset-build-cnt/)
+* [Jenkins Window Batch 작성하기](/jenkins/windows-batch/) : 그냥 window batch에 작성하면 동작하는게 Jenkins에서 작성하면 동작안하는 경우가 발생함.
 
 ---
 
