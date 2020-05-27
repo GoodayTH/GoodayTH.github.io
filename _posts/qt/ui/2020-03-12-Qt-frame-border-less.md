@@ -5,7 +5,7 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-12 00:00:00 -0000
-last_modified_at: 2020-04-29 00:00:00 -0000
+last_modified_at: 2020-05-27 00:00:00 -0000
 ---
 
 > * [Github](https://github.com/8bitscoding/VS_Frameless_Widget)
@@ -48,9 +48,15 @@ Frameless::Frameless(QWidget *parent)
 	ui.setupUi(this);
 	ui.newTitlebarLayout->setMenuBar(ui.menuBar);
 
-	HWND hwnd = (HWND)this->winId();
-	DWORD style = ::GetWindowLong(hwnd, GWL_STYLE);
-	::SetWindowLong(hwnd, GWL_STYLE, style | WS_MAXIMIZEBOX | WS_THICKFRAME | WS_CAPTION);
+	// 이 방법말고
+	//HWND hwnd = (HWND)this->winId();
+	//DWORD style = ::GetWindowLong(hwnd, GWL_STYLE);
+	//::SetWindowLong(hwnd, GWL_STYLE, style | WS_MAXIMIZEBOX | WS_THICKFRAME | WS_CAPTION);
+
+	// 이 방법이 더 낫다
+	setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint | Qt::CustomizeWindowHint);
+	setAttribute(Qt::WA_NoSystemBackground, true);
+	setAttribute(Qt::WA_TranslucentBackground); 
 }
 
 bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *result)
@@ -72,8 +78,9 @@ bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *re
 			//WS_THICKFRAME and WS_CAPTION
 			if (false)
 				return QWidget::nativeEvent(eventType, message, result);
-			*result = 0;
-			return true;
+			// 여기가 타이틀바를 그리는 부분이긴 한데, 여길 막으면 안됨.
+			//*result = 0;
+			//return true;
 		}
 		default: {
 			return QWidget::nativeEvent(eventType, message, result);
@@ -198,6 +205,8 @@ bool Frameless::event(QEvent *event)
 ```
 
 ---
+
+* [가장확실한 Example](https://github.com/Jorgen-VikingGod/Qt-Frameless-Window-DarkStyle)
 
 > * [참고사이트1](https://github.com/deimos1877/BorderlessWindow)
 > * [참고사이트2](https://github.com/JJPPeters/clTEM/blob/9d2f52f0ce556b1e1f4b70ac40cbfebc438d6f23/src/gui/controls/borderlessdialog.cpp)
