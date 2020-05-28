@@ -105,6 +105,7 @@ header:
 * [과거 commit 버전간 비교](https://8bitscoding.github.io/git-compare-past-commit/)
 
 * [sourcetree이용 스태시와 특정 커밋 비교](/git/stash-compare/)
+* [sourcetree이용 release 만들기](/git/release/)
 
 ---
 

@@ -5,7 +5,7 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-12 00:00:00 -0000
-last_modified_at: 2020-05-27 00:00:00 -0000
+last_modified_at: 2020-05-28 00:00:00 -0000
 ---
 
 > * [Github](https://github.com/8bitscoding/VS_Frameless_Widget)
@@ -54,9 +54,19 @@ Frameless::Frameless(QWidget *parent)
 	//::SetWindowLong(hwnd, GWL_STYLE, style | WS_MAXIMIZEBOX | WS_THICKFRAME | WS_CAPTION);
 
 	// 이 방법이 더 낫다
-	setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint | Qt::CustomizeWindowHint);
+	//setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint | Qt::CustomizeWindowHint);
+	//setAttribute(Qt::WA_NoSystemBackground, true);
+	//setAttribute(Qt::WA_TranslucentBackground); 
+
+	// 최종(이걸 추천)
+	setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+	setAttribute(Qt::WA_OpaquePaintEvent, false);
+	setAttribute(Qt::WA_PaintOnScreen, true);
+	setAttribute(Qt::WA_DontCreateNativeAncestors, true);
+	setAttribute(Qt::WA_NativeWindow, true);
 	setAttribute(Qt::WA_NoSystemBackground, true);
-	setAttribute(Qt::WA_TranslucentBackground); 
+	setAttribute(Qt::WA_MSWindowsUseDirect3D, true);
+	setAutoFillBackground(false);
 }
 
 bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *result)
@@ -78,7 +88,8 @@ bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *re
 			//WS_THICKFRAME and WS_CAPTION
 			if (false)
 				return QWidget::nativeEvent(eventType, message, result);
-			// 여기가 타이틀바를 그리는 부분이긴 한데, 여길 막으면 안됨.
+			// 여기가 타이틀바를 그리는 부분이긴 한데, 여길 막으면(return하면) 안됨.
+			// 이런식으로 강제로 타이틀바를 그리는 것을 막으면 듀얼모니터 환경에서 모니터간 이동시 UI가 깨질 수 있다
 			//*result = 0;
 			//return true;
 		}
