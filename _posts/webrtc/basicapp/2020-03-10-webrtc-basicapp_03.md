@@ -1,6 +1,6 @@
 ---
 title: "(webrtc) socket.io 사용하기"
-permalink: /webrtc/basicapp_03/ # link 직접 지정
+permalink: webrtc/basicapp_03/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

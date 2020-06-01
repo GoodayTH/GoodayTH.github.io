@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : tuple get"
-permalink: /cpp/template/tuple-get/                # link 직접 지정
+permalink: cpp/template/tuple-get/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

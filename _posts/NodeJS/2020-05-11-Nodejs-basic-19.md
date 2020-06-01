@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 19강 : App - 홈페이지 구현"
-permalink: /NodeJS/basic-19/                # link 직접 지정
+permalink: NodeJS/basic-19/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

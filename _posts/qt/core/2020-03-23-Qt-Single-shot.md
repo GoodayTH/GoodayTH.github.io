@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 45. QTimer - single shot"
-permalink: /qt/core/single-shot/                # link 직접 지정
+permalink: qt/core/single-shot/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

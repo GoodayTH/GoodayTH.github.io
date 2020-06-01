@@ -1,6 +1,6 @@
 ---
 title: "(webrtc) data channel 사용해보기"
-permalink: /webrtc/basicapp_05/ # link 직접 지정
+permalink: webrtc/basicapp_05/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

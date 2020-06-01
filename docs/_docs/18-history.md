@@ -1,7 +1,7 @@
 ---
 title: "History"
 classes: wide
-permalink: /docs/history/
+permalink: docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs

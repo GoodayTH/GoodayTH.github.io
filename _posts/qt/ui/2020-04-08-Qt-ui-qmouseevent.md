@@ -1,6 +1,6 @@
 ---
 title: "qt : QMouseEvent로 특정지점 클릭 메시지 보내기"
-permalink: /qt/ui/qmouseevent/                # link 직접 지정
+permalink: qt/ui/qmouseevent/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

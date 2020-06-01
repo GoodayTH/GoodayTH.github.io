@@ -1,6 +1,6 @@
 ---
 title: "page sample"
-permalink: /sample/page-sample/ # link 직접 지정
+permalink: sample/page-sample/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
@@ -37,7 +37,7 @@ page 123 123 12
 # 포스트 글 상단에 sidebar: 옵션을 넣는다
 ---
 title: "page sample"
-permalink: /sample/page-sample/ # link 직접 지정
+permalink: sample/page-sample/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

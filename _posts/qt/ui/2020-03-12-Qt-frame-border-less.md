@@ -1,11 +1,11 @@
 ---
 title: "Qt - UI : Frameless(Borderless) Widget 만들기"
-permalink: /qt/frameless/ # link 직접 지정
+permalink: qt/frameless/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-12 00:00:00 -0000
-last_modified_at: 2020-05-28 00:00:00 -0000
+last_modified_at: 2020-06-01 00:00:00 -0000
 ---
 
 > * [Github](https://github.com/8bitscoding/VS_Frameless_Widget)
@@ -92,6 +92,9 @@ bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *re
 			// 이런식으로 강제로 타이틀바를 그리는 것을 막으면 듀얼모니터 환경에서 모니터간 이동시 UI가 깨질 수 있다
 			//*result = 0;
 			//return true;
+
+			// 여기도 다시 살려야 함.
+			return true;
 		}
 		default: {
 			return QWidget::nativeEvent(eventType, message, result);

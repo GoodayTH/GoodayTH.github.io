@@ -1,6 +1,6 @@
 ---
 title: "Qt : 주기적 UI update 호출 방법"
-permalink: /qt/ui/periodie-update/                # link 직접 지정
+permalink: qt/ui/periodie-update/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "(webrtc) 이론적 부분"
-permalink: /webrtc/basic/ # link 직접 지정
+permalink: webrtc/basic/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

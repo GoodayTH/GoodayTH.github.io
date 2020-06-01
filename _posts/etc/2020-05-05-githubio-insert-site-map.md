@@ -1,6 +1,6 @@
 ---
 title: "Github io : sitemap 넣기"
-permalink: /github-io/insert-sitemap/                # link 직접 지정
+permalink: github-io/insert-sitemap/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

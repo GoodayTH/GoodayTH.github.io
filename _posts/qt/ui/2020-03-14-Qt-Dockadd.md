@@ -1,6 +1,6 @@
 ---
 title: "(Qt) Dock 특정 Layout에 넣기"
-permalink: /qt/dockadd/ # link 직접 지정
+permalink: qt/dockadd/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "Layouts"
-permalink: /docs/layouts/
+permalink: docs/layouts/
 excerpt: "Descriptions and samples of all layouts included with the theme and how to best use them."
 single_layout_gallery:
   - image_path: /assets/images/mm-layout-single-header.png
@@ -193,7 +193,7 @@ Create a portfolio archive page (eg. `_pages/portfolio-archive.md`) with the fol
 ---
 title: Portfolio
 layout: collection
-permalink: /portfolio/
+permalink: portfolio/
 collection: portfolio
 entries_layout: grid
 ---
@@ -258,7 +258,7 @@ To create a page showing all documents in the `recipes` collection you'd create 
 ```yaml
 title: Recipes
 layout: collection
-permalink: /recipes/
+permalink: recipes/
 collection: recipes
 ```
 
@@ -278,7 +278,7 @@ To create a page showing all posts assigned to the category `foo` you'd create `
 ```yaml
 title: Foo
 layout: category
-permalink: /categories/foo/
+permalink: categories/foo/
 taxonomy: foo
 ```
 
@@ -296,7 +296,7 @@ To create a page showing all posts assigned to the tag `foo bar` you'd create `f
 ```yaml
 title: Foo Bar
 layout: tag
-permalink: /tags/foo-bar/
+permalink: tags/foo-bar/
 taxonomy: foo bar
 ```
 

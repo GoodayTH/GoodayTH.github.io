@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 29강 : NodeJS - 동기와 비동기 그리고 콜백"
-permalink: /NodeJS/basic-29/                # link 직접 지정
+permalink: NodeJS/basic-29/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

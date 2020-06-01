@@ -1,6 +1,6 @@
 ---
 title: "(git) sourcetree이용 스태시와 특정 커밋 비교"
-permalink: /git/stash-compare/ # link 직접 지정
+permalink: git/stash-compare/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

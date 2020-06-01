@@ -1,6 +1,6 @@
 ---
 title: "Jenkins : Window Batch 작성하기"
-permalink: /jenkins/windows-batch/                # link 직접 지정
+permalink: jenkins/windows-batch/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "Qt : TextEdit 한글 타이핑 도중 입력받기 : QEvent::InputMethod 활용"
-permalink: /qt/ui/inputmethod/                # link 직접 지정
+permalink: qt/ui/inputmethod/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

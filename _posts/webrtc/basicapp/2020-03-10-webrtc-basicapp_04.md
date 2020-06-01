@@ -1,6 +1,6 @@
 ---
 title: "(webrtc) signaling 해보기"
-permalink: /webrtc/basicapp_04/ # link 직접 지정
+permalink: webrtc/basicapp_04/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

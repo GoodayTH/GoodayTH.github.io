@@ -1,6 +1,6 @@
 ---
 title: "(WebRTC) WebRTC 기초 다지기"
-permalink: /webrtc/basicapp_01/ # link 직접 지정
+permalink: webrtc/basicapp_01/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

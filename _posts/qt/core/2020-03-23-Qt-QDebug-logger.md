@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 23. Creating a logger class"
-permalink: /qt/core/qdebug-logger/                # link 직접 지정
+permalink: qt/core/qdebug-logger/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

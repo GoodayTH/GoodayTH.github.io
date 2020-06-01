@@ -1,6 +1,6 @@
 ---
 title: "Configuration"
-permalink: /docs/configuration/
+permalink: docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
 last_modified_at: 2019-10-04T10:54:48-04:00
 toc: true
@@ -254,7 +254,7 @@ masthead_title: "My Custom Title"
 
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
-1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
+1. Use a category based permalink structure e.g. `permalink: :categories/:title/`
 2. Manually create pages for each category or use a plugin like [jekyll-archives][jekyll-archives] to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
 ![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" | relative_url }})
@@ -914,7 +914,7 @@ And of course any default value can be overridden by settings in a post, page, o
 
 ## Outputting
 
-The default permalink style used by the theme is `permalink: /:categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `_site/foo/my-post/index.html`.
+The default permalink style used by the theme is `permalink: :categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `_site/foo/my-post/index.html`.
 
 **Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created.
 {: .notice--warning}

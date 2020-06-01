@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 18. Reading Files"
-permalink: /qt/core/Reading-files/                # link 직접 지정
+permalink: qt/core/Reading-files/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

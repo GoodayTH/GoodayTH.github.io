@@ -1,6 +1,6 @@
 ---
 title: "Gradle : 특정 폴더에 파일만 복사하기"
-permalink: /gradle/example/copyfiles/                # link 직접 지정
+permalink: gradle/example/copyfiles/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

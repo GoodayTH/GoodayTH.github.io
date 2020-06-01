@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 28강 : App - 함수를 이용해서 정리 정돈하기"
-permalink: /NodeJS/basic-28/                # link 직접 지정
+permalink: NodeJS/basic-28/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

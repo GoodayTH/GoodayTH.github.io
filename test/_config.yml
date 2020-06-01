@@ -195,7 +195,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: :categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -259,13 +259,13 @@ compress_html:
 collections:
   recipes:
     output: true
-    permalink: /:collection/:path/
+    permalink: :collection/:path/
   pets:
     output: true
-    permalink: /:collection/:path/
+    permalink: :collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: :collection/:path/
 
 
 # Defaults

@@ -1,6 +1,6 @@
 ---
 title: "(obs) start stream"
-permalink: /obs/start-stream/ # link 직접 지정
+permalink: obs/start-stream/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

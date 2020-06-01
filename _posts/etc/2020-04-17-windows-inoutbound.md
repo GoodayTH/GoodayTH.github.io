@@ -1,6 +1,6 @@
 ---
 title: "Windows : 인바운드, 아웃바운드 규칙이란"
-permalink: /windows/inoutbound/                # link 직접 지정
+permalink: windows/inoutbound/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

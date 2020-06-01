@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 5. QList vs QVector"
-permalink: /qt/core/QList-QVector/                # link 직접 지정
+permalink: qt/core/QList-QVector/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

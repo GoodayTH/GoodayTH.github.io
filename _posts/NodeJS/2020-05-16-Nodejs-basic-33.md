@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 33강 : App - POST 방식으로 전송된 데이터 받기"
-permalink: /NodeJS/basic-33/                # link 직접 지정
+permalink: NodeJS/basic-33/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

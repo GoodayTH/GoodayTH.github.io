@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 2강 - Node.js 웹서버 만들기"
-permalink: /NodeJS/basic-02/                # link 직접 지정
+permalink: NodeJS/basic-02/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

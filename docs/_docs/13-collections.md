@@ -1,6 +1,6 @@
 ---
 title: "Working with Collections"
-permalink: /docs/collections/
+permalink: docs/collections/
 excerpt: "Suggestions and Front Matter defaults for working with collections."
 last_modified_at: 2018-03-20T16:00:02-04:00
 ---
@@ -22,7 +22,7 @@ A popular use case for collections is to build a portfolio section as part of on
 collections:
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: :collection/:path/
 ```
 
 These settings essentially say output `index.html` files for each portfolio document in `_portfolio` at `_site/portfolio/<document-filename>/`.
@@ -47,7 +47,7 @@ Now make a portfolio.md file in the '_pages' folder.
 ---
 title: Portfolio
 layout: collection
-permalink: /portfolio/
+permalink: portfolio/
 collection: portfolio
 entries_layout: grid
 classes: wide

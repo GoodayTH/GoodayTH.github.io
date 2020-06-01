@@ -1,6 +1,6 @@
 ---
 title: "간단한 WebRTC 어플리케이션 만들어보기 준비"
-permalink: /webrtc/basicapp_00/ # link 직접 지정
+permalink: webrtc/basicapp_00/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

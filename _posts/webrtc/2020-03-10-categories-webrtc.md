@@ -1,6 +1,6 @@
 ---
 title: "webrtc 목차"
-permalink: /webrtc/                # link 직접 지정
+permalink: webrtc/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

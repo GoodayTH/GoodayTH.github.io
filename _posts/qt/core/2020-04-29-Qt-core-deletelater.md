@@ -1,6 +1,6 @@
 ---
 title: "Qt - Core : delete later"
-permalink: /qt/core/deletelater/                # link 직접 지정
+permalink: qt/core/deletelater/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

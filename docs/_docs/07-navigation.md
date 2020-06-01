@@ -1,6 +1,6 @@
 ---
 title: "Navigation"
-permalink: /docs/navigation/
+permalink: docs/navigation/
 excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 last_modified_at: 2018-03-20T15:59:40-04:00
 toc: true
@@ -45,7 +45,7 @@ Optionally, you can add a `description` key per title in the `main` key. This `d
 
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
-1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
+1. Use a category based permalink structure e.g. `permalink: :categories/:title/`
 2. Manually create pages for each category or use a plugin like [jekyll-archives](https://github.com/jekyll/jekyll-archives) to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
 ![breadcrumb navigation example]({{ "/assets/images/mm-breadcrumbs-example.jpg" | relative_url }})

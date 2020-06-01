@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 30강 : NodeJS - 패키지 매니저와 PM2"
-permalink: /NodeJS/basic-30/                # link 직접 지정
+permalink: NodeJS/basic-30/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 11강 - Node.js 파일 읽기"
-permalink: /NodeJS/basic-11/                # link 직접 지정
+permalink: NodeJS/basic-11/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

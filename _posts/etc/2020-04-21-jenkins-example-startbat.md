@@ -1,6 +1,6 @@
 ---
 title: "Jenkins : .bat 파일 실행하기"
-permalink: /gradle/example/startbat/                # link 직접 지정
+permalink: gradle/example/startbat/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

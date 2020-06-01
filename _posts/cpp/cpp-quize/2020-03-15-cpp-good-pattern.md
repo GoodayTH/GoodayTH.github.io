@@ -1,6 +1,6 @@
 ---
 title: "코딩테스트 : Good Pattern"
-permalink: /cpp/good-pattern/                # link 직접 지정
+permalink: cpp/good-pattern/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

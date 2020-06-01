@@ -1,6 +1,6 @@
 ---
 title: "기타사항 정리 페이지 입니다."
-permalink: /etc/                # link 직접 지정
+permalink: etc/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
@@ -69,6 +69,7 @@ header:
 
 * [item Build Count reset](/jenkins/reset-build-cnt/)
 * [Jenkins Window Batch 작성하기](/jenkins/windows-batch/) : 그냥 window batch에 작성하면 동작하는게 Jenkins에서 작성하면 동작안하는 경우가 발생함.
+* [Jenkins Git 특정 Branch 선택하기]() : `refs/heads/develop`
 
 ---
 

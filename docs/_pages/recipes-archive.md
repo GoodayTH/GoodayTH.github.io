@@ -2,7 +2,7 @@
 layout: collection
 title: "Recipes"
 collection: recipes
-permalink: /recipes/
+permalink: recipes/
 author_profile: false
 ---
 

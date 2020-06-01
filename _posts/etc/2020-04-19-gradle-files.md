@@ -1,6 +1,6 @@
 ---
 title: "Gradle : 파일관리"
-permalink: /gradle/files/                # link 직접 지정
+permalink: gradle/files/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "Jenkins : gradle plugin"
-permalink: /jenkins/gradleplugin/                # link 직접 지정
+permalink: jenkins/gradleplugin/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

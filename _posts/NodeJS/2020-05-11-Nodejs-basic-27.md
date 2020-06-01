@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 27강 : JS 함수의 출력"
-permalink: /NodeJS/basic-27/                # link 직접 지정
+permalink: NodeJS/basic-27/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

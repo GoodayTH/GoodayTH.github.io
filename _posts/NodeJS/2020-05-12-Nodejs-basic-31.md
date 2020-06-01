@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 31강 : HTML - Form"
-permalink: /NodeJS/basic-31/                # link 직접 지정
+permalink: NodeJS/basic-31/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 23강 : NodeJS 파일 목록 알아내기"
-permalink: /NodeJS/basic-23/                # link 직접 지정
+permalink: NodeJS/basic-23/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "dock widget 코너 설정하기"
-permalink: /qt/ui/dock-corner/                # link 직접 지정
+permalink: qt/ui/dock-corner/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 33. Serializing a class"
-permalink: /qt/core/serializing-class/                # link 직접 지정
+permalink: qt/core/serializing-class/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

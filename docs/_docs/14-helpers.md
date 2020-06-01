@@ -1,6 +1,6 @@
 ---
 title: "Helpers"
-permalink: /docs/helpers/
+permalink: docs/helpers/
 excerpt: "Jekyll `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg

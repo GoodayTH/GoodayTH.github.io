@@ -1,6 +1,6 @@
 ---
 title: "Qt : multi monitor 환경 현재 widget의 monitor 확인"
-permalink: /qt/ui/multi-monitor/                # link 직접 지정
+permalink: qt/ui/multi-monitor/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

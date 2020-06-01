@@ -1,6 +1,6 @@
 ---
 title: "Github io : *.rc파일 버전 병경하기"
-permalink: /githubio/insert-image/                # link 직접 지정
+permalink: githubio/insert-image/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

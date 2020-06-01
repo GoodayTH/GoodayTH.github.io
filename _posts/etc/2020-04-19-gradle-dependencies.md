@@ -1,6 +1,6 @@
 ---
 title: "Gradle : 의존관계"
-permalink: /gradle/dependencies/                # link 직접 지정
+permalink: gradle/dependencies/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

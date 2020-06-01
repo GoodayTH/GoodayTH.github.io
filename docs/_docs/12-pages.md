@@ -1,6 +1,6 @@
 ---
 title: "Working with Pages"
-permalink: /docs/pages/
+permalink: docs/pages/
 excerpt: "Suggestions and Front Matter defaults for working with pages."
 last_modified_at: 2016-11-03T11:13:12-04:00
 ---
@@ -25,9 +25,9 @@ Examples:
 
 | filename            | permalink              |
 | --------            | ---------              |
-| _pages/about.md     | `permalink: /about/`   |
-| _pages/home.md      | `permalink: /`         |
-| _pages/contact.md   | `permalink: /contact/` |
+| _pages/about.md     | `permalink: about/`   |
+| _pages/home.md      | `permalink: `         |
+| _pages/contact.md   | `permalink: contact/` |
 
 **Recommended Front Matter Defaults:**
 

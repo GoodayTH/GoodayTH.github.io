@@ -1,11 +1,11 @@
 ---
 title: "(WebRTC) Native Build"
-permalink: /webrtc/native_build/ # link 직접 지정
+permalink: webrtc/native_build/ # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-01-22 00:00:00 -0000
-last_modified_at: 2020-03-18 00:00:00 -0000
+last_modified_at: 2020-06-01 00:00:00 -0000
 sidebar:
   title: "WebRTC 목차"
   nav: webrtc
@@ -83,7 +83,7 @@ $ gn gen out/x64/Debug --args="is_debug=true use_rtti=true target_cpu=\"x64\""
 $ gn gen --ide=vs out\Default
 
 # visual studio 자체 빌드가 되지 않기에 빌드는 위에 처럼하거나 아래처럼 간단빌드가능
-$ gn gen out/Default --args="fatal_linker_warnings=false is_Debug=false"
+$ gn gen out/Default --args="fatal_linker_warnings=false is_debug=false"
 $ ninja -C out/Default
 ```
 

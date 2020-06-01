@@ -1,6 +1,6 @@
 ---
 title: "Windows Batch : *.rc파일 버전 병경하기"
-permalink: /batch/example-file-replace/                # link 직접 지정
+permalink: batch/example-file-replace/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

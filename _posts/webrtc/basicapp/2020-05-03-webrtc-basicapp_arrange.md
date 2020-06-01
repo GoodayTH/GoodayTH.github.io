@@ -1,6 +1,6 @@
 ---
 title: "WebRTC - example : 복잡하기에 여기만 보자 대충 동작을 정리했음."
-permalink: /webrtc/basic_arrange/                # link 직접 지정
+permalink: webrtc/basic_arrange/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

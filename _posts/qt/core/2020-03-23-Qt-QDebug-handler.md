@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 22. Installing a message handler"
-permalink: /qt/core/qdebug-handler/                # link 직접 지정
+permalink: qt/core/qdebug-handler/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

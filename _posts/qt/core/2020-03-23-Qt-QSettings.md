@@ -1,6 +1,6 @@
 ---
 title: "(Qt) 10. Introduction to QSettings"
-permalink: /qt/core/QSettings/                # link 직접 지정
+permalink: qt/core/QSettings/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

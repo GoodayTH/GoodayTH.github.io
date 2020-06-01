@@ -1,6 +1,6 @@
 ---
 title: "Github io : github page 특수문자 넣기"
-permalink: /githubio/special-char/                # link 직접 지정
+permalink: githubio/special-char/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

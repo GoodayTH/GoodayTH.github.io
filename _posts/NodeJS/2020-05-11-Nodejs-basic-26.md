@@ -1,6 +1,6 @@
 ---
 title: "NodeJS Basic 26강 : JS 함수의 입력"
-permalink: /NodeJS/basic-26/                # link 직접 지정
+permalink: NodeJS/basic-26/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
