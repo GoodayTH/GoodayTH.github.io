@@ -24,6 +24,22 @@ header:
       url: "https://webrtc.org/"
 ---
 
+## Signaling 이론
+
+1. [local에 카메라, 오디오 정보를 받는다.](/webrtc/sum_1/) : `navigator.getUserMedia` 사용하기
+2. [통화를 원하는 A가 Signal Server로 SDP(Session Description Protocol)을 보낸다.](/webrtc/sum_2/)
+3. Signal Server는 그 정보를 B에게 보내고 B에게서도 SDP를 받는다.
+4. [A는 B에게서 받은 SDP를 바탕으로 ICE(Internet Connectivity Establishment) 정보를 Signal Server로 주고 서버는 다시 B에게 전달한다.](/webrtc/sum_3/)
+5. ICE를 받은 B는 자신의 IP를 Server에게 전달한다.
+6. IP의 위치에 따라 공통망인지, STUN, TURN을 사용할 것인지 결정후 통신이 시작된다.
+
+* [WebRTC Signaling 이론](/webrtc/basicapp_02/) : 결국 [WebRTC 이론적 부분](/webrtc/basic/)과 비슷한 설명임.
+
+---
+---
+
+## 여기서 부터는 과거자료
+
 ## WebRTC란?
 
 * [WebRTC 이론적 부분](/webrtc/basic/)
@@ -37,20 +53,6 @@ header:
 * Mediastream(`getUserMedia`)를 통해 영상/음성 정보를 web으로 가져온다.
 
 * [WebRTC 기초 다지기](/webrtc/basicapp_01/) : nvm 설치 + `getUserMedia`으로 web에서 비디오/오디오 정보 받기
-
-### Signaling 이론
-
-1. [local에 카메라, 오디오 정보를 받는다.](/webrtc/sum_1/) : `navigator.getUserMedia` 사용하기
-2. [통화를 원하는 A가 Signal Server로 SDP(Session Description Protocol)을 보낸다.](/webrtc/sum_2/)
-3. Signal Server는 그 정보를 B에게 보내고 B에게서도 SDP를 받는다.
-4. A는 B에게서 받은 SDP를 바탕으로 ICE(Internet Connectivity Establishment) 정보를 Signal Server로 주고 서버는 다시 B에게 전달한다.
-5. ICE를 받은 B는 자신의 IP를 Server에게 전달한다.
-6. IP의 위치에 따라 공통망인지, STUN, TURN을 사용할 것인지 결정후 통신이 시작된다.
-
-* 너무 길이서 정리하자면 ...
-* SDP -> ICE -> public, STUN, TURN, -> RTC Connection 순서이다.
-
-* [WebRTC Signaling 이론](/webrtc/basicapp_02/) : 결국 [WebRTC 이론적 부분](/webrtc/basic/)과 비슷한 설명임.
 
 ### Signaling
 
