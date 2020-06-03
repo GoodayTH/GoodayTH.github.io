@@ -70,6 +70,7 @@ header:
 * [item Build Count reset](/jenkins/reset-build-cnt/)
 * [Jenkins Window Batch 작성하기](/jenkins/windows-batch/) : 그냥 window batch에 작성하면 동작하는게 Jenkins에서 작성하면 동작안하는 경우가 발생함.
 * [Jenkins Git 특정 Branch 선택하기]() : `refs/heads/develop`
+* [Git Credential(암호) 관리](/jenkins/credential/)
 
 ---
 
@@ -159,7 +160,10 @@ Simple (or Streaming) Text Orientated Messaging Protocol.<br>
 말 그대로 메시징 프로토콜이다.<br>
 websocket에서 사용되며 특정 규약에 맞춰 보낼시 파싱<br>
 
+서버에 구독을 요청하고 메시지가 오면 받아서 파싱한다. 통신의 기반은 WebSocket이고 메시지는 json을 쓴다.
+
 * [참고사이트](https://swiftymind.tistory.com/tag/Websocket%20%2B%20STOMP)
+* [참고사이트2 - 설명 좋음](https://supawer0728.github.io/2018/03/30/spring-websocket/)
 
 ---
 
@@ -167,3 +171,12 @@ websocket에서 사용되며 특정 규약에 맞춰 보낼시 파싱<br>
 
 * [GitHub(다운로드)](https://github.com/PowerShell/PowerShell/releases)
 
+---
+
+## startuml
+
+startuml 1.0 다운로드
+
+* [다운로드 페이지](http://sourceforge.net/projects/staruml/files/staruml/5.0/)
+
+![](/file/image/startuml.png)

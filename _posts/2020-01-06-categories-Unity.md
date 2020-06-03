@@ -24,3 +24,38 @@ header:
     - label: "Unity HomePage"
       url: "https://unity3d.com//"
 ---
+
+## C#
+
+기본적 문법
+
+```C#
+// 주석
+
+/* 
+* 주석
+*/
+
+// 콘솔 로그 출력
+int num = 0;
+Debug.Log("로그" + num);
+
+// 함수선언
+float GetRadius(float size)
+{
+  // ...
+}
+
+// 배열 선언
+int[] scores = new int[10];
+
+// 상속
+public class Animal
+{
+  public string name;
+  string sound;
+  float weight;
+}
+
+Animal jack = new Animal();
+```
