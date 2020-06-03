@@ -79,7 +79,7 @@ header:
 
 ---
 
-## Github.io
+## Github Page
 
 * [jekyll로 github page만들기](https://8bitscoding.github.io/gitpage-make/)
 * [테스트 이미지 넣기](/githubio/insert-image/)
@@ -90,6 +90,7 @@ header:
 * [sitemap 넣기](/github-io/insert-sitemap/)
 * [robots.txt 수정](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/) : `root`아래 robots.txt를 넣으면됨.
 * [github page 특수문자 넣기](/githubio/special-char/)
+* [_config.yml 수정시 주의사항](/githubio/caution-config/)
 
 * Google Search Console이 제대로 동작하지 않을시 그냥 Github-page를 rename해서 새로 Google Search Console을 등록해 버리는게 차라리 빠름...
 

@@ -400,3 +400,7 @@ defaults:
       comments: true
       sidebar:
         nav: "Unity"
+
+sitemap :
+  changefreq : daily
+  priority : 1.0
