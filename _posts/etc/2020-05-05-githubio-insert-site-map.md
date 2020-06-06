@@ -24,7 +24,8 @@ header:
 
 ---
 
-/root 밑에 sitemap.xml을 만들어 아래를 넣는다.
+/root 밑에 sitemap.xml을 만들어 아래를 넣는다.<br>
+아래 Example은 changefreq = weekly, priority = 0.5로 되어 있는데 나는 daily, 1로 변경함.
 
 ```xml
 ---

@@ -29,7 +29,9 @@ url                      : "https://8bitscoding.github.io"
 
 ---
 
-plugins에 `jekyll-sitemap`를 넣었다면 굳이 sitemap.xml을 만들지 않아도 된다.
+__plugins에 `jekyll-sitemap`를 넣었다면 굳이 sitemap.xml을 만들지 않아도 된다.__<Br>
+테스트를 해보니 sitemap.xml을 직접만들어 넣어주는게 낫다.<br>
+sitemap.xml을 만드는 방법은 [여기](/github-io/insert-sitemap/) 참조
 
 ```yml
 # Plugins (previously gems:)
