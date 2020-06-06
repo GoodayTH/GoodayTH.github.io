@@ -296,6 +296,9 @@ defaults:
       comments: true
       share: true
       related: true
+    sitemap :
+        changefreq : daily
+        priority : 1.0
 
   # sample page
   - scope:
@@ -400,7 +403,5 @@ defaults:
       comments: true
       sidebar:
         nav: "Unity"
+      
 
-sitemap :
-  changefreq : daily
-  priority : 1.0
