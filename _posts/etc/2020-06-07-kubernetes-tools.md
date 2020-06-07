@@ -74,3 +74,102 @@ $ cat .ssh/id_rsa.pub
 
 ssh를 넣는다
 
+Kubespray 설치(instance-01의 ssh에서)
+
+```s
+$ ssh intance-2 hostname
+$ ssh intance-3 hostname
+$ ssh intance-4 hostname
+$ ssh intance-5 hostname
+# 모두 yes하면된다.
+```
+
+```s
+$ sudo apt update
+$ sudo apt -y install python-pip
+```
+
+```s
+$ pip --version
+```
+
+![](/file/image/kubernetes-tools-09.png)
+
+```s
+$ git clone https://github.com/kubernetes-sign/kubespray.git
+$ cd kubespray
+$ git checkout -b v2.11.0
+$ sudo pip install -r requirements.txt
+$ ansible --version
+```
+
+![](/file/image/kubernetes-tools-10.png)
+
+설치완료!<br>
+kubespray 설정
+
+```s
+ ~/kubespray $ cp -rfp inventory/sample inventory/mycluster
+ ~/kubespray $ ls inventory/mycluster
+```
+
+![](/file/image/kubernetes-tools-11.png)
+
+```s
+~/kubespray $ vi inventory/mycluster/inventory.ini
+```
+
+![](/file/image/kubernetes-tools-12.png)
+
+아래와 같이 수정한다.
+
+```
+# ## Configure 'ip' variable to bind kubernetes services on a
+# ## different ip than the default iface
+# ## We should set etcd_member_name for etcd cluster. The node that is not a etcd member do not need to set the valu
+e, or can set the empty string value.
+[all]
+instance-1 ansible_ssh_host=10.128.0.2 ip=10.128.0.2 etcd_member_name=etcd1
+instance-2 ansible_ssh_host=10.128.0.3 ip=10.128.0.3 etcd_member_name=etcd2
+instance-3 ansible_ssh_host=10.128.0.4 ip=10.128.0.4 etcd_member_name=etcd3
+instance-4 ansible_ssh_host=10.128.0.5 ip=10.128.0.5
+instance-5 ansible_ssh_host=10.128.0.6 ip=10.128.0.6
+
+[kube-master]
+instance-1
+instance-2
+instance-3
+
+[etcd]
+instance-1
+instance-2
+instance-3
+
+[kube-node]
+instance-4
+instance-5
+
+[calico-rr]
+
+[k8s-cluster:children]
+kube-master
+kube-node
+calico-rr
+```
+
+마지막으로 클러스터를 구성하는 명령을 실행
+
+```s
+~/kubespray $ ansible-playbook -i inventory/mycluster/inventory.ini -v --become --become-user=root cluster.yml
+```
+
+![](/file/image/kubernetes-tools-13.png)
+
+동작을 확인
+
+```s
+$ sudo -i
+$ kubectl get node
+```
+
+![](/file/image/kubernetes-tools-14.png)
