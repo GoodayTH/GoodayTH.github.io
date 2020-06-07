@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes : Git Credential(암호) 관리"
+title: "Kubernetes : Kubernetes 설치하기"
 permalink: kubernetes/install/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments

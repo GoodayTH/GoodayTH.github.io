@@ -24,6 +24,7 @@ header:
 ## Kubernetes
 
 * [Kubernetes 설치하기](/kubernetes/install/)
+* [Kubernetes 도구활용](/kubernetes/tools/)
 
 ---
 
