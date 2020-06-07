@@ -21,6 +21,12 @@ header:
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
 ---
 
+## Kubernetes
+
+* [Kubernetes 설치하기](/kubernetes/install/)
+
+---
+
 ## gradle
 
 * [강의](https://www.youtube.com/watch?v=s-XZ5B15ZJ0&list=PL7mmuO705dG2pdxCYCCJeAgOeuQN1seZz)
