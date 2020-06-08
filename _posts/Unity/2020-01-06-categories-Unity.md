@@ -27,6 +27,8 @@ header:
 
 ## Unity
 
+> 실습에 사용한 Unity Version은 **19.2.x** 사용
+
 * [기본 세팅](/unity/00/)
 
 * [바닥, 움직이는 구, 간단한 스크립트 만들기](/unity/01/)
@@ -39,12 +41,16 @@ header:
 * [쿼터니언이란?, Object를 회전시키기](/unity/07/)
 * [Object 복제, Object 생성위치 지정](/unity/08/)
 * [전역(static)변수 사용하기](/unity/09/)
+* [Asset Store이용](/unity/10/)
+
+* [Coroutine 유니티 쓰레드 사용하기](/unity/11/)
 
 ## C#
 
 * [오버로드](/unity/csharp/overload/)
 * [List](/unity/csharp/list/)
 * [Singleton Pattern](/unity/csharp/singleton/)
+* [상속](/unity/csharp/inheritance/)
 
 * 기본적 문법
 
