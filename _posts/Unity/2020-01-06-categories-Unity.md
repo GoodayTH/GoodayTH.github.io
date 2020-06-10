@@ -58,6 +58,21 @@ header:
 * [프로퍼티 (getter, setter)](/unity/csharp/property/)
 * [delegate](/unity/csharp/delegate/)
 * [event](/unity/csharp/event/)
+* [액션, 람다 함수](/unity/csharp/action-lambda/)
+
+* [제네릭(템플릿)]()
+
+```csharp
+public void Print<T>(T inputMessage)
+{
+  Debug.Log(inputMessage)
+}
+
+public class Container<T>
+{
+  T messages[]
+}
+```
 
 * 기본적 문법
 
