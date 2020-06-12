@@ -38,6 +38,7 @@ header:
 ## Janus WebRTC Server
 
 * [Hyper-V 설치](/webrtc/janus/hyper-v/)
+* [Janus Server 설치](/webrtc/janus/install/)
 
 ---
 ---
