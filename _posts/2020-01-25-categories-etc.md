@@ -23,6 +23,10 @@ header:
 
 ## Hyper-V & Linux
 
+> 언제 VirtualBox를 언제 Hyper-V를 쓰면 좋나?<Br>
+> Linux로 GUI 작업을 해야 한다면? 무조건 VirtualBox<Br>
+> SSH접속만으로 처리가 가능하다면 Hyper-V<Br>
+
 * [Hyper-V 해상도 변경](/hyper-v/resolution/)
 * [Ubuntu 16.04 file browser에서 open terminal](/linux/openterminal/)
 * [Hyper-V VNX](/linux/vnc/)
