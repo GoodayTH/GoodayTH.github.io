@@ -21,6 +21,11 @@ header:
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
 ---
 
+## Hyper-V & Linux
+
+* [Hyper-V 해상도 변경](/hyper-v/resolution/)
+* [Ubuntu 16.04 file browser에서 open terminal](/linux/openterminal/)
+
 ## Kubernetes
 
 * [Kubernetes 설치하기](/kubernetes/install/)
