@@ -25,6 +25,7 @@ header:
 
 * [Hyper-V 해상도 변경](/hyper-v/resolution/)
 * [Ubuntu 16.04 file browser에서 open terminal](/linux/openterminal/)
+* [Hyper-V VNX](/linux/vnc/)
 
 ## Kubernetes
 
