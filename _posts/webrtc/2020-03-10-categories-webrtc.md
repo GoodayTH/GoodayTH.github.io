@@ -40,6 +40,8 @@ header:
 * [Hyper-V 설치](/webrtc/janus/hyper-v/)
 * [Janus Server 설치](/webrtc/janus/install/)
 
+* [Janus 디버깅은?](/webrtc/janus/debug/)
+
 ---
 ---
 
