@@ -1,7 +1,26 @@
 ---
-title: "(Qt) SubClassing"
+title: "Qt : SubClassing"
+permalink: qt/core/subclassing/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-02-16 00:00:00 -0000
+last_modified_at: 2020-06-15 00:00:00 -0000
+header:
+  teaser: /file/image/qt-page-teaser.gif
+sidebar:
+  title: "qt"
+  nav: qt
+tag:
+  - qt
+  - core
+category:
+  - subclassing
+excerpt: ""
 ---
+
+* 서브 클래싱은 별도의 h/cpp를 만들어야 진행 된다.
+* 그리고 cmake 혹은 빌드를 다시 진행 해야 서브클래싱이 된다.
 
 > 다음과 같이 서브클래싱이 가능하다.
 
