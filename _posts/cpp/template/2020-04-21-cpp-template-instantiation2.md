@@ -1,5 +1,5 @@
 ---
-title: "C++ Template : Instantiation2"
+title: "C++ Template : type deduction"
 permalink: cpp/template/Instantiation2/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
@@ -9,111 +9,105 @@ last_modified_at: 2020-04-21 00:00:00 -0000
 sidebar:
   title: "C++"
   nav: cpp
+header:
+  teaser: /file/image/cpp-page-teaser.gif
+tag:
+  - C++
+category:
+  - template
+  - deduction
+excerpt: ""
 ---
 
-## technic
-
 ```cpp
-template<typename T> void foo(T a) {}
-
-template<typenmae T, typename U> struct pair
+template<typename T>
+T square(T a)
 {
-    T first;
-    U second;
-    pair(const T& a, const U& b) : first(a), second(b) {}
-};
-
-// 함수 템플릿
-template<typename T, typename U>
-pair<T, U> make_pair(const T& a, const U& b)
-{
-    // make_pair에서 타입을 추론해준다.
-    return pair<T, U>(a, b);
+  return a * a;
 }
 
 int main()
 {
-    pair<int, double> p(1, 3.4);
-    foo(p);
-
-    foo(pair<int, double>(1, 3.4));     // 가장 기본적인 방식
-
-    foo(make_pair(1, 3.4));             // C++17 이전 방식
-    // foo(make_tuple(1, 3.4, 1));      // make_tuple도 있음을 기억!
-
-    foo(pair(1, 3.4));                  // C++17 이후 방식
+  square(3);    // 클래스도 type deduction이 가능할까?
+  // 결론적으로 말하자면 C++17이전에는 불가능하다.
 }
 ```
 
-## identity
-
-타입을 명확화 하고싶을 때 사용
-
 ```cpp
-template<typename T> struct identity
+template<typename T>
+class Vector
 {
-    typedef T type;
+  T* buff;
+public:
+  Vector() {}
+  Vector(int sz, T initValue) {}
 };
-
-template<typneame T> void foo(T a) {}
-template<typneame T> void goo(typename identity<T>::type a) {}
 
 int main()
 {
-    identity<int>::type n;      // identity<int>::type = int -> 이게뭐지??
-
-    foo(3);             // ok
-    foo<int>(3);        // ok
-
-    goo(3);             // error - identity를 확인할 수 없다.
-    goo<int>(3);        // ok
+  // Vector<int> v1(10, 3);    // 10개를 3으로 초기화
+  // C++ 17부터는 아래가 가능
+  Vector v1(10, 3);
+  
+  Vector v3;    // 이게 될까 ??
+  // 안됨. -> 가이드를 줘야 된다.
 }
 ```
 
----
+```cpp
+template<typename T>
+class Vector
+{
+  T* buff;
+public:
+  Vector() {}
+  Vector(int sz, T initValue) {}
+};
+
+// 가이드는 이렇게 주자.
+Vector()->Vector<int>;
+// Vector를 그냥 쓰면 int로 추론해 주세요.(C++17 기능)
+
+int main()
+{
+  Vector v3;
+}
+```
+
+그래서 이게 뭐가 좋은데??
 
 ```cpp
-#include <iostream>
+#include <list>
 using namespace std;
 
-template<typename T> T square(T a)
+int main()
 {
-    return a * a;
+  // list<int> s = {1,2,3};  // 옛날 이야기
+  list s = {1,2,3};         // C++17 - okay
 }
+```
+
+```cpp
+#include <list>
+using namespace std;
+
+template<typename T>
+class Vector
+{
+  T* buff;
+public:
+  Vector() {}
+  Vector(int sz, T initValue) {}
+  
+  template<typename C> Vector(C& c) {}
+};
+
+Vector()->Vector<int>;
+Vector(C& c)->Vector<typename C::value_type>;    // 생성자로 C가 들어오면 C의 value_type으로 추론해 주세요.
 
 int main()
 {
-    printf("%p\n", &square);        // 함수의 주소가 나올까?? -> template이기에 errro!
-    printf("%p\n", &square<int>);   // ok - 인스턴스화 되며 메모리에 올라간다
-    printf("%p\n", static_cast<int(*)(int)>(&square));      // ok 역시 인스턴스화 됨.
-
-    auto p = &square<int>;      // ok
+  list s = {1,2,3};
+  Vector v3(s);           // okay
 }
 ```
-
----
-
-```cpp
-// Lib.h
-template<typename T> T square(T a)
-```
-
-```cpp
-// Lib.cpp
-template<typename T> T square(T a)
-{
-    return a * a;
-}
-```
-
-template은 이렇게 쓰면 에러난다. 선언(*.h)에 다 몰아 넣어야한다.
-
-```cpp
-// Lib.h
-template<typename T> T square(T a)
-{
-    return a * a;
-}
-```
-
-템플릿은 헤더파일로 제공해야한다.

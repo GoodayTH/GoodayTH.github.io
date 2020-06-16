@@ -5,10 +5,18 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-21 00:00:00 -0000
-last_modified_at: 2020-04-21 00:00:00 -0000
+last_modified_at: 2020-06-16 00:00:00 -0000
 sidebar:
   title: "C++"
   nav: cpp
+header:
+  teaser: /file/image/cpp-page-teaser.gif
+tag:
+  - C++
+category:
+  - template
+  - lazy instantiation
+excerpt: ""
 ---
 
 ```cpp
@@ -73,6 +81,14 @@ int main()
 }
 ```
 
+```
+Resource2()   # static으로 선언된 Resource2가 main보다 먼저 생성된다.
+main
+Resource1()   # Test 생성시점에 Resource1이 생성.
+~Resource1()
+~Resource2()  # 소멸은 제일 마지막..
+```
+
 ![](/file/imagecpp-template-lazy-instantiation1.png)
 
 * [Run This Code](https://ideone.com/BRX0z6)
@@ -90,6 +106,13 @@ int main()
     cout << "main" << endl;             // 1. main 함수 호출
     Test<int> t;                        // 2. 생성자 호출
 }
+```
+
+```
+main
+Resource1()
+~Resource1()
+# 사용한적 없는 Resource2는 호출이 되지 않는다.
 ```
 
 ![](/file/imagecpp-template-lazy-instantiation2.png)

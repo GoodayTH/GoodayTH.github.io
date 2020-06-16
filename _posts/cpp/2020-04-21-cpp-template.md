@@ -13,9 +13,12 @@ sidebar:
 
 ## Template 개념
 
-* [개념](/cpp/template/basic/)
-* [Instantiation](/cpp/template/Instantiation/) : Instantiation(인스턴스화)
+* [Template 기본개념](/cpp/template/basic/)
+* [Template Instantiation 개념](/cpp/template/Instantiation/) : Instantiation(인스턴스화)
+* [명시적/암시적 인스턴스화](/cpp/template/Instantiation1-1/)
 * [Instantiation2](/cpp/template/Instantiation2/)
+* [응용) 함수 템플릿 만들기](/cpp/template/func-template/)
+* [응용) template 주의사항](/cpp/template/caution/)
 * [Lazy Instantiation](/cpp/template/LazyInstantiation/)
 * [type deduction](/cpp/template/typededuction/)
     * [배열의 이름은 주소일까?](/cpp/template/arrayname/)

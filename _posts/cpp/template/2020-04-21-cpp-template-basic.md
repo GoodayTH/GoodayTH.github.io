@@ -5,10 +5,18 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-21 00:00:00 -0000
-last_modified_at: 2020-04-21 00:00:00 -0000
+last_modified_at: 2020-06-16 00:00:00 -0000
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 sidebar:
   title: "C++"
   nav: cpp
+tag:
+  - C++
+category:
+  - template
+  - 개념
+excerpt: ""
 ---
 
 ```cpp
@@ -84,7 +92,7 @@ T square(T a)
 
 ---
 
-## Template의 필요성
+## Template의 필요성(언제쓰나?)
 
 ```cpp
 class Complex
