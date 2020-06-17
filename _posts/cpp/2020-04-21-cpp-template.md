@@ -18,17 +18,23 @@ sidebar:
 * [명시적/암시적 인스턴스화](/cpp/template/Instantiation1-1/)
 * [Instantiation2](/cpp/template/Instantiation2/)
 * [응용) 함수 템플릿 만들기](/cpp/template/func-template/)
+
 * [응용) template 주의사항](/cpp/template/caution/)
 * [Lazy Instantiation](/cpp/template/LazyInstantiation/)
+* [type 출력하기](/cpp/template/typeid/)
 * [type deduction](/cpp/template/typededuction/)
-    * [배열의 이름은 주소일까?](/cpp/template/arrayname/)
+* [배열의 이름은 주소일까?](/cpp/template/arrayname/)
+
+* [argument decay](/cpp/template/decay/)
 
 ## Template 기본 문법
 
 * [class template 선언](/cpp/template/class/)
-* [copy constructor](/cpp/template/copycon/)
+* [복사 생성자](/cpp/template/copycon/)
+* [함수 템플릿 호출시 주의 사항](/cpp/template/func-caution/)
 * [template과 friend](/cpp/template/friend/)
 * [typename](/cpp/template/typename/)
+
 * [parameter](/cpp/template/parameter/)
 
 ## type traits
