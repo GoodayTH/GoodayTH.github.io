@@ -35,6 +35,8 @@ sidebar:
 * [template과 friend](/cpp/template/friend/)
 * [typename](/cpp/template/typename/)
 
+* [value_type](/cpp/template/value_type/)
+* [template](/cpp/template/template/)
 * [parameter](/cpp/template/parameter/)
 
 ## type traits

@@ -5,38 +5,46 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-25 00:00:00 -0000
-last_modified_at: 2020-04-25 00:00:00 -0000
+last_modified_at: 2020-06-18 00:00:00 -0000
 sidebar:
   title: "C++"
   nav: cpp
+header:
+  teaser: /file/image/cpp-page-teaser.gif
+tag:
+  - C++
+  - Template
+category:
+  - 주의사항
+excerpt: ""
 ---
-
-## typename
 
 ```cpp
 class Test
 {
 public:
-    enum { value = 1 };
-    static int value2;
-
-    typedef int INT;
-    using SHORT = short;        // C++11
-
-    class innerClass {};
+  enum { value1 = 1 };
+  static int value2;
+  
+  typedef int INT;
+  using SHORT = short;    // C++ 11
+  
+  class innerClass {};
 };
+
 int Test::value2 = 1;
 
 int main()
 {
-    // 값
-    int n1 = Test::value1;
-    int n2 = Test::value2;
-
-    // 타입
-    Test::INT a;
-    Test::SHORT b;
-    Test::innerClass c;
+  // 클래스 내부의 호출은 두 가지 호출이 존재
+  // 값을 호출
+  int n1 = Test::value1;
+  int n2 = Test::value2;
+  
+  // 타입을 호출
+  Test::INT a;
+  Test::SHORT b;
+  Test::innerClass c;
 }
 ```
 
@@ -46,141 +54,23 @@ int p = 0;
 class Test
 {
 public:
-    // ...
+  // enum { DWORD = 5 }
+  // typdef int DWORD;
 };
 
 template<typename T>
-int foo(T t) // T : Test
+int foo(T t)
 {
-    T::DWORD * p;   // 값 : 5 * p : 연산
-                    // 타입 : 지역변수 선언
-    // 컴파일러는 어떻게 판단할까?
-
-    T::DWORD * p;               // 값으로 판단 error!
-    typename T::DWORD * p;      // 타입으로 판단
-    return 0;
+  T::DWORD * p;   // T는 값으로 해석이 될까 타입으로 해석이 될까?
+  // 결론적으론 컴파일러는 값으로 해석을 한다.
+  
+  typename T::DWORD * p;    // typename을 지정해 줘야 타입이라고 컴파일러에게 알려줄 수 있다.
+  return 0;
 }
 
 int main()
 {
-    Test t;
-    foo(t);
-}
-```
-
----
-
-## value_type #1
-
-```cpp
-#include <iostream>
-#include <vector>
-#include <list>
-using namespace std;
-
-/*
-void print_first_element(vector<int>& v)
-{
-    int n = v.front();
-    cout << n << endl;
-}
-*/
-
-template<typename T>
-void print_first_element(vector<T>& v)
-{
-    T n = v.front();
-    cout << n << endl;
-}
-
-int main()
-{
-    vector<int> v = { 1, 2, 3 };
-    print_first_element(v);
-
-    list<int> l = { 1, 2, 3 };
-    print_first_element(l);     // error
-}
-```
-
-```cpp
-template<typename T>
-void print_first_element(T& v)
-{
-    // ??? n = v.front();
-    T::value_type n = v.front();
-    // auto n = v.front();      // 물론 이런 선언이 가능하다
-    cout << n << endl;
-}
-```
-
----
-
-## value_type #2
-
-```cpp
-#include <list>
-using namespace std;
-
-template<typename T> class Vector
-{
-    T* buff;
-    int size;
-public:
-    Vector<int sz, T value> {}
-};
-
-int main()
-{
-    // Vector<int> v(10, 3);
-    Vector v(10, 3);            // 이렇게 선언해도 가능
-    list<int> s = {1,2,3};
-
-    // 아래는 가능한가?
-    Vector v2(s);
-}
-```
-
-```cpp
-template<typename T> class Vector
-{
-    T* buff;
-    int size;
-public:
-    Vector<int sz, T value> {}
-
-    template<typename C> Vector<C c> {}
-};
-template<typename C> 
-Vector<C c>->Vector<typename C::value_type>;
-```
-
----
-
-## template
-
-```cpp
-class Test
-{
-public:
-    template<typename T> static void f() {}
-    template<typename T> class Complex {}
-};
-
-template<typename T> void foo(T a)
-{
-    Test::f<int>();     // ok
-    T::f<int>();        // error
-    T::template f<int>();       // ok - T가 template임을 알려줘야한다.
-
-    Test::Complex<int> c1;      // ok
-    T::Complex<int> c2;         // error
-    typename T::template Complex<int> c3;   // ok
-}
-
-int main()
-{
-    Test t;
-    foo(t);
+  Test t;
+  foo(t);
 }
 ```
