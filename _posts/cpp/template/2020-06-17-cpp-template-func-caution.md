@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : 함수 템플릿 호출시 주의 사항"
-permalink: cpptemplate/func-caution/                # link 직접 지정
+permalink: cpp/template/func-caution/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
