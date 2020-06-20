@@ -38,6 +38,7 @@ sidebar:
 * [value_type](/cpp/template/value_type/)
 * [template](/cpp/template/template/)
 * [parameter](/cpp/template/parameter/)
+* [specialization](/cpp/template/specialization/)
 
 ## type traits
 
