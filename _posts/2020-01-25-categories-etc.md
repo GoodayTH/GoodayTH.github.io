@@ -27,6 +27,8 @@ header:
 > Linux로 GUI 작업을 해야 한다면? 무조건 VirtualBox<Br>
 > SSH접속만으로 처리가 가능하다면 Hyper-V<Br>
 
+* [Linux 과거 자료](https://github.com/8BitsCoding/RobotMentor/wiki/Linux_Ubuntu)
+
 * [Hyper-V 해상도 변경](/hyper-v/resolution/)
 * [Ubuntu 16.04 file browser에서 open terminal](/linux/openterminal/)
 * [Hyper-V VNX](/linux/vnc/)
@@ -199,3 +201,15 @@ startuml 1.0 다운로드
 * [다운로드 페이지](http://sourceforge.net/projects/staruml/files/staruml/5.0/)
 
 ![](/file/image/startuml.png)
+
+---
+
+## YOLO
+
+* [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/YOLO)
+
+---
+
+## Python
+
+* [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/Python)

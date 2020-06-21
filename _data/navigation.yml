@@ -16,6 +16,10 @@ main:
     url: /categories-Electron/
   - title: "obs"
     url: /categories-obs/
+  - title: "MFC"
+    url: https://github.com/8BitsCoding/RobotMentor/wiki/MFC
+  - title: "ROS"
+    url: https://github.com/8BitsCoding/RobotMentor/wiki/ROS
   - title: "etc"
     url: /etc/
 
