@@ -42,7 +42,12 @@ sidebar:
 
 ## type traits
 
-* [type traits](/cpp/template/traits/)
+* [IfThenElse](/cpp/template/traits/)
+* [couple template](/cpp/template/couple/)
+* [template meta programming](/cpp/template/meta/)
+* [type_traits & is_pointer](/cpp/template/trait/)
+* [is_array](/cpp/template/is_array/)
+
 * [integral_constant](/cpp/template/intcons/)
 * [type modification](/cpp/template/modification/)
 * [remove_all_pointer](/cpp/template/remove_all/)
