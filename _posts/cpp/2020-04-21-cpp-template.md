@@ -48,7 +48,9 @@ sidebar:
 * [type_traits & is_pointer](/cpp/template/trait/)
 * [is_array](/cpp/template/is_array/)
 
+* [int2type](/cpp/template/int2type/)
 * [integral_constant](/cpp/template/intcons/)
+
 * [type modification](/cpp/template/modification/)
 * [remove_all_pointer](/cpp/template/remove_all/)
 * [get function result & argument](/cpp/template/get_result/)
