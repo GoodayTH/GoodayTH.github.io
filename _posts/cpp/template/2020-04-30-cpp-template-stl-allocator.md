@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : STL allocator"
-permalink: cpptemplate/stl-allocator/                # link 직접 지정
+permalink: cpp/template/stl-allocator/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

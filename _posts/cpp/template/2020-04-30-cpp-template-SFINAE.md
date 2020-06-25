@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : SFINAE"
-permalink: cpptemplate/SFINAE/                # link 직접 지정
+permalink: cpp/template/SFINAE/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

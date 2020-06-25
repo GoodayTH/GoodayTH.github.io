@@ -1,6 +1,6 @@
 ---
 title: "C++ Template : enable_if"
-permalink: cpptemplate/enable_if/                # link 직접 지정
+permalink: cpp/template/enable_if/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
