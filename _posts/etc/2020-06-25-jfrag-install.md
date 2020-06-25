@@ -19,3 +19,36 @@ header:
 ---
 
 * [참고사이트](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-WindowsInstallation)
+
+## JAVA_HOME 설정
+
+![](/file/image/jfrag_intall_01.png)
+
+---
+
+## jFrag 다운로드
+
+* [링크](https://jfrog.com/download-jfrog-platform/)
+
+압출을 풀고 app, var폴더를 artifactory폴더를 만들어 안에 넣는다.
+
+---
+
+## JFROG_HOME 설정
+
+![](/file/image/jfrag_intall_02.png)
+
+---
+
+## jFrag 실행
+
+관리자모드로 cmd실행
+
+```s
+$ artifactory.bat
+```
+
+`localhost:8082`에 접속
+
+* ID : admin
+* PW : password
