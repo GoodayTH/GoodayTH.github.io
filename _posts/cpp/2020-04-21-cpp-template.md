@@ -50,10 +50,12 @@ sidebar:
 
 * [int2type](/cpp/template/int2type/)
 * [integral_constant](/cpp/template/intcons/)
+* [remove_pointer](/cpp/template/remove_pointer/)
+* [get function result & argument](/cpp/template/get_result/)
+* [C++ 표준 type_traits](/cpp/template/cpp_type_traits/)
 
 * [type modification](/cpp/template/modification/)
 * [remove_all_pointer](/cpp/template/remove_all/)
-* [get function result & argument](/cpp/template/get_result/)
 * [정리](/cpp/template/traits_summary/)
 
 ## Variadic Template

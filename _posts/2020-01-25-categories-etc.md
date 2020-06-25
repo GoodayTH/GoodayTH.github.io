@@ -21,6 +21,12 @@ header:
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
 ---
 
+## jFrag artifactory
+
+* [install](/jFrag/install/)
+
+---
+
 ## Hyper-V & Linux
 
 > 언제 VirtualBox를 언제 Hyper-V를 쓰면 좋나?<Br>
