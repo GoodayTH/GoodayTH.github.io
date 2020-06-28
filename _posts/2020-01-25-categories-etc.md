@@ -24,6 +24,7 @@ header:
 ## jFrag artifactory
 
 * [install](/jFrag/install/)
+* [jenkins 연동](/jFrag/jenkins/)
 
 ---
 
