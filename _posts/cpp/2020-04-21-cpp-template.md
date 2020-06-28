@@ -61,7 +61,8 @@ sidebar:
 ## Variadic Template
 
 * [Variadic Template](/cpp/template/variadic/)
-* [pack expansion](/cpp/template/packexpansion/)
+* [pack expansion 다른 방법](/cpp/template/packexpansion/)
+
 * [using recursive](/cpp/template/recursive/)
 * [fold expression](/cpp/template/foldexpression/)
 
