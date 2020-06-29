@@ -25,6 +25,7 @@ header:
 
 * [install](/jFrag/install/)
 * [jenkins 연동](/jFrag/jenkins/)
+* [generic build upload](/jFrag/generic/)
 
 ---
 
@@ -105,6 +106,7 @@ header:
 ## Windows Batch
 
 * [*.rc파일 버전 병경하기](/batch/example-file-replace/)
+* [bat curl 쓰기](/batch/curl/)
 
 ---
 

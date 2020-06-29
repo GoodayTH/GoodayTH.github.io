@@ -27,3 +27,7 @@ xcopy /e /h /k /Y D:\\Release*.* D:\output
 # 특정 파일명 검색후 복사
 for /r . %%f in (./*.pdb) do @xcopy "%%f" D:\folder /Y
 ```
+
+```s
+MSBuild.exe target.sln -target:projectname -p:Configuration=Release
+```

@@ -9,6 +9,14 @@ last_modified_at: 2020-04-27 00:00:00 -0000
 sidebar:
   title: "C++"
   nav: cpp
+header:
+  teaser: /file/image/cpp-page-teaser.gif
+tag:
+  - C++
+  - Template
+category:
+  - return type
+excerpt: ""
 ---
 
 ```cpp
@@ -19,54 +27,63 @@ double hoo(short a, int b) { return 0; }
 
 template<typename T> struct result_type
 {
-    typedef T type;
+  typedef T type;
 };
 
-/*
-template<typename T, typename A1, typename A2> 
-struct result_type<R(A1, A2)>
+template<typename R, typename A1, typename A2> 
+struct result_type<R(A1, A2)>     // 만약 인자가 여러개라면??
 {
-    typedef R type;
-};
-*/
-
-template<typename T ... Types> 
-struct result_type<R(Types...)>
-{
-    typedef R type;
+  typedef R type;
 };
 
 template<typename T> void foo(const T& t)
 {
-    // T : double(short, int) 함수 모양
-    typename result_type<T>::type ret;
-    cout << typeid(ret).name() << endl;
+  typename result_type<T>::type ret;
+  cout << typeid(ret).name() << endl;
 }
 
 int main()
 {
-    foo(hoo);
-}
-```
-
-```cpp
-int main()
-{
-    int n = 0;
-    foo(n);     // 실수로 int를 보낸다면?
+  foo(hoo);
 }
 ```
 
 ```cpp
 template<typename T> struct result_type
 {
-    // typedef T type; // 여기를 없애면
-    // 에러를 유발하게 된다.
-    static_assert(is_function<T>::vlaue, "error");
+  typedef T type;
 };
+
+template<typename R, typename ... Types> 
+struct result_type<R(Types...)> 
+{
+  typedef R type;
+};
+
+template<typename T> void foo(const T& t)
+{
+  typename result_type<T>::type ret;
+  cout << typeid(ret).name() << endl;
+}
 ```
 
 ```cpp
-template<typename T> struct result_type;
-// 의도적으로 구현부를 만들지 않아도 된다.
+template<typename T> struct result_type
+{
+  // typedef T type;
+  // 함수가 아닐경우 에러처리
+  static_assert(is_function<T>::value, "error");
+};
+
+template<typename R, typename ... Types> 
+struct result_type<R(Types...)> 
+{
+  typedef R type;
+};
+
+template<typename T> void foo(const T& t)
+{
+  typename result_type<T>::type ret;
+  cout << typeid(ret).name() << endl;
+}
 ```
