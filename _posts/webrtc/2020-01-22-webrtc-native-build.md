@@ -63,6 +63,8 @@ $ git checkout branch-heads/?
 $ gclient sync --force    # 이거 꼭 해야함.
 ```
 
+> 70이전 버전 빌드를 위해서는 gclient를 예전버전으로 체크아웃해야한다.
+
 ![](/file/image/webrtc-native-build-image-02.png)
 
 ---
@@ -85,6 +87,25 @@ $ gn gen --ide=vs out\Default
 # visual studio 자체 빌드가 되지 않기에 빌드는 위에 처럼하거나 아래처럼 간단빌드가능
 $ gn gen out/Default --args="fatal_linker_warnings=false is_debug=false"
 $ ninja -C out/Default
+```
+
+bat로 작성하기
+
+```
+:: m74이후 버전은 is_clang=true로 둬야 정상동작한다...
+
+:: x64 Debug
+call gn clean out/vs2017-x64-debug
+call gn gen out/vs2017-x64-debug --winsdk="10.0.18362" "--args=is_debug=true is_clang=false symbol_level=2 rtc_use_h264=true target_cpu=\"x64\""
+call ninja -C out/vs2017-x64-debug webrtc
+
+:: x64 Release
+call gn clean out/vs2017-x64-release
+call gn gen out/vs2017-x64-release --winsdk="10.0.18362" "--args=is_debug=false is_clang=false rtc_use_h264=true target_cpu=\"x64\""
+call ninja -C out/vs2017-x64-release webrtc
+
+:: .sln 생성(단 VS에서 빌드는 안됨)
+$ gn gen --ide=vs out\VisualStuio_sln
 ```
 
 ---
