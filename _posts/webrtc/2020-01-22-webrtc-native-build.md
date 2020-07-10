@@ -21,6 +21,11 @@ sidebar:
 
 설치시 path지정 잊지말기
 
+```s
+# python 업데이트
+$ python -m pip install pywin32
+```
+
 ### Windows10 SDK 설치
 
 VS Installer에서 설치되는거 보다 홈페이지에서 다운 받는걸 추천<br>
