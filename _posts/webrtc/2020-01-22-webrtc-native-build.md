@@ -68,6 +68,8 @@ Reviewed-by: Edward Lesmes <ehmaldonado@chromium.org>
 
 gclient가 있는 폴더를 PATH에 넣으면 된다.
 
+`DEPOT_TOOLS_WIN_TOOLCHAIN = 0`
+
 ---
 
 ## webrtc 다운로드
