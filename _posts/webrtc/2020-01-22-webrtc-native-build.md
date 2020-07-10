@@ -35,6 +35,29 @@ $ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 $ gclient # webrtc 버전관리도구 설치
 ```
 
+WebRTC 70버전과 depot_tools의 버전을 맞춰야 한다.
+
+```s
+$ git checkout c68a1753c53a02b1bd292035e4a72a18e55814f3
+```
+
+```
+커밋: c68a1753c53a02b1bd292035e4a72a18e55814f3 [c68a175]
+상위 항목: 38d36a616d
+작성자: Andrii Shyshkalov <tandrii@chromium.org>
+날짜: 2018년 10월 16일 화요일 오전 6:55:41
+커밋한 사람: Commit Bot
+git cl try-results: delete Rietveld support.
+
+R=ehmaldonado
+
+Bug: 770408
+Change-Id: I94ff37f198937dc7d341a859a71becd91cf3a706
+Reviewed-on: https://chromium-review.googlesource.com/c/1279140
+Commit-Queue: Andrii Shyshkalov <tandrii@chromium.org>
+Reviewed-by: Edward Lesmes <ehmaldonado@chromium.org>
+```
+
 ![](/file/image/webrtc-native-build-image-01.png)
 
 ---
