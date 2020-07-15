@@ -154,8 +154,8 @@ sendMessage.addEventListener('click', function(ev){
 
 * [Native Example - 1](/webrtc/native-example-1/) : WebRTC 내부 Example 실행해보기
 * [Native Example - 2](/webrtc/native-example-2/) : Client내부 분석 1차
-* [Native Example - 3](/webrtc/native-example-3/) : Client내부 분석 2차(연결시도 송신)
-* [Native Example - 4](/webrtc/native-example-4/) : Client내부 분석 3차(연결시도 수신)
+* [Native Example - 3](/webrtc/native-example-3/) : PeerConnection Client 측
+* [Native Example - 4](/webrtc/native-example-4/) : PeerConnection Server 측
 
 ---
 
