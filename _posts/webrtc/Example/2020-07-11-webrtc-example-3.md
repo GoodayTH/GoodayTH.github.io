@@ -18,7 +18,7 @@ header:
   teaser: /file/image/webrtc-page-teaser.gif
 ---
 
-## 우선은 구현 ...
+## 우선은 빌드
 
 Windows 데스크톱 애플리케이션 하나 생성
 
