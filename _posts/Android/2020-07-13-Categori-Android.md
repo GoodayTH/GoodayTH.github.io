@@ -26,7 +26,9 @@ header:
 
 ## Tutorial
 
-* [Tutorial - 1](/android/tutorial-1/)
+* [Tutorial - 1](/android/tutorial-1/) : 프로젝트 생성하기, 가상머신 실행하기, 버튼 생성하기
+* [Tutorial - 2](/android/tutorial-2/) : 버튼만들기, 함수연결하기
+* [Tutorial - 3](/android/tutorial-3/) : Layout 변경방법
 
 ---
 
