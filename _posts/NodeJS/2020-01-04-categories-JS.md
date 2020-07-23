@@ -26,6 +26,13 @@ header:
       url: "https://nodejs.org/"
 ---
 
+## Vue.JS 
+
+* [Vue.JS 강의 1 - 1](/VueJS/1-1/)
+* [Vue.JS 강의 1 - 2](/VueJS/1-2/)
+
+---
+
 ## Node.js 생활 코딩 강의 정리
 
 * [**생활코딩 강의 홈페이지**](https://opentutorials.org/course/3332) : 생활코딩 Node.js
