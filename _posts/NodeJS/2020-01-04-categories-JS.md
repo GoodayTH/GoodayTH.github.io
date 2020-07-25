@@ -28,8 +28,11 @@ header:
 
 ## Vue.JS 
 
-* [Vue.JS 강의 1 - 1](/VueJS/1-1/)
-* [Vue.JS 강의 1 - 2](/VueJS/1-2/)
+* [Vue.JS 강의 1 - 1](/VueJS/1-1/) : Vue를 배우기 위한 준비
+* [Vue.JS 강의 1 - 2](/VueJS/1-2/) : Vue소개, MVVM 설명
+* [Vue.JS 강의 1 - 3](/VueJS/1-3/) : Vue 인스터스 설명
+* [Vue.JS 강의 1 - 4](/VueJS/1-4/) : 컴포넌트 설명
+* [Vue.JS 강의 1 - 5](/VueJS/1-5/) : 컴포넌트 통신 방법, props
 
 ---
 
