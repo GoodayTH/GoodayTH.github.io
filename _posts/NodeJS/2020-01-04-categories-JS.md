@@ -33,6 +33,10 @@ header:
 * [Vue.JS 강의 1 - 3](/VueJS/1-3/) : Vue 인스터스 설명
 * [Vue.JS 강의 1 - 4](/VueJS/1-4/) : 컴포넌트 설명
 * [Vue.JS 강의 1 - 5](/VueJS/1-5/) : 컴포넌트 통신 방법, props
+* [Vue.JS 강의 1 - 6](/VueJS/1-6/) : event emit
+* [Vue.JS 강의 1 - 7](/VueJS/1-7/) : 같은 컴포넌트 레벨간의 통신
+* [Vue.JS 강의 1 - 8](/VueJS/1-8/) : Vue Router
+* [Vue.JS 강의 1 - 9](/VueJS/1-9/) : http통신 라이브러리 axios
 
 ---
 
