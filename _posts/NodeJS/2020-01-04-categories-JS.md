@@ -38,6 +38,7 @@ header:
 * [Vue.JS 강의 1 - 8](/VueJS/1-8/) : Vue Router
 * [Vue.JS 강의 1 - 9](/VueJS/1-9/) : http통신 라이브러리 axios
 * [Vue.JS 강의 1 - 10](/VueJS/1-10/) : 템플릿 문법
+* [Vue.JS 강의 1 - 11](/VueJS/1-11/) : Watch
 
 ---
 
