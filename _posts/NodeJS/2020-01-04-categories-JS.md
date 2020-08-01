@@ -26,19 +26,22 @@ header:
       url: "https://nodejs.org/"
 ---
 
-## Vue.JS 
+## Vue.JS : 기초
 
-* [Vue.JS 강의 1 - 1](/VueJS/1-1/) : Vue를 배우기 위한 준비
-* [Vue.JS 강의 1 - 2](/VueJS/1-2/) : Vue소개, MVVM 설명
-* [Vue.JS 강의 1 - 3](/VueJS/1-3/) : Vue 인스터스 설명
-* [Vue.JS 강의 1 - 4](/VueJS/1-4/) : 컴포넌트 설명
-* [Vue.JS 강의 1 - 5](/VueJS/1-5/) : 컴포넌트 통신 방법, props
-* [Vue.JS 강의 1 - 6](/VueJS/1-6/) : event emit
-* [Vue.JS 강의 1 - 7](/VueJS/1-7/) : 같은 컴포넌트 레벨간의 통신
-* [Vue.JS 강의 1 - 8](/VueJS/1-8/) : Vue Router
-* [Vue.JS 강의 1 - 9](/VueJS/1-9/) : http통신 라이브러리 axios
-* [Vue.JS 강의 1 - 10](/VueJS/1-10/) : 템플릿 문법
-* [Vue.JS 강의 1 - 11](/VueJS/1-11/) : Watch
+* [Vue.JS 강의 기초 1 - 1](/VueJS/1-1/) : Vue를 배우기 위한 준비
+* [Vue.JS 강의 기초 2](/VueJS/1-2/) : Vue소개, MVVM 설명
+* [Vue.JS 강의 기초 3](/VueJS/1-3/) : Vue 인스터스 설명
+* [Vue.JS 강의 기초 4](/VueJS/1-4/) : 컴포넌트 설명
+* [Vue.JS 강의 기초 5](/VueJS/1-5/) : 컴포넌트 통신 방법, props
+* [Vue.JS 강의 기초 6](/VueJS/1-6/) : event emit
+* [Vue.JS 강의 기초 7](/VueJS/1-7/) : 같은 컴포넌트 레벨간의 통신
+* [Vue.JS 강의 기초 8](/VueJS/1-8/) : Vue Router
+* [Vue.JS 강의 기초 9](/VueJS/1-9/) : http통신 라이브러리 axios
+* [Vue.JS 강의 기초 10](/VueJS/1-10/) : 템플릿 문법
+* [Vue.JS 강의 기초 11](/VueJS/1-11/) : Watch
+* [Vue.JS 강의 기초 12](/VueJS/1-12/) : Vue CLI
+
+> 이 이후과정은 필요할때 강의를 다시 수강할 것.
 
 ---
 
