@@ -4,11 +4,13 @@ main:
     url: /qt/
   - title: "C++"
     url: /cpp/
+  - title: "C#"
+    url: /cs/
   - title: "webrtc"
     url: /webrtc/
   - title: "Android"
     url: /Android/
-  - title: "NodeJS"
+  - title: "JavaScript"
     url: /NodeJS/
   - title: "java"
     url: /java/
