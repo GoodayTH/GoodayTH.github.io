@@ -28,4 +28,5 @@ header:
 
 ## C# 기초강좌
 
-* []()
+* [C# Basic - 1 : 실습환경](/cs-basic-1/)
+* [C# Basic - 2: .NET Framework 란?](/cs-basic-2/)
