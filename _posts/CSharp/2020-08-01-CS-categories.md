@@ -30,3 +30,4 @@ header:
 
 * [C# Basic - 1 : 실습환경](/cs-basic-1/)
 * [C# Basic - 2: .NET Framework 란?](/cs-basic-2/)
+* [C# Basic - 3: 표준입출력](/cs-basic-3/)
