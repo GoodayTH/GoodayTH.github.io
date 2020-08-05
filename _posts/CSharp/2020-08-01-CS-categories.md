@@ -33,3 +33,5 @@ header:
 * [C# Basic - 3: 표준입출력](/cs-basic-3/)
 * [C# Basic - 4: 타입, 변수, 리터럴](/cs-basic-4/)
 * [C# Basic - 5: 클래스 기본 문법](/cs-basic-5/)
+
+* [C# Basic - 6: System.Object](/cs-basic-6/)
