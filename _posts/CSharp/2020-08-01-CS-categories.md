@@ -35,3 +35,5 @@ header:
 * [C# Basic - 5: 클래스 기본 문법](/cs-basic-5/)
 
 * [C# Basic - 6: System.Object](/cs-basic-6/)
+* [C# Basic - 7: Value type & Reference Type](/cs-basic-7/)
+* [C# Basic - 8: null & casting](/cs-basic-8/)
