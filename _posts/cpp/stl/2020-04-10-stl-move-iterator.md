@@ -1,6 +1,6 @@
 ---
 title: "STL : move iterator"
-permalink: cppstl/move-iterator/                # link 직접 지정
+permalink: cpp/stl/move-iterator/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

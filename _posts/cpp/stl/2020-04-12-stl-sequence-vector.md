@@ -1,6 +1,6 @@
 ---
 title: "STL : sequence container1 - vector"
-permalink: cppstl/sequence/vector/                # link 직접 지정
+permalink: cpp/stl/sequence/vector/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories

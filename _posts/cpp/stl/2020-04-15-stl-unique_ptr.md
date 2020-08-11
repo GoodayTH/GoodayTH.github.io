@@ -1,6 +1,6 @@
 ---
 title: "STL : unique_ptr"
-permalink: cppstl/spointer/unique_ptr/                # link 직접 지정
+permalink: cpp/stl/spointer/unique_ptr/                # link 직접 지정
 toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
