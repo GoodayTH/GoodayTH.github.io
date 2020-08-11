@@ -161,6 +161,7 @@ header:
 * [DLL 디버깅 (Break Point 찍기)](/vs/dll-debug/)
 * [각종 설정](/vs/settings/)
 * [WinDbg 사용하기](/vs/WinDbg/)
+* [빌드 후 파일복사](/vs/buildAftercopy/)
 
 ---
 
