@@ -26,6 +26,8 @@ main:
     url: https://github.com/8BitsCoding/RobotMentor/wiki/ROS
   - title: "etc"
     url: /etc/
+  - title: "Resume"
+    url: /resume/
 
 # for sidebar
 
