@@ -171,6 +171,29 @@ header:
 
 ---
 
+## Visual Studio Code 추천 plug-in
+
+* [platUML](http://snowdeer.github.io/tips/2019/10/04/visual-studio-code-how-to-use-uml/)
+
+```
+@startuml
+
+scale 2
+title My First Diagram
+
+A -> B : Hello
+B -> C : Good Morning
+C --> A : Bye Bye
+
+@enduml
+```
+
+Shift + Command + p 를 눌러서 PlantUML: Preview Current Diagram을 선택
+
+![](/file/image/platUML.png)
+
+---
+
 ## curl
 
 * [설치](/curl/install/)

@@ -29,6 +29,8 @@ header:
 * [Basic C++(11이전) 문법](/cpp/basic/)
 * [Modern C++(11이후) 문법](/cpp/modern/)
 
+* [pragma region](/cpp/pragma-region/)
+
 ## STL
 
 * [STL](/cpp/stl/)
@@ -49,3 +51,7 @@ header:
 
 * [코딩테스트 : 문제 풀이](/cpp/quize/)
 * [코딩테스트 : Good Pattern](/cpp/good-pattern/)
+
+## MFC
+
+* [Console log 출력](/cpp/mfc/console-log/)
