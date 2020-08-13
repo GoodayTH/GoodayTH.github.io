@@ -43,3 +43,4 @@ header:
 * [C# Basic - 11: 인자 전달 방식](/cs-basic-11/)
 * [C# Basic - 12: 메소드 특징](/cs-basic-12/)
 * [C# Basic - 13: Property and Indexer](/cs-basic-13/)
+* [C# Basic - 14: Index and Range](/cs-basic-14/)
