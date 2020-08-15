@@ -46,3 +46,4 @@ header:
 * [C# Basic - 14: Index and Range](/cs-basic-14/)
 * [C# Basic - 15: Generic](/cs-basic-15/)
 * [C# Basic - 16: Delegate](/cs-basic-16/)
+* [C# Basic - 17: Delegate2](/cs-basic-17/)
