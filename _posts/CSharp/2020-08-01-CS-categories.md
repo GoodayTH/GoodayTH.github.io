@@ -45,3 +45,4 @@ header:
 * [C# Basic - 13: Property and Indexer](/cs-basic-13/)
 * [C# Basic - 14: Index and Range](/cs-basic-14/)
 * [C# Basic - 15: Generic](/cs-basic-15/)
+* [C# Basic - 16: Delegate](/cs-basic-16/)
