@@ -48,3 +48,4 @@ header:
 * [C# Basic - 16: Delegate](/cs-basic-16/)
 * [C# Basic - 17: Delegate2](/cs-basic-17/)
 * [C# Basic - 18: Exception Handling](/cs-basic-18/)
+* [C# Basic - 19: try ~ finally](/cs-basic-19/)
