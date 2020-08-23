@@ -171,7 +171,38 @@ header:
 
 ---
 
+## Visual Studio 추천 plug-in
+
+* [Word Highlight With Margin](https://marketplace.visualstudio.com/items?itemName=TrungKienPhan.WordHighlight-18439)
+
+![](/file/image/WordHighlightWithMargin.jpg)
+
+---
+
 ## Visual Studio Code 추천 plug-in
+
+* [highlight-words](https://marketplace.visualstudio.com/items?itemName=rsbondi.highlight-words)
+
+![](/file/image/highlight-words.gif)
+
+- `Ctrl + Shifht + p` -> Highlight toggle Current
+
+* [Text Marder](https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker)
+
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+- 개좋음
+- 
+
+![](/file/image/git-lens.gif)
+
+![](/file/image/git-lens-01.png)
+
+각 줄별로 git history를 분석할 수 있음
+
+![](/file/image/git-lens-02.png)
+
+git commit별로 비교할 수 있음
 
 * [platUML](http://snowdeer.github.io/tips/2019/10/04/visual-studio-code-how-to-use-uml/)
 
