@@ -60,4 +60,11 @@ header:
 
 ## WPF
 
-* []()
+> * Todo : 9월 1주 까지 끝내기
+> * Daily : 1h
+
+### Intro to WPF
+
+* [WPF - 1: 프로젝트생성](/cs-wpf-01/)
+
+![](/file/image/cs-wpf-01-02.png)

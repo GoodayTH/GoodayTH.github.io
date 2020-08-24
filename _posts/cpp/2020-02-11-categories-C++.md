@@ -55,3 +55,9 @@ header:
 ## MFC
 
 * [Console log 출력](/cpp/mfc/console-log/)
+* [16진수로 핸들(HWND) 주소 받아 HWND 객체 만들기](/cpp/mfc/16hwnd/)
+
+```cpp
+int xAdd = 0x5176e;
+HWND hwnd = (HWND)xAdd;
+```
