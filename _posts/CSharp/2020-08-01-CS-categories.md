@@ -68,3 +68,7 @@ header:
 * [WPF - 1: 프로젝트생성](/cs-wpf-01/)
 
 ![](/file/image/cs-wpf-01-02.png)
+
+### Calculator App
+
+* [WPF - 2: XAML이란](/cs-wpf-02/)

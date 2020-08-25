@@ -146,6 +146,7 @@ header:
 * [sourcetree이용 스태시와 특정 커밋 비교](/git/stash-compare/)
 * [sourcetree이용 release 만들기](/git/release/)
 * [github ssh 등록](/git/github-ssh/)
+* [git ignore 생성](/git/ignore/)
 
 ---
 
