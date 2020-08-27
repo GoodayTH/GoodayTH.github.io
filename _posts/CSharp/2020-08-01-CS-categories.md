@@ -74,3 +74,5 @@ header:
 * [WPF - 2: XAML이란](/cs-wpf-02/)
 
 ![](/file/image/cs-wpf-2-4.png)
+
+* [WPF - 3: Improving the UI](/cs-wpf-03/)
