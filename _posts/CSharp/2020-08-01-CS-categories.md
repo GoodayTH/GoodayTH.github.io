@@ -76,3 +76,7 @@ header:
 ![](/file/image/cs-wpf-2-4.png)
 
 * [WPF - 3: Improving the UI](/cs-wpf-03/)
+
+![](/file/image/cs-wpf-3-2.png)
+
+* [WPF - 4: SQLite](/cs-wpf-04/)
