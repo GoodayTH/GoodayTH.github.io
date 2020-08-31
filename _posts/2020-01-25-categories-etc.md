@@ -170,6 +170,7 @@ header:
 * [각종 설정](/vs/settings/)
 * [WinDbg 사용하기](/vs/WinDbg/)
 * [빌드 후 파일복사](/vs/buildAftercopy/)
+* [최신 C++(C++17 이상) 사용하기](/vs/uselatestcpp/)
 
 ---
 
@@ -178,6 +179,12 @@ header:
 * [Word Highlight With Margin](https://marketplace.visualstudio.com/items?itemName=TrungKienPhan.WordHighlight-18439)
 
 ![](/file/image/WordHighlightWithMargin.jpg)
+
+* [MetaProject](https://marketplace.visualstudio.com/items?itemName=ViacheslavLozinskyi.MetaProject&ssr=false#overview)
+
+TODO 전시기
+
+![](/file/image/MetaProject.gif)
 
 ---
 
