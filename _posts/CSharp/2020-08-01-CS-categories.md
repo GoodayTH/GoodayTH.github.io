@@ -82,3 +82,7 @@ header:
 * [WPF - 4: SQLite](/cs-wpf-04/)
 
 * [WPF - 5: ListView](/cs-wpf-05/)
+
+![](/file/image/cs-wpf-5-4.png)
+
+* [WPF - 6: Custom User Controls](/cs-wpf-06/)
