@@ -61,3 +61,5 @@ header:
 int xAdd = 0x5176e;
 HWND hwnd = (HWND)xAdd;
 ```
+
+* [MFC 이미지 처리하기(링크)](https://lazineer.tistory.com/10)

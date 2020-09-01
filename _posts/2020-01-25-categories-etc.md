@@ -172,6 +172,10 @@ header:
 * [빌드 후 파일복사](/vs/buildAftercopy/)
 * [최신 C++(C++17 이상) 사용하기](/vs/uselatestcpp/)
 
+* [스크롤 막대 띄우기]()
+
+![](/file/image/vs-scrollbar.jpg)
+
 ---
 
 ## Visual Studio 추천 plug-in
