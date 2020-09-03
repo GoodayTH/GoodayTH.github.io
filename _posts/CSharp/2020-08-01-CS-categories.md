@@ -86,3 +86,5 @@ header:
 ![](/file/image/cs-wpf-5-4.png)
 
 * [WPF - 6: Custom User Controls](/cs-wpf-06/)
+* [WPF - 7: REST and AI](/cs-wpf-07/)
+* [WPF - 8: MVVM - The Weather App](/cs-wpf-08/)
