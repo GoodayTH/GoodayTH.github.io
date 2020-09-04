@@ -6,24 +6,12 @@ main:
     url: /cpp/
   - title: "C#"
     url: /cs/
-  - title: "webrtc"
-    url: /webrtc/
-  - title: "Android"
-    url: /Android/
   - title: "JavaScript"
     url: /NodeJS/
-  - title: "java"
-    url: /java/
-  - title: "Unity"
-    url: /unity/
-  - title: "Electron"
-    url: /categories-Electron/
+  - title: "webrtc"
+    url: /webrtc/
   - title: "obs"
     url: /categories-obs/
-  - title: "MFC"
-    url: https://github.com/8BitsCoding/RobotMentor/wiki/MFC
-  - title: "ROS"
-    url: https://github.com/8BitsCoding/RobotMentor/wiki/ROS
   - title: "etc"
     url: /etc/
   - title: "Resume"

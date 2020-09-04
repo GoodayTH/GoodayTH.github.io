@@ -302,3 +302,32 @@ startuml 1.0 다운로드
 ## Python
 
 * [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/Python)
+
+---
+
+## Java
+
+### Java 기초
+
+* [basic 1 : 주석, Console print, 변수할당, 변수이름 규칙](/java/basic-1/)
+* [basic 2 : 자료형 정리, 상수, 자료형변환, 연산자](/java/basic-2/)
+* [basic 3 : 반복문](/java/basic-3/)
+* [basic 4 : 배열](/java/basic-4/)
+
+---
+
+## Android
+
+### Tutorial
+
+* [Tutorial - 1](/android/tutorial-1/) : 프로젝트 생성하기, 가상머신 실행하기, 버튼 생성하기
+* [Tutorial - 2](/android/tutorial-2/) : 버튼만들기, 함수연결하기
+* [Tutorial - 3](/android/tutorial-3/) : Layout 변경방법, LinearLayout
+
+### TroubleShoot
+
+#### 에뮬레이터가 실행안되는 경우
+
+64bit이 보함된 에뮬레이터를 설치하고. 그래픽도 수정
+
+![](/file/image/Android-TroubleShoot-1.png)

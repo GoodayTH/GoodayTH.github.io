@@ -60,9 +60,6 @@ header:
 
 ## WPF
 
-> * Todo : 9월 1주 까지 끝내기
-> * Daily : 1h
-
 ### Intro to WPF
 
 * [WPF - 1: 프로젝트생성](/cs-wpf-01/)
@@ -88,3 +85,87 @@ header:
 * [WPF - 6: Custom User Controls](/cs-wpf-06/)
 * [WPF - 7: REST and AI](/cs-wpf-07/)
 * [WPF - 8: MVVM - The Weather App](/cs-wpf-08/)
+
+---
+
+## Unity
+
+> 실습에 사용한 Unity Version은 **19.2.x** 사용
+
+* [기본 세팅](/unity/00/)
+
+* [바닥, 움직이는 구, 간단한 스크립트 만들기](/unity/01/)
+* [키보드 입력을 움직이는 구에 주기](/unity/02/)
+* [Time.deltaTime이용 구 회전시키기](/unity/03/)
+* [충돌 감지 함수, 모든 오브젝트 효과적용하기](/unity/04/)
+* [GameManager 생성 및 배열적용](/unity/05/)
+
+* [Object의 상대적 좌표, 스페이스바 누를시 점프](/unity/06/)
+* [쿼터니언이란?, Object를 회전시키기](/unity/07/)
+* [Object 복제, Object 생성위치 지정](/unity/08/)
+* [전역(static)변수 사용하기](/unity/09/)
+* [Asset Store이용](/unity/10/)
+
+* [Coroutine 유니티 쓰레드 사용하기](/unity/11/)
+* [Unity Event](/unity/12/)
+
+## C#
+
+* [오버로드](/unity/csharp/overload/)
+* [List](/unity/csharp/list/)
+* [Singleton Pattern](/unity/csharp/singleton/)
+* [상속](/unity/csharp/inheritance/)
+* [interface](/unity/csharp/interface/)
+
+* [추상(abstract) 클래스](/unity/csharp/abstract/)
+* [프로퍼티 (getter, setter)](/unity/csharp/property/)
+* [delegate](/unity/csharp/delegate/)
+* [event](/unity/csharp/event/)
+* [액션, 람다 함수](/unity/csharp/action-lambda/)
+
+* [제네릭(템플릿)]()
+
+```csharp
+public void Print<T>(T inputMessage)
+{
+  Debug.Log(inputMessage)
+}
+
+public class Container<T>
+{
+  T messages[]
+}
+```
+
+* 기본적 문법
+
+```csharp
+// 주석
+
+/* 
+* 주석
+*/
+
+// 콘솔 로그 출력
+int num = 0;
+Debug.Log("로그" + num);
+
+// 함수선언
+float GetRadius(float size)
+{
+  // ...
+}
+
+// 배열 선언
+int[] scores = new int[10];
+
+// 상속
+public class Animal
+{
+  public string name;
+  string sound;
+  float weight;
+}
+
+Animal jack = new Animal();
+```

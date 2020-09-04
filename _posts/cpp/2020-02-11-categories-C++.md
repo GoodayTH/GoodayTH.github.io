@@ -54,6 +54,8 @@ header:
 
 ## MFC
 
+* [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/MFC)
+
 * [Console log 출력](/cpp/mfc/console-log/)
 * [16진수로 핸들(HWND) 주소 받아 HWND 객체 만들기](/cpp/mfc/16hwnd/)
 
@@ -64,3 +66,9 @@ HWND hwnd = (HWND)xAdd;
 
 * [MFC 이미지 처리하기(링크)](https://lazineer.tistory.com/10)
 * [특정 프로그램 Capture](/cpp/specific-window-capture/)
+
+---
+
+## ROS
+
+* [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/ROS)
