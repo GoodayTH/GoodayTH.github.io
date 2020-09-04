@@ -63,3 +63,4 @@ HWND hwnd = (HWND)xAdd;
 ```
 
 * [MFC 이미지 처리하기(링크)](https://lazineer.tistory.com/10)
+* [특정 프로그램 Capture](/cpp/specific-window-capture/)
