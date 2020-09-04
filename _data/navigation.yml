@@ -8,10 +8,6 @@ main:
     url: /cs/
   - title: "JavaScript"
     url: /NodeJS/
-  - title: "webrtc"
-    url: /webrtc/
-  - title: "obs"
-    url: /categories-obs/
   - title: "etc"
     url: /etc/
   - title: "Resume"
