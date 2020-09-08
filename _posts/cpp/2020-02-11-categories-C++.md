@@ -76,6 +76,7 @@ HWND hwnd = (HWND)xAdd;
 
  * [Direct3D 개발 환경 조성](/dxd/environment/)
  * [Direct3D Frame work 만들기](/dxd/make-framework/)
+ * [Verices](/dxd/verices/)
 
 ---
 
