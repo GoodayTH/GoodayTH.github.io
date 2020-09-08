@@ -69,6 +69,16 @@ HWND hwnd = (HWND)xAdd;
 
 ---
 
+## Direct X
+
+ * [참고강의](https://www.youtube.com/playlist?list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1)
+ * [참고사이트](https://m.blog.naver.com/PostView.nhn?blogId=whdgkks12347&logNo=221334350047&proxyReferer=https:%2F%2Fwww.google.com%2F)
+
+ * [Direct3D 개발 환경 조성](/dxd/environment/)
+ * [Direct3D Frame work 만들기](/dxd/make-framework/)
+
+---
+
 ## ROS
 
 * [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/ROS)
