@@ -197,6 +197,10 @@ TODO 전시기
 
 ![](/file/image/MetaProject.gif)
 
+* [Highlight Comment Tags](https://marketplace.visualstudio.com/items?itemName=zloywolk.highlight-comment-tags)
+
+![](/file/image/HighlightCommentTags.png)
+
 ---
 
 ## Visual Studio Code 추천 plug-in

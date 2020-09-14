@@ -67,6 +67,13 @@ HWND hwnd = (HWND)xAdd;
 * [MFC 이미지 처리하기(링크)](https://lazineer.tistory.com/10)
 * [특정 프로그램 Capture](/cpp/specific-window-capture/)
 
+* [wchar_t cout 처리]()
+
+```cpp
+wchar_t * wc = "hello";
+std::wcout << wc << std::endl;
+```
+
 ---
 
 ## Direct X
