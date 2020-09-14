@@ -153,6 +153,7 @@ header:
 * [sourcetree이용 release 만들기](/git/release/)
 * [github ssh 등록](/git/github-ssh/)
 * [git ignore 생성](/git/ignore/)
+* [Submodule 추가하기](/git/submodule/)
 
 ---
 
