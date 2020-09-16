@@ -32,6 +32,12 @@ header:
 
 * [Qt UI](/qt/ui/)
 
+* [Qt HWND 얻기]()
+
+```cpp
+HWND hwnd = HWND(ui->preview->winId());
+```
+
 ## Thread
 
 * [Qt Thread](/qt/thread/)

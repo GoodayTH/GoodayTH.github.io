@@ -60,8 +60,15 @@ header:
 * [16진수로 핸들(HWND) 주소 받아 HWND 객체 만들기](/cpp/mfc/16hwnd/)
 
 ```cpp
+// int to HWND
 int xAdd = 0x5176e;
 HWND hwnd = (HWND)xAdd;
+
+// HWND to string
+stringstream ss;
+ss << std::hex << xAdd;
+ss.str();         // string
+ss.str().c_str(); // const char *
 ```
 
 * [MFC 이미지 처리하기(링크)](https://lazineer.tistory.com/10)
