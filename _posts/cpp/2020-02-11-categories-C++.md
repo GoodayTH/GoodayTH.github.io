@@ -31,6 +31,8 @@ header:
 
 * [pragma region](/cpp/pragma-region/)
 
+* [Exception](/cpp/exception/)
+
 ## STL
 
 * [STL](/cpp/stl/)

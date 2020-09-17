@@ -1,19 +1,24 @@
 ---
 title: "(C++) exception"
-date: 2020-01-10 00:00:00 -0000
+permalink: cpp/exception/                # link 직접 지정
+toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
+date: 2020-09-04 00:00:00 -0000
+last_modified_at: 2020-09-04 00:00:00 -0000
+sidebar:
+  title: "목차"
+  nav: cpp
+tag:
+  - cpp
+category:
+  - exception
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
-### 목차
-
-* [C방식 오류 처리의 단점](#C방식-오류-처리의-단점)
-* [예외와 클래스](#예외와-클래스)
-* [noexcept](#noexcept)
-* [](#)
-* [](#)
-
----
-
-### C방식 오류 처리의 단점
+## C방식 오류 처리의 단점
 
 C 방식의 오류 처리 단점
 
@@ -67,11 +72,10 @@ int main()
 }
 ```
 
-### 예외와 클래스
+## 예외와 클래스
 
-> 예외에 더 많은 정보를 담기 위해서는 클래스를 넘기는게 가장 좋다.
-> 
-> 또한 되도록 std::exception으로 상속 받아서 만들면 더 좋다!
+예외에 더 많은 정보를 담기 위해서는 클래스를 넘기는게 가장 좋다.<br>
+또한 되도록 std::exception으로 상속 받아서 만들면 더 좋다!<br>
 
 ```cpp
 #include <iostream>
@@ -107,16 +111,16 @@ int main()
 
 ---
 
-### noexcept
+## noexcept
 
-> 함수가 예외가 없음(있음)을 표기하는 방법
+함수가 예외가 없음(있음)을 표기하는 방법
 
 ![](/file/imagecpp-exception-image-01.png)
 
-> 예외는 왜 표기하나?
-> 
-> 1. 예외가 없는 함수가 컴파일러 최적화가 더 잘 된다.
-> 2. 예외가 있는지 없는지 조사후에 다른 알고리즘을 사용할 수 있다.
+예외는 왜 표기하나?
+ 
+1. 예외가 없는 함수가 컴파일러 최적화가 더 잘 된다.
+2. 예외가 있는지 없는지 조사후에 다른 알고리즘을 사용할 수 있다.
 
 ```cpp
 void foo()  // 예외가 있다.
@@ -151,5 +155,57 @@ int main()
     bool b = noexept( foo() );
     
     std::cout << b << std::endl;
+}
+```
+
+---
+
+## 추가
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void mightGoWrong() {
+    bool error = true;
+
+    if(error) {
+        throw 8;
+    }
+}
+
+int main() {
+    mightGoWrong();
+    // main 함수에서 error를 아직은 잡을 수 없다.
+
+    return 0;
+}
+```
+
+```cpp
+int main() {
+    try {
+        mightGoWrong();
+    }
+    catch(int e){       // throw를 int로 던지기에 이렇게 받을 수 있을 것이다.
+        cout << "Error code : " << e << endl;
+    }
+    cout << "Still running" << endl;
+    return 0;
+}
+```
+
+```cpp
+int main() {
+    try {
+        mightGoWrong();
+    }
+    catch(int e){
+        cout << "Error code : " << e << endl;
+    }catch(char const * e) {    // 다른 자료형으로도 받을 수 있다.
+        cout << "Error message : " << e << endl;
+    }
+    cout << "Still running" << endl;
+    return 0;
 }
 ```
