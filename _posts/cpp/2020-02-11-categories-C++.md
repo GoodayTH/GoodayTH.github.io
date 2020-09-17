@@ -69,6 +69,9 @@ stringstream ss;
 ss << std::hex << xAdd;
 ss.str();         // string
 ss.str().c_str(); // const char *
+
+// const char * to HWND
+HWND hwnd = (HWND)(int)strtol(const_char, NULL, 16);  // 0x일 경우 0으로
 ```
 
 * [MFC 이미지 처리하기(링크)](https://lazineer.tistory.com/10)
