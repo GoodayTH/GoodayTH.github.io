@@ -13,6 +13,7 @@ tag:
   - C++
 category:
   - category
+classes: wide
 excerpt: "C++와 관련된 지식을 정리한 페이지 입니다."
 header:
   teaser: /file/image/qt-page-teaser.gif

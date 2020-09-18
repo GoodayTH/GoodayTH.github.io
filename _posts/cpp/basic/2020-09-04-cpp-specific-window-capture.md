@@ -15,6 +15,7 @@ category:
   - capture
   - printwindow
   - bitblt
+classes: wide
 excerpt: ""
 header:
   teaser: /file/image/cpp-page-teaser.gif

@@ -13,6 +13,7 @@ tag:
   - cpp
 category:
   - exception
+classes: wide
 excerpt: ""
 header:
   teaser: /file/image/cpp-page-teaser.gif
