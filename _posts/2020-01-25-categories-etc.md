@@ -13,6 +13,7 @@ tag:
   - 기타사항
 category:
   - category
+classes: wide
 excerpt: "기타사항 정리 페이지 입니다"
 header:
   teaser: /file/image/etc-page-teaser.gif
