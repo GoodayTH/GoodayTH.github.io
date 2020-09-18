@@ -1,7 +1,7 @@
 ---
 title: "(C++) exception"
 permalink: cpp/exception/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-09-04 00:00:00 -0000
@@ -209,4 +209,105 @@ int main() {
     cout << "Still running" << endl;
     return 0;
 }
+```
+
+---
+
+```cpp
+class ConGoWrong {
+    ConGoWrong() {
+        char* pMemory = new char[99999999999999999999]; // 여기서 에러가 발생할 것.
+        delete [] pMemory;
+    }
+};
+
+int main() {
+    ConGoWrong wrong;   // 에러를 잡아보자
+
+    return 0;
+}
+```
+
+```cpp
+int main() {
+    try{
+        ConGoWrong wrong;
+    }
+    catch(bac_alloc& e){
+        cout << e.what() << endl;
+    }
+
+    return 0;
+}
+```
+
+다른 Exception의 정보를 보려면 아래 페이지를 참조하자<br>
+https://en.cppreference.com/w/cpp/error/exception
+
+---
+
+## Custom Exception
+
+```cpp
+#include <exception>
+using namespace std;
+// ...
+class MyException : public exception
+{
+public:
+    virtual const char * what() const throw() {
+        return "Something bad happend!";
+    }
+};
+
+class Test {
+public:
+    void goesWrong(){
+        throw MyException();
+    }
+};
+
+int main() {
+    Test test;
+
+    try {
+        test.goesWrong();
+    }
+    catch(MyException& e) {
+        cout << e.what() << endl;
+    }
+}
+```
+
+---
+
+## Exception Catching Order
+
+```cpp
+void goesWrong() {
+    bool error1Detected = true;
+    bool error2Detected = false;
+
+    if(error1Detected) {
+        throw bad_alloc();
+    }
+
+    if(error2Detected){
+        throw exception();
+    }
+}
+
+int main() {
+    try {
+        goesWrong();
+    }
+    catch(exception& e) {       // 여기서 error1Detected가 잡힌다.
+        cout << "exception& e" << e.what() << endl;
+    }
+    catch(bad_alloc& e) {
+        cout << "bad_alloc& e" << e.what() << endl;
+    }
+    return 0;
+}
+// bac_alloc을 exception 보다 먼저 검사해야 함.
 ```
