@@ -51,3 +51,204 @@ void test(int _a) {
 
 void (*pTest)(int) = test;
 ```
+
+---
+
+## Using Function Pointers
+
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+bool match(string test){
+  return test.size() == 3;
+}
+
+int main() {
+  vector<string> texts;
+  texts.push_back("one");
+  texts.push_back("one1");
+  texts.push_back("one2");
+  texts.push_back("one3");
+  texts.push_back("one4");
+  texts.push_back("one5");
+  texts.push_back("one6");
+
+  // 이런식으로 쓰면된다.
+  cout << match("one") << endl;
+
+  // 모두 돌리고 싶다면?
+  cout << count_if(texts.begin(), texts.end(), match) << endl;
+
+  return 0;
+}
+```
+
+```cpp
+// function pointer를 이용해 처리
+bool match(string test){
+  return test.size() == 3;
+}
+
+int countStrings(vector<string> &texts, bool (*match)(string test)) {
+  int tally = 0;
+  for(int i = 0; i < testx.size(); i++) {
+    if(match(texts[i]) {
+      tally++;
+    }
+  }
+
+  return tally;
+}
+
+int main() {
+  vector<string> texts;
+  texts.push_back("one");
+  texts.push_back("one1");
+  texts.push_back("one2");
+  texts.push_back("one3");
+  texts.push_back("one4");
+  texts.push_back("one5");
+  texts.push_back("one6");
+
+  cout << countString(texts, match) << endl;
+
+  return 0;
+}
+```
+
+---
+
+## Object Slicing and Polymorphism
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Parent {
+public:
+  void print() {
+    cout << "parent" << endl;
+  }
+};
+
+class Child : public Parent {
+public:
+  void print() {
+    cout << "child" << endl;
+  }
+};
+
+int main() {
+  Child c1;
+  Parent &p1 = c1;
+  p1.print();   // parent
+
+  return 0;
+}
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Parent {
+public:
+  // 만약 virtual 선언을 한다면?
+  virtual void print() {
+    cout << "parent" << endl;
+  }
+};
+
+class Child : public Parent {
+public:
+  void print() {
+    cout << "child" << endl;
+  }
+};
+
+int main() {
+  Child c1;
+  Parent &p1 = c1;
+  p1.print();   // child -> child가 출력됨.
+
+  Parent p2 = Child();
+  p2.print();   // parent -> =를 넣으며 복사 생성자가 생성.
+  // 복사생성자를 재생성해보자
+
+  return 0;
+}
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Parent {
+private:
+  int one;
+public:
+  Parent() : one(0) {
+    // 복사 생성자를 쓰기위해서 만듦
+  }
+
+  Parent(const Parent& other) : one(0) {
+    one = other.one;
+    cout << "copy parent" << endl;
+  }
+
+  virtual void print() {
+    cout << "parent" << endl;
+  }
+
+  virtual ~Parent() {}
+};
+
+class Child : public Parent {
+private:
+  int two;
+
+public:
+  Child() : two(0) {}
+  void print() {
+    cout << "child" << endl;
+  }
+};
+
+int main() {
+  Child c1;
+  Parent &p1 = c1;
+  p1.print();   // child 
+
+  Parent p2 = Child();  // 복사생성자로 Parent의 one변수를 변경할 수 있음.
+  p2.print();   // 
+  
+  return 0;
+}
+```
+
+---
+
+## Abstract Classes and Pure Virtual Functions
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Abstract Class가 될 것이다.
+class Animal {
+  virtual void speak() = 0;
+};
+
+class Dog : public Animal {
+  virtual void speak() {
+    cout << "Woof!" << endl;
+  }
+};
+
+int main() {
+
+}
+```
