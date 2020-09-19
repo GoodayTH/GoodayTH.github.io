@@ -34,6 +34,7 @@ header:
 
 * [Exception](/cpp/exception/)
 * [Function Pointer](/cpp/function-pointer/)
+* [decltype](/cpp/decltype/)
 
 ## STL
 

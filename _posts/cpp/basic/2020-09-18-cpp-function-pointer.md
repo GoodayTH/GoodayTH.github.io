@@ -284,5 +284,38 @@ int main() {
 ## Functor
 
 ```cpp
+#include <iostream>
+using namespace std;
 
+struct Test {
+  virtual bool operator()(string& text) = 0;
+  virtual ~Test() {} 
+};
+
+struct MatchTest : public Test {
+  virtual bool operator()(string &text) {
+    return text == "lion";
+  }
+};
+
+void check(string text, Test& test) {
+  // functor는 이런식으로 활용이가능
+  if(test(text)) {
+    cout << "Text matches!" << endl;
+  }
+}
+
+int main() {
+  MatchTest pred;
+
+  string value = "lion";
+
+  // 마치 function 같지만 객체를 function처럼 쓰는 fuctor이다 
+  cout << pred(value) << endl;
+
+  MatchTest m;
+  check("lion", m);
+
+  return 0;
+}
 ```
