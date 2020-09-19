@@ -239,6 +239,7 @@ using namespace std;
 
 // Abstract Class가 될 것이다.
 class Animal {
+  virtual void run() = 0;
   virtual void speak() = 0;
 };
 
@@ -248,7 +249,40 @@ class Dog : public Animal {
   }
 };
 
-int main() {
+class Labrador : public Dog {
+public:
+  Labrador() {
+    cout << "new Labrador" << endl;
+  }
+  virtual void speak() {
+    cout << "Labrador:Woof!" << endl;
+  }
+};
 
+void test(Animal& a){
+  a.run();
 }
+
+int main() {
+  Animal animal;  // error - 추상가상이라
+  Dog dog;        // error - run을 구현하지 않음
+  Labrador l;     // okay
+  l.speak();
+
+  Animal *pAnimal[5];
+  pAnimal[0] = &l;    // okay
+  pAnimal[0]->speak();
+
+  test(l);  // == l.run();
+
+  return 0;
+}
+```
+
+---
+
+## Functor
+
+```cpp
+
 ```
