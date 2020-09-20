@@ -130,5 +130,180 @@ void ring::iterator::print() {
 위 내용의 연장이다.
 
 ```cpp
+#ifndef RING_H_
+#define RING_H_
 
+#include <iostream>
+using namespace std;
+
+template<class T>
+class ring {
+private:
+    int m_pos;
+    int m_size;
+    T *m_values;
+
+public:
+    class iterator;
+
+public:
+    ring(int size) : m_size(size), m_values(NULL), m_pos(0) {
+        m_values = new T[size];
+    }
+
+    ~ring() {
+        delete [] m_values;
+    }
+
+    int size() {
+        return m_size;
+    }
+
+    void add(T value) {
+        m_values[m_pos++] = value;
+
+        if(m_pos == m_size) {
+            m_pos = 0;
+        }
+    }
+
+    T& get(int pos) {
+        return m_values[pos];
+    }
+};
+
+template<class T>
+class ring<T>::iterator {
+public:
+    void print();
+};
+
+void ring::iterator::print() {
+    cout << "Hellow from iterator : " << T() << endl;
+}
+
+#endif  // RING_H_
+```
+
+---
+
+## Making Classes iterable
+
+```cpp
+#include "ring.h"
+
+int main() {
+    ring<string>::iterator it;
+
+    cout << *it << endl;
+
+    ring<string> textring(3);
+
+    textring.add("one");
+    textring.add("two");
+    textring.add("three");
+
+    for(int i = 0; i < textring.size(); i ++) {
+        cout << textring.get(i) << endl;
+    }
+
+    // for까지 구현
+    // 예전 구현 방식
+    for(ring<string>::iterator it = textring.begin(); it != textring.end(); it++) {
+        cout << *it << endl;
+    }
+
+    cout << endl;
+
+    // C++11이후 구현
+    for(string value : textring) {
+        cout << value << endl;
+    }
+
+    return 0;
+}
+```
+
+```cpp
+#ifndef RING_H_
+#define RING_H_
+
+#include <iostream>
+using namespace std;
+
+template<class T>
+class ring {
+private:
+    int m_pos;
+    int m_size;
+    T *m_values;
+
+public:
+    class iterator;
+
+public:
+    ring(int size) : m_size(size), m_values(NULL), m_pos(0) {
+        m_values = new T[size];
+    }
+
+    ~ring() {
+        delete [] m_values;
+    }
+
+    int size() {
+        return m_size;
+    }
+
+    iterator begin() {
+        return iterator(0, *this);
+    }
+
+    iterator end() {
+        return iterator(m_size, *this);
+    }
+
+    void add(T value) {
+        m_values[m_pos++] = value;
+
+        if(m_pos == m_size) {
+            m_pos = 0;
+        }
+    }
+
+    T& get(int pos) {
+        return m_values[pos];
+    }
+};
+
+template<class T>
+class ring<T>::iterator {
+private:
+    int m_pos;
+    ring m_ring;
+
+public:
+    iterator(int pos, ring& aring) : m_pos(pos), m_ring(aring){
+
+    }
+
+    iterator &operator++(int a) {
+        m_pos++;
+        return *this;
+    }
+
+    iterator &operator++() {
+        m_pos++;
+        return *this;
+    }
+
+    T & operator*() {
+        return m_ring.get(m_pos);
+    }
+
+    bool operator!=(const iterator & other) const {
+        return m_pos != other.m_pos;
+    }
+};
+
+#endif  // RING_H_
 ```
