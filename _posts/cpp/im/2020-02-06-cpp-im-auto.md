@@ -1,6 +1,22 @@
 ---
 title: "(C++) auto"
+permalink: cpp/auto/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-02-06 00:00:00 -0000
+last_modified_at: 2020-09-20 00:00:00 -0000
+sidebar:
+  title: "목차"
+  nav: cpp
+tag:
+  - cpp
+category:
+  - auto
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ```cpp
@@ -41,5 +57,37 @@ int main()
   
   const char* const s2 = "hello";
   auto a10 = s1;    // const char*
+}
+```
+
+---
+
+```cpp
+auto text() {
+  return 7;   // 이런것도 가능
+}
+
+auto text() -> int {
+  return 7;   // 직접 지정도 가능
+}
+
+// 보통은 아래와 같이 쓴다
+template <class T>
+auto test(T value) -> decltype(value) {
+  return value;
+}
+
+template <class T, class S>
+auto test(T value, S value2) -> decltype(value + value2) {
+  return value + value2;
+}
+
+int get() {
+  return 999;
+}
+
+// 함수를 리턴할때 auto를 쓰고 싶다면 이렇게 쓰자
+auto test2() -> decltype(get()) {
+  return get();
 }
 ```

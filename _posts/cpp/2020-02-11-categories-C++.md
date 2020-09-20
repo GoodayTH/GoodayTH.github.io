@@ -35,6 +35,10 @@ header:
 * [Exception](/cpp/exception/)
 * [Function Pointer](/cpp/function-pointer/)
 * [decltype](/cpp/decltype/)
+* [auto](/cpp/auto/)
+* [Range-Based Loops](/cpp/range-based-loops/)
+
+* [Nested Template Classes](/cpp/nest-template/)
 
 ## STL
 
