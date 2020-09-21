@@ -39,6 +39,8 @@ header:
 * [Range-Based Loops](/cpp/range-based-loops/)
 
 * [Nested Template Classes](/cpp/nest-template/)
+* [초기화](/cpp/initializer/)
+* [람다식](/cpp/lambda/)
 
 ## STL
 
