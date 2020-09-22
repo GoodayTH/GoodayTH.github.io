@@ -20,7 +20,7 @@ header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
 
-* [참고사이트]https://yonghello.tistory.com/entry/%ED%8C%8C%EC%9D%BC%EB%A7%A4%ED%95%91%EC%98%88%EC%A0%9C)
+* [참고사이트](https://yonghello.tistory.com/entry/%ED%8C%8C%EC%9D%BC%EB%A7%A4%ED%95%91%EC%98%88%EC%A0%9C)
 
 ---
 
@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
 
 ### <예제>
 
-<공유메모리를 만들고 공유메모리에 데이터를 써넣는 프로그램>
+공유메모리를 만들고 공유메모리에 데이터를 써넣는 프로그램
 
 ```cpp
 #include <windows.h>
@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
 
 ### <예제>
 
-<공유메모리에 접근하여 데이터를 출력하는 프로그램.>
+공유메모리에 접근하여 데이터를 출력하는 프로그램.
 
 ```cpp
 #include <windows.h>
