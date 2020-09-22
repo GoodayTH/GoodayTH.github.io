@@ -512,3 +512,204 @@ int main() {
     test(func);
 }
 ```
+
+---
+
+## Lambda Parameters and Return Types
+
+```cpp
+auto pGreet = [](string name){ cout << "Hello" << name << endl; };
+
+pGreet("Mike");     // Hello Mike
+```
+
+```cpp
+void testGreet(void (*greet)(string)) {
+    greet("Bob");
+}
+
+auto pGreet = [](string name){ cout << "Hello" << name << endl; };
+
+testGreet(pGreet);  // Hello Mike
+```
+
+```cpp
+auto pDivide = [](double a, double b){
+    if(b == 0.0) return 0;      // int로 return하기에 error!
+    return a / b;
+};
+
+cout << pDivide(10.0, 5.0) << endl;
+```
+
+```cpp
+auto pDivide = [](double a, double b) -> double{
+    if(b == 0.0) return 0;      // okay
+    return a / b;
+};
+
+cout << pDivide(10.0, 5.0) << endl;
+```
+
+```cpp
+void runDivide(double (*divide)(double a, double b)) {
+    auto rval = divide(9, 3);
+    cout << rval << endl;
+}
+```
+
+---
+
+## Lambda Capture Expressions
+
+```cpp
+int one = 1;
+int two = 2;
+int three = 3;
+
+// 지역변수를 쓰고 싶다면?
+[](){ cout << one << endl; }();
+
+[one, two](){ cout << one << two << endl; }();
+
+// 더 많은 지역변수를 쓰고싶다면?
+[=](){ cout << one << two << endl; }();
+// Capture all local variables by value
+
+// Capture by reference
+[=, &three](){ cout << one << two << endl; }();
+
+[&](){ cout << one << two << endl; }();
+```
+
+---
+
+## Capturing this With Lambdas
+
+```cpp
+class Test {
+private:
+    int one{1};
+    int two{2};
+
+public:
+    void run() {
+        int three = 3;  // {3} 가 더 좋은 표현
+        int four = 4;   // {4}
+
+        auto pLambda = [one, three, four](){        // error! - one은 private으로 접근 불가
+            cout << three << endl;
+            };
+        pLambda();
+    }
+};
+
+int main() {
+    Test test;
+    test.run();
+
+    return 0;
+}
+```
+
+```cpp
+class Test {
+private:
+    int one{1};
+    int two{2};
+
+public:
+    void run() {
+        int three{3};
+        int four{4};
+
+        auto pLambda = [this, three, four](){
+            cout << one << endl;   // 이런식으로 접근 가능
+            one = 111;  // call by reference로 접근됨.
+            cout << three << endl;
+            };
+        pLambda();
+    }
+};
+```
+
+---
+
+## The Standard Function Type
+
+```cpp
+#include <functional>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    int size = 5;
+    vector<string> vec{"one", "two", "three"};
+
+    int count = count_if(vec.begin(), vec.end(), [](string test){
+        return test.size == size;
+    });
+
+    cout << count << endl;
+}
+```
+
+```cpp
+bool check(string &test) {
+    return test.size() == 3;
+}
+
+int count = count_if(vec.begin(), vec.end(), check);
+```
+
+```cpp
+class Check {
+public:
+    bool operator()(string &test) {
+        return test.size() == 5;
+    }
+} check1;
+
+int count = count_if(vec.begin(), vec.end(), check1);   // okay
+```
+
+```cpp
+// function으로 람다를 받을 수 있다
+void run(function<bool(string&)> check) {
+    string test = "dog";
+    cout << check(test) << endl;
+}
+
+auto lambda = [size](string test) {return test.size() == size;};
+
+run(lambda);        // okay
+run(check1);        // okay
+run(check);        // okay
+```
+
+```cpp
+function<int(int, int)> add = [](int one, int two){return one+two;};
+cout << add(7, 3) << endl;
+```
+
+---
+
+## Mutable Lambdas
+
+```cpp
+int cats = 5;
+
+[cats](){
+    cats = 8;       // error
+    cout << cats << endl;
+}();
+```
+
+```cpp
+int cats = 5;
+
+[cats]() mutable {
+    cats = 8;       // okay
+    cout << cats << endl;
+}();
+```

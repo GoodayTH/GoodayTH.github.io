@@ -1,6 +1,22 @@
 ---
 title: "(C++) delegate constructor"
+permalink: cpp/delegate-constructor/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-02-05 00:00:00 -0000
+last_modified_at: 2020-09-22 00:00:00 -0000
+sidebar:
+  title: "목차"
+  nav: cpp
+tag:
+  - cpp
+category:
+  - delegate-constructor
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ```cpp
@@ -24,7 +40,7 @@ int main()
 }
 ```
 
-> 그래서 그런데 ...
+그래서 그런데 ...
 
 ```cpp
 struct Point
@@ -37,7 +53,7 @@ struct Point
 };
 ```
 
-> 위임생성자의 탄생
+위임생성자의 탄생
 
 ```cpp
 struct Point
@@ -47,3 +63,5 @@ struct Point
   Point(int a, int b) : x(a), y(b) {}
 };
 ```
+
+---

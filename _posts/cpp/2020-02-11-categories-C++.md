@@ -41,6 +41,7 @@ header:
 * [Nested Template Classes](/cpp/nest-template/)
 * [초기화](/cpp/initializer/)
 * [람다식](/cpp/lambda/)
+* [delegate constructor](/cpp/delegate-constructor/)
 
 ## STL
 
