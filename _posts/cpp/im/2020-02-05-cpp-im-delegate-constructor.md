@@ -65,3 +65,213 @@ struct Point
 ```
 
 ---
+
+## 추가
+
+```cpp
+class Parent {
+  int dogs;
+  string text;
+
+public:
+  /*
+  Parent() {
+    dogs = 5;
+    cout << "No parameter parent constructor" << endl;
+  }
+  */
+
+  Parent(string text) {
+    dogs = 5;
+    this->text = text;
+    cout << "string parameter parent constructor" << endl;
+  }
+};
+
+class Child : public Parent {
+public:
+  Child() { // error - 부모도 기본생성자가 있어야 한다.
+
+  }
+};
+
+int main()
+{
+  Parent parent("Hello");
+  Child child;
+
+  return 0;
+}
+```
+
+```cpp
+class Parent {
+  int dogs;
+  string text;
+
+public:
+  /*
+  Parent() {
+    dogs = 5;
+    cout << "No parameter parent constructor" << endl;
+  }
+  */
+
+  Parent(string text) {
+    dogs = 5;
+    this->text = text;
+    cout << "string parameter parent constructor" << endl;
+  }
+};
+
+class Child : public Parent {
+public:
+  Child() : Parent("Hello") { // okay
+
+  }
+};
+
+int main()
+{
+  Parent parent("Hello");
+  Child child;
+
+  return 0;
+}
+```
+
+C++11방식으로 이 문제를 해결해보자
+
+```cpp
+class Parent {
+  int dogs;
+  string text;
+
+public:
+  Parent() : Parent("hello") {
+    dogs = 5;
+    cout << "No parameter parent constructor" << endl;
+  }
+
+  Parent(string text) {
+    dogs = 5;
+    this->text = text;
+    cout << "string parameter parent constructor" << endl;
+  }
+};
+
+class Child : public Parent {
+public:
+  Child() = defualt;
+};
+```
+
+---
+
+## -fno-elide-constructors
+
+```cpp
+class Test {
+public:
+  Test() {
+    cout << "constructor" << endl;
+  }
+
+  Test(int i) {
+    cout << "parameterized constructor" << endl;
+  }
+
+  Test(const Test& other) {
+    cout << "copy constructor" << endl;
+  }
+
+  Test& operator=(const Test& other) {
+    cout << "assignment" << endl;
+    return *this;
+  }
+
+  ~Test() {
+    cout << "destructor" << endl;
+  }
+
+  friend ostream &operator<<(ostream& out, const Test& test);
+};
+
+ostream &operator<<(ostream& out, const Test& test) {
+  out << "Hello from test";
+  return out;
+}
+
+Test getTest() {
+  return Test();
+}
+
+int main() {
+  Test test1 = getTest();
+  cout << test1 << endl;
+
+  // constructor
+  // copy constructor
+  // destructor
+  // copy constructor
+  // destructor
+  // Hello from test
+  // destructor
+  // 간단한 동작에 이렇게 만은 함수가??
+}
+```
+
+```cpp
+Test getTest() {
+  return Test();    // constructor
+}
+
+int main() {
+  Test test1 = getTest(); // copy contructor and destructor
+  cout << test1 << endl;  // copy, destruc, hellwo, destruc 순서 호출
+}
+```
+
+`-fno-elide-constructors` C++에 옵션을 줘서 최적화 가능
+
+---
+
+## Constructors and Memory
+
+```cpp
+#include <memory.h>
+
+class Test {
+private:
+  static const int SIZE = 100;
+  int * _pBuffer;
+public:
+  Test() {
+    cout << "constructor" << endl;
+    // _pBuffer = new int[SIZE];
+    // memset(_pBuffer, 0, sizeof(int)*SIZE);
+
+    // C++11 방식으로 초기화
+    _pBuffer = new int[SIZE]{};   // 쉽다!
+
+    for(int i = 0; i < SIZE; i++) {
+      _pBuffer[i] = 7 * i;
+    }
+
+    // 복사생성자에서 메모리초기화는 이렇게
+    // memcpy(_pBuffer, other._pBuffer, SIZE*sizeof(int));
+  }
+
+  // ...
+
+  ~Test() {
+    cout << "destructor" << endl;
+
+    delete [] _pBuffer;
+  }
+
+  friend ostream &operator<<(ostream& out, const Test& test);
+};
+
+// ...
+```
