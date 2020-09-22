@@ -217,7 +217,6 @@ TODO 전시기
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 - 개좋음
-- 
 
 ![](/file/image/git-lens.gif)
 
@@ -247,6 +246,8 @@ C --> A : Bye Bye
 Shift + Command + p 를 눌러서 PlantUML: Preview Current Diagram을 선택
 
 ![](/file/image/platUML.png)
+
+* 동시편집 : Ctrl + Alt + Shift
 
 ---
 

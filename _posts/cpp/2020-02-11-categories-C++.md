@@ -64,7 +64,7 @@ header:
 * [코딩테스트 : 문제 풀이](/cpp/quize/)
 * [코딩테스트 : Good Pattern](/cpp/good-pattern/)
 
-## MFC
+## WIN32, MFC
 
 * [과거자료](https://github.com/8BitsCoding/RobotMentor/wiki/MFC)
 
@@ -95,6 +95,10 @@ HWND hwnd = (HWND)(int)strtol(const_char, NULL, 16);  // 0x일 경우 0으로
 wchar_t * wc = "hello";
 std::wcout << wc << std::endl;
 ```
+
+* [process간 Event 공유(OpenEvent)](/cpp/win32/process-event-share/)
+* [공유메모리 접근(shared memoey mapping)](/cpp/win32/file-mapping/)
+* [Dll 함수사용 (GetProcAddress)](/cpp/win32/use-dll-func/)
 
 ---
 
