@@ -1,14 +1,22 @@
 ---
-title: "STL : unique_ptr"
+title: "(STL) unique_ptr"
 permalink: cpp/stl/spointer/unique_ptr/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-15 00:00:00 -0000
-last_modified_at: 2020-04-15 00:00:00 -0000
+last_modified_at: 2020-09-24 00:00:00 -0000
 sidebar:
-  title: "C++"
+  title: "목차"
   nav: cpp
+tag:
+  - cpp
+category:
+  - unique_ptr
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ## 1
@@ -162,6 +170,16 @@ int main()
     // unique_ptr<Shape> p = CreateShape(1);
     shared_ptr<Shape> p = CreateShape(1);
     // unique, shared 모두 사용가능
+```
 
+## 배열을 사용하고 싶을 경우
 
+```cpp
+unique_ptr<uint8_t[]> mp_array;
+
+// 선언
+mp_array = std::make_unique<uint8_t[]>(48000 * 8);
+
+// uint8_t* 의 호출이 필요할 경우
+&mp_array[0];
 ```

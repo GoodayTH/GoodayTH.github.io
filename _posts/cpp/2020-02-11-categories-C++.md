@@ -47,6 +47,8 @@ header:
 
 * [STL](/cpp/stl/)
 
+* [unique_ptr](/cpp/stl/spointer/unique_ptr/)
+
 ## Template
 
 * [Template](/cpp/template/)
@@ -101,6 +103,17 @@ std::wcout << wc << std::endl;
 * [Dll 함수사용 (GetProcAddress)](/cpp/win32/use-dll-func/)
 
 * [Thread 사용](/cpp/win32/thread/)
+* [DC에 연결된 BITMAP 정보 처리](/cpp/win32/dc-bitmap/)
+
+* [window 클립보드에 데이터 저장]()
+
+```cpp
+//copy to clipboard
+OpenClipboard(nullptr);
+EmptyClipboard();
+SetClipboardData(CF_BITMAP, capturedScreenBitmap);
+CloseClipboard();
+```
 
 ---
 

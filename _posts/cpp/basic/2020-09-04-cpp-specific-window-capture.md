@@ -29,3 +29,48 @@ header:
 bitblt을 이용하면 가장 좋지만... <br>
 요즘 개발되고 있는 cef기반의 프로그램은 hardware accelation을 지원하기에 단순히 bitblt을 이용해 capture가 불가능하다.<br>
 `::printwindow`를 사용하자 자세한건 나중에 정리...
+
+---
+
+## Capture한 데이터 BITMAP으로 저장하기
+
+* [참고사이트](https://stackoverflow.com/questions/55034881/printwindow-prints-with-empty-space)
+
+```cpp
+bool result = true;
+
+HWND appHWnd = ::FindWindow(nullptr, TEXT("Melon"));
+
+RECT appWindowRect; ::GetWindowRect(appHWnd, &appWindowRect);
+HDC appDC = ::GetWindowDC(appHWnd);
+//    HDC appDC = ::GetDC(appHWnd); // same issue occured either
+//    HDC appDC = ::GetDC(nullptr);
+HDC memoryDC = ::CreateCompatibleDC(appDC);
+
+HBITMAP capturedScreenBitmap = ::CreateCompatibleBitmap(
+    appDC,
+    appWindowRect.right - appWindowRect.left,
+    appWindowRect.bottom - appWindowRect.top
+);
+
+HBITMAP memoryBitmap = static_cast<HBITMAP>(::SelectObject(memoryDC, capturedScreenBitmap));
+
+result = ::PrintWindow(appHWnd, memoryDC, 0);
+
+//copy to clipboard
+OpenClipboard(nullptr);
+EmptyClipboard();
+SetClipboardData(CF_BITMAP, capturedScreenBitmap);
+CloseClipboard();
+
+::SelectObject(memoryDC, memoryBitmap);
+::DeleteObject(capturedScreenBitmap);
+::DeleteDC(memoryDC);
+::ReleaseDC(appHWnd, appDC);
+```
+
+---
+
+## 추가
+
+capture가 제대로 되지 않는 App들이 있는데 DPI Awareness 문제임.
