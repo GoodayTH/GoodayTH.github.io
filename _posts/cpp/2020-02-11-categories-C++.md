@@ -100,6 +100,8 @@ std::wcout << wc << std::endl;
 * [공유메모리 접근(shared memoey mapping)](/cpp/win32/file-mapping/)
 * [Dll 함수사용 (GetProcAddress)](/cpp/win32/use-dll-func/)
 
+* [Thread 사용](/cpp/win32/thread/)
+
 ---
 
 ## Direct X
