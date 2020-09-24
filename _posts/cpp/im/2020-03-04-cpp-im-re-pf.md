@@ -1,19 +1,28 @@
 ---
 title: "(C++) perfect forward 다시 정리"
+permalink: cpp/perfect-forward/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
+comments: true                  # for disqus Comments
+categories:                     # for categories
 date: 2020-03-04 00:00:00 -0000
----
-
-## 목차
-
-* [perfect forwarding 개념](https://8bitscoding.github.io/cpp-im-re-pf/#perfect-forwarding-개념)
-* [그래서 언제쓰는데?](https://8bitscoding.github.io/cpp-im-re-pf/#그래서-언제쓰는데?)
-
+last_modified_at: 2020-09-24 00:00:00 -0000
+sidebar:
+  title: "목차"
+  nav: cpp
+tag:
+  - cpp
+category:
+  - perfect-forward
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ## perfect forwarding 개념
 
-> 역시 이렇게 시작한다.<br>
-> 특정 함수가 동작하는데 걸리는 시간을 측정하는 함수를 만들고 싶다
+역시 이렇게 시작한다.<br>
+특정 함수가 동작하는데 걸리는 시간을 측정하는 함수를 만들고 싶다<br>
 
 ```cpp
 int main()
@@ -41,8 +50,8 @@ void chronometry(F f, A& arg)    // 참조로 받자?? -> 이러면 rvalue를 �
 }
 ```
 
-> 이런 문제에서 perfect forwarding이 시작된다.<br>
-> **매개변수를 r이든 l이든 무엇이든 받아서 내가 사용하는 함수에 넣고싶다 -> perfect forwarding!**
+이런 문제에서 perfect forwarding이 시작된다.<br>
+**매개변수를 r이든 l이든 무엇이든 받아서 내가 사용하는 함수에 넣고싶다 -> perfect forwarding!**
 
 ```cpp
 template<typename F, typename T> 
@@ -54,7 +63,7 @@ void chronometry(F f, T&& arg)
 }
 ```
 
-> 리턴형까지 정리하면 ...
+리턴형까지 정리하면 ...
 
 ```cpp
 template<typename F, typename T>
@@ -123,7 +132,6 @@ Point()
 
 > * [Run This Code](https://ideone.com/CTGeVt)
 
-> 근데 perfect forwarding 말 하다 말고 갑자기 왠 vector?<br>
-> emplace_back 내부가 perfect forwarding으로 구현된다.<br>
-> 말인즉슨 복사생성이 안일어 난다는말!
-
+근데 perfect forwarding 말 하다 말고 갑자기 왠 vector?<br>
+emplace_back 내부가 perfect forwarding으로 구현된다.<br>
+말인즉슨 복사생성이 안일어 난다는말!

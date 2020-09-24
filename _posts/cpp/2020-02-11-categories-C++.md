@@ -42,6 +42,12 @@ header:
 * [초기화](/cpp/initializer/)
 * [람다식](/cpp/lambda/)
 * [위임 생성자(delegate constructor)](/cpp/delegate-constructor/)
+* [lvalue와 rvalue](/cpp/l-r-value/)
+
+* [연산자와 lvalue](/cpp/l-value/)
+* [move](/cpp/move/)
+* [명시적형변환(Explicit casting 명시적형변환)](/cpp/explicit-casting/)
+* [perfect forward 다시 정리](/cpp/perfect-forward/)
 
 ## STL
 

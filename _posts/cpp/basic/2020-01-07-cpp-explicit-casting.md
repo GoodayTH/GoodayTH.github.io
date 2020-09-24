@@ -1,14 +1,22 @@
 ---
 title: "(C++) Explicit casting 명시적형변환"
-#permalink: cpp/basic/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+permalink: cpp/explicit-casting/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-01-07 00:00:00 -0000
-last_modified_at: 2020-03-16 00:00:00 -0000
+last_modified_at: 2020-09-24 00:00:00 -0000
 sidebar:
-  title: "C++"
+  title: "목차"
   nav: cpp
+tag:
+  - cpp
+category:
+  - explicit-casting
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 * C : void* → 다른 타입의 포인터로 암시적 변환 허용
@@ -50,7 +58,7 @@ int main()
 
 ---
 
-### Example
+## Example
 
 ```cpp
 void foo(int) {}
