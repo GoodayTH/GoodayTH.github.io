@@ -123,6 +123,25 @@ CloseClipboard();
 
 ---
 
+## DirectX2D
+
+* [참고사이트](https://hombody.tistory.com/11?category=846211)
+* [DirectX SDK Download](https://www.microsoft.com/en-us/download/confirmation.aspx?id=6812)
+* [SDK가 설치되지 않는다면](https://jiras.tistory.com/17)
+
+```s
+# 만약 DirectX SDK 설치가 안된다면?
+$ MsiExec.exe /passive /X{F0C3E5D1-1ADE-321E-8167-68EF0DE699A5}
+$ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
+```
+
+> * 빌드환경 : OS(Windows10(1909/18363.1082)), IDE(VS2017(15.9.24))
+
+* [1. DirectX2d Window 띄우기](/cpp/dxd2/1/)
+* [2. 세모그리기](/cpp/dxd2/2/)
+
+---
+
 ## Direct X
 
  * [참고강의](https://www.youtube.com/playlist?list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1)
