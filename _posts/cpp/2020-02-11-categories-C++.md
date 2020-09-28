@@ -141,6 +141,12 @@ $ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
 * [2. 세모그리기](/cpp/dxd2/2/)
 * [3. imgui 적용하기](/cpp/dxd2/3/)
 
+* 셰이더(Shader) : 그림을 그려주는 도구, Pixel, Texture Shader가 있다.
+* 텍스쳐(Texture) : 3D 폴리곤 위에 그려지는 이미지라 생각
+* `ID3D11ShaderResourceView*` : 셰이더 리소스 뷰 (그려주는 셰이더의 뷰를 변수로 받음)
+* [obs에서 사용된 Shader] `device->OpenSharedResource` : 외부에 열린 device의 texture를 device handle로 연다
+* [obs에서 사용된 Shader] `device->CreateShaderResourceView` : texture로 shaderresourceview를 만든다
+
 ---
 
 ## Direct X
