@@ -1,7 +1,7 @@
 ---
 title: "Qt"
 permalink: qt/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-15 00:00:00 -0000
@@ -13,6 +13,7 @@ tag:
   - qt
 category:
   - category
+classes: wide
 excerpt: "Qt와 관련된 지식을 정리한 홈페이지 입니다."
 header:
   teaser: /file/image/qt-page-teaser.gif
