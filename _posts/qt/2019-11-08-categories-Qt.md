@@ -43,6 +43,12 @@ int h = label->height();
 label->setPixmap(p.scaled(w,h,Qt::KeepAspectRatio));
 ```
 
+**스마트 포인터**
+
+* [QPointer](/qt/core/QPointer/) : Qt용 포인터
+* [QScopedPointer](/qt/core/QScopedPointer/) : 범위 내에서 delete를 하지 않아도 되는 포인터
+* [QSharedPointer](/qt/core/QSharedPointer/) : 참조자를 체크하는 shared pointer
+
 ## UI
 
 * [Qt UI](/qt/ui/)
@@ -59,7 +65,14 @@ HWND hwnd = HWND(ui->preview->winId());
 
 ## Thread
 
-* [Qt Thread](/qt/thread/)
+> * [Qt Thread](/qt/thread/)
+
+* [Q. std thread냐 QThread냐?]() : 
+  - Thread - 1의 waitcondition예제를 보면 알겠지만 Signal and Slot의 처리에 있어 QThread가 유리하다, manager에서 Thread의 함수 호출을 쉽게 할 수 있다
+
+* [Thread 세부 정리](/qt/thread/)
+* [Qt Thread - 1](/qt/thread/theorem1/)
+* [Qt Thread - 2](/qt/thread/theorem2/) : queue condition에 따라서 어떻게 동작하는지 보여준다.
 
 ## QML
 

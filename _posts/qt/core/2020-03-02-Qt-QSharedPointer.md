@@ -1,14 +1,23 @@
 ---
 title: "(Qt) 4. QSharedPointer"
-permalink: qt/core/QScopedPointer/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+permalink: qt/core/QSharedPointer/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-02 00:00:00 -0000
-last_modified_at: 2020-03-23 00:00:00 -0000
+last_modified_at: 2020-10-01 00:00:00 -0000
 sidebar:
   title: "qt"
   nav: qt
+tag:
+  - qt
+  - QSharedPointer
+category:
+  - 정리
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ## 사용법
@@ -52,7 +61,7 @@ QSharedPointer<test> createPointer() {
 //QSharedPointer will delete the pointer it is holding when it goes out of scope,
 //provided no other QSharedPointer objects are referencing it.
 
-
+// test는 QObject를 상속한다
 void doDeleteLater(test *obj) {
     qInfo() << "Deleting: " << obj;
     obj->deleteLater();
