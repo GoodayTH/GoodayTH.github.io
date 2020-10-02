@@ -240,3 +240,141 @@ BOOL InjectDll(DWORD dwPID, LPCTSTR szDllName)
     return TRUE;
 }
 ```
+
+역시 코드가 간결합니다. (편의상 예외처리, 리턴값 체크 등의 코드는 생략하였습니다.)<br>
+main() 함수에서는 2개의 서브 함수를 호출하고 있습니다.<br>
+FindProcessID(DEF_PROC_NAME) 함수는 프로세스 이름으로 PID(Process ID) 를 구해주는 함수입니다. (설명은 생략합니다.) 그리고 InjectDll(dwPID, DEF_DLL_PATH) 함수가 바로 DLL Injection 을 해주는 핵심 함수입니다.<br>
+InjectDll() 함수를 자세히 살펴보겠습니다.<br>
+InjectDll() 함수는 대상 프로세스(notepad.exe)로 하여금 스스로 LoadLibrary("myhack.dll") API 를 호출하도록 명령하는 기능을 가지고 있습니다.<br>
+
+**1. 대상 프로세스 핸들 구하기**
+
+hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, dwPID))
+
+OpenProcess() API 를 이용해서 notepad.exe 의 프로세스 핸들을 구합니다. (이때 미리 구해놓은 PID 를 사용함)<br>
+이 프로세스 핸들(hProcess)을 이용해서 해당 프로세스(notepad.exe)를 제어할 수 있습니다.<br>
+
+**2-3. 대상 프로세스 메모리에 Injection 시킬 DLL 경로를 써주기**
+
+pRemoteBuf = VirtualAllocEx(hProcess, NULL, dwBufSize, MEM_COMMIT, PAGE_READWRITE);
+
+대상 프로세스(notepad.exe)에게 로딩할 DLL 파일의 경로(문자열)를 알려줘야 합니다.
+아무 메모리 공간에 쓸 수 없으므로 VirtualAllocEx() API 를 이용하여 대상 프로세스(notepad.exe) 메모리 공간에 버퍼를 할당합니다. 버퍼 크기는 DLL 경로 문자열 길이(NULL 포함)입니다. <br>
+
+* 주의! 
+VirtualAllocEx() 함수의 리턴값(pRemoteBuf)은 할당된 버퍼 주소입니다. 이 주소는 내 프로세스(Inject.exe)의 메모리 주소가 아니라 hProcess 핸들이 가리키는 대상 프로세스(notepad.exe)의 메모리 주소라는것을 꼭 기억하시기 바랍니다.
+
+WriteProcessMemory(hProcess, pRemoteBuf, (LPVOID)szDllName, dwBufSize, NULL);
+
+할당 받은 버퍼 주소(pRemoteBuf)에 WriteProcessMemory() API 를 이용하여 DLL 경로 문자열("C:\\myhack.dll")을 써줍니다.<br>
+이로써 대상 프로세스(notepad.exe) 메모리 공간에 Injection 시킬 DLL 파일의 경로가 생겼습니다.<br>
+
+* 참고
+Win32 프로그래밍을 처음 배울 때 분명 다른 프로세스의 메모리에 읽고 쓰는 일이 어렵다고(혹은 불가능하다고) 배웠습니다. 하지만 실제로는 다른 프로세스의 메모리 공간에 접근을 못하면 운영체제도 답답해 집니다. (예를 들어 다른 프로세스 메모리에 접근 할 수 없다면 디버거 제작이 불가능해지지요.) 그래서 Windows 운영체제는 Debug API 를 제공하여 다른 프로세스 메모리 공간에 접근 할 수 있도록 하였습니다. 대표적인 Debug API 가 바로 위에서 소개해 드린 VirtualAllocEx(), VirtualFreeEx(), WriteProcessMemory(), ReadProcessMemory() 등이 있습니다.
+
+**4. LoadLibraryA() API 주소를 구하기**
+
+```cpp
+hMod = GetModuleHandle("kernel32.dll");
+pThreadProc = (LPTHREAD_START_ROUTINE)GetProcAddress(hMod, "LoadLibraryA");
+```
+
+LoadLibrary() API 를 호출시키기 위해 그 주소가 필요합니다.<br>
+(LoadLibraryA() 는 LoadLibrary() 의 ASCII 문자열 버전입니다.)<br>
+
+위 코드의 의미를 잘 생각해봐야 합니다.<br>
+우리는 분명 notepad.exe 에 로딩된 kernel32.dll 의 LoadLibraryA() API 의 시작 주소를 알아내야 합니다.<br>
+하지만 위 코드는 InjectDll.exe 에 로딩된 kernel32.dll 의 LoadLibraryA() API 의 시작 주소를 얻어내고 있습니다.<br>
+
+notepad.exe 에 로딩된 kernel32.dll 과 InjectDll.exe 에 로딩된 kernel32.dll 의 메모리 시작 위치(ImageBase)가 동일 하다면 위 코드는 문제가 없습니다.<br>
+
+일반적인 DLL 파일의 ImageBase 는 0x10000000 으로 설정되기 때문에 a.dll 과 b.dll 을 차례대로 로딩하면 a.dll 은 정상적으로 0x1000000 주소에 로딩이 되겠지만 b.dll 은 자신이 원하는 0x10000000 주소에 로딩되지 못하고 다른 비어 있는 주소 공간에 로딩됩니다. 즉, DLL Relocation 이 발생하는 것입니다. (a.dll 이 같은 주소에 이미 로딩되어 있기 때문입니다.)<br>
+
+만약 kernel32.dll 이 프로세스마다 다른 주소에 로딩된다면 위 코드는 잘못된 것입니다.<br>
+하지만 실제 Winodows 운영체제에서 kernel32.dll 은 프로세스마다 같은 주소에 로딩됩니다.<br>
+
+어째서 그런걸까요?<br>
+
+PE View 를 통해서 Windows 운영체제의 핵심 DLL 파일들의 ImageBase 값을 조사해 봤습니다.<br>
+(Windows XP SP3 KOR 버전입니다. Windows 업데이트 상태에 따라서 아래 값들은 달라질 수 있습니다.)<br>
+
+![](/file/image/dll-injection-3.png)
+
+Microsoft 에서 친절하게 OS 핵심 DLL 파일들의 ImageBase 값을 이쁘게 정리해놨습니다.
+즉, 자신들끼리 절대로 겹치지 않고 따라서 DLL Relocation 이 발생하지 않습니다.<br>
+Dll Injection 기법은 위와같이 OS 핵심 DLL 들은 자신만의 고유한 주소에 로딩된는 것을 보장해주는 Windows 특성을 이용한 것입니다. (이 특성이 Windows 보안 취약점으로 이용되기도 합니다.)<br>
+
+따라서 InjectDll.exe 프로세스에 import 된 LoadLibraryA() 주소와 notepad.exe 프로세스에 import 된 LoadLibraryA() 주소는 동일합니다.<br>
+
+* 참고!
+모든 Windows 프로세스는 kernel32.dll 을 로딩합니다.
+PE Header 를 조작하여 IAT 에서 kernel32.dll 항목을 제거해버려도 loader 가 강제로 kernel32.dll 을 로딩시켜버립니다. (XP 부터 해당됨. 2000 에서는 실행불가.)
+
+**5. 대상 프로세스에 스레드를 실행 시킴**
+
+모든 준비는 끝났고 마지막으로 notepad.exe 로 하여금 LoadLibraryA() API 를 호출하도록 명령만 내리면 됩니다. 하지만 Windows 에서는 그런 API 를 제공하지 않습니다.<br>
+
+그래서 편법(?)으로 CreateRemoteThread() API 를 사용합니다.<br>
+(편법이라기 보다는 DLL Injection 의 정석이라고 말 할 수 있지요.)<br>
+
+CreateRemoteThread() API 는 다른 프로세스에게 스레드를 실행시켜주는 함수입니다.
+
+```cpp
+HANDLE WINAPI CreateRemoteThread(
+  __in   HANDLE                   hProcess,             // 프로세스 핸들
+  __in   LPSECURITY_ATTRIBUTES    lpThreadAttributes,
+  __in   SIZE_T                   dwStackSize,
+  __in   LPTHREAD_START_ROUTINE   lpStartAddress,       // 스레드 함수 주소
+  __in   LPVOID                   lpParameter,          // 스레드 파라미터 주소
+  __in   DWORD                    dwCreationFlags,
+  __out  LPDWORD                  lpThreadId
+);
+```
+
+첫번째 파라미터인 hProcess 만 빼면 일반적으로 사용되는 CreateThread() 함수와 다 똑같습니다.<br>
+
+hProcess 파라미터가 바로 스레드를 실행시킬 프로세스의 핸들입니다.<br>
+lpStartAddress 와 lpParameter 파라미터는 각각 스레드 함수 주소와 스레드 파라미터 주소입니다.<br>
+중요한건 이 주소들이 대상 프로세스의 가상 메모리 공간의 주소이어야 한다는 것입니다. (그래야 그 프로세스에서 인식을 할 수 있겠죠.)<br>
+
+좀 어리둥절 하시죠?<br>
+다른 프로세스에 DLL 을 injection 시키는데 스레드가 무슨 상관일까요?<br>
+
+스레드 함수 ThreadProc() 과 LoadLibrary() API 를 보시면 힌트를 얻을 수 있습니다.
+
+```cpp
+DWORD WINAPI ThreadProc(
+  __in  LPVOID           lpParameter
+);
+
+HMODULE WINAPI LoadLibrary(
+  __in  LPCTSTR          lpFileName
+);
+```
+
+두 함수 모두 4 byte 파라미터를 받고, 4 byte 값을 리턴하지요.<br>
+바로 여기서 아이디어를 얻은 것입니다.<br>
+
+CreateRemoteThread() 를 호출해서 4 번째 파라미터 lpStartAddress 에 "LoadLibrary() 주소"를 주고, 5 번째 파라미터 lpParameter 에 원하는 "DLL 의 경로" 문자열을 주면 됩니다. (반드시 대상 프로세스의 가상 메모리 공간에의 주소이여야 합니다.)<br>
+
+우린 이미 위에서 다 준비해놨지요. 편안하게 호출해주면 됩니다.<br>
+
+```cpp
+hThread = CreateRemoteThread(hProcess, NULL, 0, pThreadProc, pRemoteBuf, 0, NULL);
+
+pThreadProc = notepad.exe 의 LoadLibraryA() 주소
+pRemoteBuf = notepad.exe 의 "c:\\myhack.dll" 문자열 주소
+```
+
+CreateRemoteThread() 는 스레드를 생성하는 것이 아니라 실제로는 LoadLibraryA() 를 호출 시키는 것입니다.<br>
+
+
+
++---+
+
+CreateRemoteThread() 를 이용한 Dll Injection 기법에 대한 설명을 마치겠습니다.<br>
+
+처음에는 잘 이해가 되지 않을 수 있습니다. 설명을 다시 차근차근 읽어보시고 직접 실습해 보세요.<br>
+
+다음 번에는 다른 Dll Injection 기법들과 한번 Injection 된 Dll 을 꺼내는 (Ejection) 방법에 대해서 설명드리도록 하겠습니다.<br>
+
