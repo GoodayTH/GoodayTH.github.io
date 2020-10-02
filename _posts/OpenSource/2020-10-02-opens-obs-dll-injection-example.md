@@ -12,12 +12,7 @@ tag:
 category:
   - dll-injection
 sidebar:
-  - title: "목차"
-    children:
-      - title: "Dll Injection 이란?"
-        url: opens/obs/game-capture/dll-injection-example/#dll-injection-이란
-      - title: "DLL Injection 간단 실습"
-        url: opens/obs/game-capture/dll-injection-example/#dll-injection-간단-실습
+  - nav: dll-injection
 classes: wide
 excerpt: ""
 header:
