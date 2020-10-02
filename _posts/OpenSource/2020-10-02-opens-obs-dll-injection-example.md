@@ -12,10 +12,10 @@ tag:
 category:
   - dll-injection
 sidebar:
-  - title: "dll-injection example"
+  - title: "목차"
     children:
       - title: "Dll Injection 이란?"
-        url: /# Dll Injection 이란?
+        url: /#dll-injection-이란
 classes: wide
 excerpt: ""
 header:
