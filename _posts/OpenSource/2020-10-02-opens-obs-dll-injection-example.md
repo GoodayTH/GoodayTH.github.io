@@ -12,9 +12,7 @@ tag:
 category:
   - dll-injection
 sidebar:
-  - title: "Another Title"
-    text: "More text here."
-    url: opens/obs/game-capture/dll-injection-example/#dll-injection-이란
+  - nav: dll-injection
 classes: wide
 excerpt: ""
 header:
