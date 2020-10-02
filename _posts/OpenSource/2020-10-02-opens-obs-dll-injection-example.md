@@ -6,14 +6,16 @@ comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-10-02 00:00:00 -0000
 last_modified_at: 2020-10-02 00:00:00 -0000
-sidebar:
-  title: "OpenSource 목차"
-  nav: OpenS
 tag:
   - OpenSource
   - obs
 category:
   - dll-injection
+sidebar:
+  - title: "dll-injection example"
+    children:
+      - title: "Dll Injection 이란?"
+        url: /# Dll Injection 이란?
 classes: wide
 excerpt: ""
 header:
