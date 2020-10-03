@@ -22,6 +22,12 @@ header:
   caption: "Photo credit: [**EBS**](https://ebs.co.kr)"
 ---
 
+## UML
+
+* [Class Diagram](/etc/uml/class-diagram/)
+
+---
+
 ## Window Pro.
 
 * [Process Explorer](/winp/pe/)
