@@ -119,6 +119,14 @@ header:
 * [Jenkins Window Batch 작성하기](/jenkins/windows-batch/) : 그냥 window batch에 작성하면 동작하는게 Jenkins에서 작성하면 동작안하는 경우가 발생함.
 * [Jenkins Git 특정 Branch 선택하기]() : `refs/heads/develop`
 * [Git Credential(암호) 관리](/jenkins/credential/)
+* [Qt VS Tools 연동]()
+
+```s
+# Jenkins에서 아래 환경변수를 선언해 줘야한다
+set QtDir=C:\Qt\Qt5.13.1\5.13.1\msvc2017_64
+set QtInstallDir=C:\Qt\Qt5.13.1\5.13.1\msvc2017_64
+set QtMsBuild=C:\Users\th\AppData\Local\QtMsBuild
+```
 
 ---
 
