@@ -30,7 +30,68 @@ header:
 
 ### WebRTC 통신
 
-함수 호출 순서
+**서버와 연결**
+
+```cpp
+void MainWnd::OnDefaultAction() {
+  if (!callback_)
+    return;
+  if (ui_ == CONNECT_TO_SERVER) {
+    std::string server(GetWindowText(edit1_));
+    std::string port_str(GetWindowText(edit2_));
+    int port = port_str.length() ? atoi(port_str.c_str()) : 0;
+    callback_->StartLogin(server, port);
+    // ...
+```
+
+```cpp
+void Conductor::StartLogin(const std::string& server, int port) {
+	printf("Conductor::StartLogin\n");
+  if (client_->is_connected())
+    return;
+  server_ = server;
+  client_->Connect(server, port, GetPeerName());
+}
+```
+
+```cpp
+void PeerConnectionClient::Connect(const std::string& server,
+                                   int port,
+                                   const std::string& client_name) {
+  RTC_DCHECK(!server.empty());
+  RTC_DCHECK(!client_name.empty());
+
+  if (state_ != NOT_CONNECTED) {
+    RTC_LOG(WARNING)
+        << "The client must not be connected before you can call Connect()";
+    callback_->OnServerConnectionFailure();
+    return;
+  }
+
+  if (server.empty() || client_name.empty()) {
+    callback_->OnServerConnectionFailure();
+    return;
+  }
+
+  if (port <= 0)
+    port = kDefaultServerPort;
+
+  server_address_.SetIP(server);
+  server_address_.SetPort(port);
+  client_name_ = client_name;
+
+  if (server_address_.IsUnresolvedIP()) {
+    state_ = RESOLVING;
+    resolver_ = new rtc::AsyncResolver();
+    resolver_->SignalDone.connect(this, &PeerConnectionClient::OnResolveResult);
+    resolver_->Start(server_address_);
+  } else {
+    DoConnect();
+  }
+}
+```
+
+**함수 호출 순서**
 
 ```s
 # 생성
