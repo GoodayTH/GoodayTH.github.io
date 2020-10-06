@@ -1,14 +1,22 @@
 ---
 title: "(C++) const와 constexpr"
-#permalink: cpp/basic/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+permalink: cpp/constexpr/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-01-06 00:00:00 -0000
-last_modified_at: 2020-03-16 00:00:00 -0000
+last_modified_at: 2020-10-06 00:00:00 -0000
 sidebar:
-  title: "C++"
+  title: "목차"
   nav: cpp
+tag:
+  - cpp
+category:
+  - constexpr
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 `constexpr`은 컴파일 시간 상수 만 넣을 수 있다. (컴파일 할 당시 상수인 것)<br>
@@ -30,7 +38,7 @@ constexpr double pi = 3.14;
 
 ---
 
-### constexpr은 보통 이렇게 사용된다.
+## constexpr은 보통 이렇게 사용된다.
 
 1. constexpr 상수
 2. constexpr function
@@ -75,4 +83,21 @@ int main()
 if constexpr(n == 0)
 // 컴파일 시간에 조건식을 조사하라.
 // 단, 컴파일 시간에 조건검사가 가능하게 변수가 지정이 되어 있어야함.
+```
+
+---
+
+## 추가
+
+```cpp
+int arr[6];   // OK
+int A() { return 3; }
+int arr[A()+3];   // Compile Error
+
+// C++ 11
+constexpr int A() { return 3; }   // Force the computation to happen at Compile Time.
+int arr[A() + 3];   // OK
+
+constexpr int cubed(int x) { return x * x * x; }
+int y = cubed(1789);    // computed at compile time
 ```
