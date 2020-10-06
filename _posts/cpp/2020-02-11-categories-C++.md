@@ -48,6 +48,10 @@ header:
 * [move](/cpp/move/)
 * [명시적형변환(Explicit casting 명시적형변환)](/cpp/explicit-casting/)
 * [perfect forward 다시 정리](/cpp/perfect-forward/)
+* [foreach](/cpp/foreach/)
+
+* [NULL vs nullptr](/cpp/NULL-nullptr/)
+* [static_assert](/cpp/static_assert/)
 
 ## STL
 

@@ -275,3 +275,30 @@ public:
 
 // ...
 ```
+
+---
+
+## Example
+
+```cpp
+class dog {
+public:
+  dog() { ... }
+  dog(int a) { dog(); doOtherThings(a); }
+};
+
+// C++ 03:
+class dog {
+  init() { ... };
+public:
+  dog() { init(); }
+  dog(int a) { init(); doOtherThings(); }
+};
+
+// C++ 11:
+class dog {
+public:
+  dog() { ... }
+  dog(int a) : dog() { doOtherThings(); }
+};
+```

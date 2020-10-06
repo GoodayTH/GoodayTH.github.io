@@ -5,7 +5,7 @@ permalink: cpp/auto/                # link 직접 지정
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-02-06 00:00:00 -0000
-last_modified_at: 2020-09-20 00:00:00 -0000
+last_modified_at: 2020-10-06 00:00:00 -0000
 sidebar:
   title: "목차"
   nav: cpp
@@ -90,4 +90,22 @@ int get() {
 auto test2() -> decltype(get()) {
   return get();
 }
+```
+
+---
+
+## 추가
+
+* [참고](https://www.youtube.com/watch?v=U6mgsPqV32A&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH)
+
+```cpp
+std::vector<int> vec = {2, 3, 4, 5};
+
+// C++ 03
+for (std::vector<int>::iterator it = vec.begin(); it != vec.end(); ++it)
+  m_vec.push_back(*it);
+
+// C++ 11
+for (auto it = vec.begin(); it != vec.end(); ++it)
+  m_vec.push_back(*it);
 ```

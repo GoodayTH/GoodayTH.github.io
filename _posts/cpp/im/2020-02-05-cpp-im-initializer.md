@@ -5,7 +5,7 @@ permalink: cpp/initializer/                # link 직접 지정
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-02-05 00:00:00 -0000
-last_modified_at: 2020-09-21 00:00:00 -0000
+last_modified_at: 2020-10-06 00:00:00 -0000
 sidebar:
   title: "목차"
   nav: cpp
@@ -261,4 +261,27 @@ int main() {
 
   return 0;
 }
+```
+
+---
+
+## 추가
+
+* [참고](https://www.youtube.com/watch?v=U6mgsPqV32A&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH)
+
+```cpp
+// 이런식으로 초기화 가능
+#include <initializer_list>
+class boVector {
+  vector<int> m_vec;
+
+public:
+  boVector(const initializer_list<int>& v) {
+    for(initializer_list<int>::iterator itr = v.begin(); itr != v.end(); ++itr)
+      m_vec.push_back(*itr)
+  }
+};
+
+boVector v = {0, 2, 3, 4};
+boVector v{0, 2, 3, 4};
 ```
