@@ -72,7 +72,7 @@ header:
 
 ## Thread
 
-* [Thread](/cpp/thread/)
+* [C++11 Thread](/cpp/thread/)
 
 ## Coding Test
 
