@@ -61,6 +61,7 @@ header:
 * [STL](/cpp/stl/)
 
 * [unique_ptr](/cpp/stl/spointer/unique_ptr/)
+* [shared_ptr](/cpp/stl/spointer/shared_ptr/)
 
 ## Template
 
