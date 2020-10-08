@@ -5,7 +5,7 @@ permalink: cpp/perfect-forward/                # link 직접 지정
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-04 00:00:00 -0000
-last_modified_at: 2020-09-24 00:00:00 -0000
+last_modified_at: 2020-10-08 00:00:00 -0000
 sidebar:
   title: "목차"
   nav: cpp
@@ -35,6 +35,8 @@ int main()
 ```
 
 ```cpp
+// F가 함수이고
+// A가 함수에 들어갈 매개변수라 생각하자
 template<typename F, typename A>
 void chronometry(F f, A arg)    // 그런데 이렇게 만들면 A를 값으로 받기에 완벽한 복사라 할 수 없다.
 {
@@ -135,3 +137,80 @@ Point()
 근데 perfect forwarding 말 하다 말고 갑자기 왠 vector?<br>
 emplace_back 내부가 perfect forwarding으로 구현된다.<br>
 말인즉슨 복사생성이 안일어 난다는말!
+
+---
+
+## 추가
+
+* [참고사이트](https://www.youtube.com/watch?v=0xcCNnWEMgs&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH&index=4)
+
+```cpp
+void foo(boVector arg);   
+// boVector에게는 move, copy constructor가 있다고 가정한다.
+
+template<typename T>
+void relay(T arg) {
+  foo(arg);
+}
+
+int main() {
+  boVector reusable = createBoVector();
+  relay(reusable);        // T : boVector -> copy constructor 호출
+  // ...
+  relay(createBoVector());  // T : boVector&& -> move contructor 호출
+}
+```
+
+```cpp
+// solution:
+template<typename T>
+void relay(T&& arg) {
+  foo(std::forward<T>(arg));
+}
+```
+
+이게 왜 되나?
+
+## Reference Collapsing Rules
+
+```cpp
+T& & => T&
+T& && => T&
+T&& & => T&
+T&& && => T&&
+// 그냥 &가 적은쪽으로 취함된다고 외우자
+```
+
+```cpp
+// remove_reference
+template<class T>
+struct remove_reference;
+
+// T is int&
+remove_reference<int&>::tpye i;   // int i
+
+// T is int
+remove_reference<int>::type i;    // int i
+```
+
+그럼 다시 위의 예제로 돌아가서 ...
+
+```cpp
+template<typename T>
+void relay(T&& arg) {
+  // ...
+}
+
+relay(9);   // => T = int&& => int&& && => int&&
+relay(x);   // => T = int& => int& && => int&
+```
+
+```cpp
+template<typename F, typename T> 
+void chronometry(F f, T&& arg)
+{
+    f(std::forward<T>(arg));
+    // 아래는 위와 동일한 표현이다.
+    // f(static_cast<T&&>(arg));
+}
+```
