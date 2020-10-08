@@ -184,3 +184,9 @@ Test &operator=(Test &&other) {
   return *this;
 }
 ```
+
+---
+
+## 추가2(20.10.08)
+
+* [참고사이트](https://www.youtube.com/watch?v=IOkgBrXCtfo&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH&index=3)
