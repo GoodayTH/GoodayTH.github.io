@@ -56,6 +56,11 @@ header:
 * [constexpr](/cpp/constexpr/)
 * [char 종류](/cpp/char/)
 
+## Effective C++
+
+* [explicit](/cpp/effective/explicit/)
+* [define](/cpp/effective/define/)
+
 ## STL
 
 * [STL](/cpp/stl/)
