@@ -1,14 +1,22 @@
 ---
-title: "STL : weak_ptr"
+title: "(C++) weak_ptr"
 permalink: cpp/stl/spointer/weak_ptr/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-15 00:00:00 -0000
-last_modified_at: 2020-04-15 00:00:00 -0000
+last_modified_at: 2020-10-09 00:00:00 -0000
 sidebar:
-  title: "C++"
+  title: "목차"
   nav: cpp
+tag:
+  - cpp
+category:
+  - weak_ptr
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ## 1
@@ -42,9 +50,7 @@ int main()
 }
 ```
 
-* 참조변수가 증가하지 않는 포인터가 필요하다
-
-* [Run This Code]()
+* 해결책 : 참조변수가 증가하지 않는 포인터가 필요하다
 
 ```cpp
 #include <iostream>
@@ -140,4 +146,66 @@ shared_ptr<Car> sp2 = wp.lock();
 
 if(sp2)
     sp->Go();
+```
+
+---
+
+## 추가
+
+* [참고사이트](https://www.youtube.com/watch?v=EWoMjuN5OH4&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH&index=9)
+
+```cpp
+class Dog {
+    shared_ptr<Dog> m_pFriend;
+public:
+    string m_name;
+    void bark() { cout << "Dog" << m_name << " rules!" << endl; }
+    Dog() { //create }
+    ~Dog() { cout << "dog is destroyed: " << m_name << endl; }
+    void makeFriend(shared_ptr<Dog> f) { m_pFriend = f; }
+};
+
+int main()
+{
+    shared_ptr<Dog> pD(new Dog("Gunner"));
+    shared_ptr<Dog> pD(new Dog("Smokey"));
+    pD->makeFriend(pD2);
+    pD->makeFriend(pD);
+    // 서로 물고있어 삭제가 되지 않음.
+    // cyclic reference
+}
+```
+
+```cpp
+class Dog {
+    weak_ptr<Dog> m_pFriend;        // 해결
+    // 사실 weak_ptr은 raw pointer(Dog *) 사용과 동일하다 단, weak_ptr로 delete를 할 수 없다는 점만 다르다
+public:
+    string m_name;
+    void bark() { cout << "Dog" << m_name << " rules!" << endl; }
+    Dog() { //create }
+    ~Dog() { cout << "dog is destroyed: " << m_name << endl; }
+    void makeFriend(shared_ptr<Dog> f) { m_pFriend = f; }
+};
+```
+
+weak_ptr의 사용
+
+```cpp
+// weak_ptr은 그냥 사용하면 안된다.
+class Dog {
+    weak_ptr<Dog> m_pFriend;
+public:
+    string m_name;
+    void bark() { cout << "Dog" << m_name << " rules!" << endl; }
+    Dog() { //create }
+    ~Dog() { cout << "dog is destroyed: " << m_name << endl; }
+    void makeFriend(shared_ptr<Dog> f) { m_pFriend = f; }
+    void showFriend() {
+        if(!m_pFriend.expired()) {
+            cout << "My friend is : " << m_pFriend.lock()->m_name << endl;
+            cout << m_pFriend.use_count() << endl;
+        }
+    }
+};
 ```

@@ -33,3 +33,15 @@ header:
 ## WebRTC
 
 * [Client Server Example](/opens/webrtc/cs-example/)
+
+---
+
+## REST SDK(Casablanca)
+
+* [이론) REST API란?](/opens/rest-sdk/rest-api/)
+
+REST SDK를 OpenSource에 넣은 이유는 Nuget Package로 사용할 수도 있지만 별도로 빌드할수있게 MS에서 오픈소스로도 관리하기 때문이다.<br>
+단, 아래에서 설명한 부분은 Nuget으로 설치하여 사용하는 부분이고 빌드는 별도로 정리하지 않음(오래걸리고 수정할 필요성을 못느꼈기 때문)
+
+* [설치하기](/opens/rest-sdk/install/)
+* [웹페이지 받기](/opens/rest-sdk/get-web/)

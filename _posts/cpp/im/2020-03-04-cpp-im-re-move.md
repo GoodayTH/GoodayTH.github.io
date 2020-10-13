@@ -5,7 +5,7 @@ permalink: cpp/move/                # link 직접 지정
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-03-04 00:00:00 -0000
-last_modified_at: 2020-09-24 00:00:00 -0000
+last_modified_at: 2020-10-08 00:00:00 -0000
 sidebar:
   title: "목차"
   nav: cpp
@@ -190,3 +190,85 @@ Test &operator=(Test &&other) {
 ## 추가2(20.10.08)
 
 * [참고사이트](https://www.youtube.com/watch?v=IOkgBrXCtfo&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH&index=3)
+
+```cpp
+void printInt(int& i) { cout << "lvalue reference: " << i << endl; }
+void printInt(int&& i) { cout << "rvalue reference: " << i << endl; }
+// void printInt(int i) {} // 이걸 넣어버리면 컴파일이 안됨. 컴파일러가 어떤 함수를 사용해야할지 모르기 때문이다.
+
+int main() {
+  int a = 5;    // a is a lvalue
+  int& b = a;   // b is a lavlue(reference)
+  int&& c;      // c is a rvalue
+
+  printInt(a);    // Call printInt(int& i)
+  printInt(6);    // Call printInt(int&& i)
+}
+```
+
+```cpp
+class boVector {
+  int size;
+  double* arr_;    // a big array
+public:
+  boVector(const boVector& rhs) {
+    size = rhs.size;
+    arr_ = new double[size];
+    for(int i = 0; i < size; i++) { arr_[i] = rhs.arr_[i]; }
+  }
+  ~boVector() { delete arr_; }
+};
+
+void foo(boVector v);
+boVector createBoVector();  
+
+void main() {
+  boVector resuable = createBoVector();
+  foo(resuable);    
+
+  foo(createBoVector()); // big array가 복사되어 버린다. -> 메모리의 낭비 및 시간의 낭비이다.
+
+  // Move constructor로 해결해보자.
+}
+```
+
+```cpp
+class boVector {
+  int size;
+  double* arr_; 
+public:
+  boVector(const boVector& rhs) {
+    size = rhs.size;
+    arr_ = new double[size];
+    for(int i = 0; i < size; i++) { arr_[i] = rhs.arr_[i]; }
+  }
+    boVector(boVector&& rhs) {    // Move constructor
+    size = rhs.size;
+    arr_ = rhs.arr_;
+    rhs.arr_ = nullptr;
+  }
+  ~boVector() { delete arr_; }
+};
+
+void foo_by_value(boVector v);
+void foo_by_ref(boVector& v);
+
+int main() {
+  foo_by_ref(createBoVector());
+}
+```
+
+좀 더 C++11스럽게 해결해 보자
+
+```cpp
+void foo(boVector v);
+void foo_by_ref(boVector& v);
+
+int main() {
+  boVector resuable = createBoVector();
+  foo(resuable);            // Call copy constructor
+  foo(std::move(resuable)); // Call Move constructor
+
+  foo_by_ref(resuable);             // Call no constructor
+}
+```

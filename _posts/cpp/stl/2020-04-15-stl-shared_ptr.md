@@ -1,14 +1,22 @@
 ---
-title: "STL : shared_ptr"
+title: "(C++) shared_ptr"
 permalink: cpp/stl/spointer/shared_ptr/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-15 00:00:00 -0000
-last_modified_at: 2020-04-15 00:00:00 -0000
+last_modified_at: 2020-10-08 00:00:00 -0000
 sidebar:
-  title: "C++"
+  title: "목차"
   nav: cpp
+tag:
+  - cpp
+category:
+  - shared_ptr
+classes: wide
+excerpt: ""
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
 
 ## 1
@@ -120,7 +128,7 @@ int main()
 
 ```cpp
 // C++17 이후에는 shared_ptr에 배열을 지원한다.
-sharted_ptr<Car> p1(new Car[10]);       // 삭제자를 넣어줘야함!
+shared_ptr<Car> p1(new Car[10]);       // 삭제자를 넣어줘야함!
 shared_ptr<Car[]> p1(new Car[10]);      // ok!
 ```
 
@@ -311,4 +319,133 @@ public:
         cout << "Finish Thread" << endl;
     }
 };
+```
+
+---
+
+## 추가
+
+* [참고사이트](https://www.youtube.com/watch?v=qUDAkDvoLas&list=PL5jc9xFGsL8FWtnZBeTqZBbniyw0uHyaH&index=7)
+
+```cpp
+#include <iostream>
+#include <string>
+#include <memory>
+using namespace std;
+
+class Dog {
+    string name_;
+public:
+    Dog(string name) { 
+        cout << "Dog is created : " << name << endl;
+        name_ = name; 
+    }
+    Dog() {
+        cout << "Nameless dog created." << endl;
+        name_ = "nameless";
+    }
+    ~Dog() {
+        cout << "dog is destroyed: " << name_ << endl;
+    }
+    void bark() {
+        cout << "Dog " << name_ << " rules!" << endl;
+    }
+}
+
+void foo(){
+    Dog* p = new Dog("Gunner");
+    // ...
+    delete p;
+    // ...
+
+    p->bark();  // error : p is a dangling pointer
+}   // Memory leak
+// 결국은 delete time이 문제이다. 이걸해결해보자 -> smart pointer
+
+int main() {
+
+}
+```
+
+```cpp
+void foo() {
+    shared_ptr<Dog> p(new Dog("Gunner"));       // Count = 1
+    p->bark();
+}   // out of scope
+// Count = 0
+// delete Dog
+```
+
+```cpp
+void foo() {
+    shared_ptr<Dog> p(new Dog("Gunner"));       // Count = 1
+    {
+        shared_ptr<Dog> p2 = p;                 // Count = 2
+        p2->bark();
+        // cout << p.use_count();       // Count를 출력가능
+    }
+    // Count = 1
+    p->bark();
+}   // out of scope
+// Count = 0
+// delete Dog
+```
+
+아래처럼 쓰지말자
+
+```cpp
+Dog* d = new Dog("Tank");
+shared_ptr<Dog> p(d);       // p.use_count() == 1
+shared_ptr<Dog> p2(d);      // p2.use_count() == 1
+// 이렇게 쓰면안된다는 말.
+```
+
+An object should be assigned to a smart pointer as soon as it is created<br>
+Raw pointer should not be used.
+
+아래처럼 쓰자
+
+```cpp
+shared_ptr<Dog> p = make_shared<Dog>("Tank");
+```
+
+왜?
+
+```cpp
+shared_ptr<Dog> p(new Dog("Gunner"));
+// step 1 : Gunner is created
+// step 2 : p is created
+
+shared_ptr<Dog> p = make_shared<Dog>("Tank");
+// step 1에 p, Tank 모두 created
+```
+
+```cpp
+shared_ptr<Dog> p1 = make_shared<Dog>("Gunner");
+shared_ptr<Dog> p2 = make_shared<Dog>("Tank");
+p1 = p2;        // Gunner is deleted
+p1 = nullptr;   // Gunner is deleted
+p1.reset();     // Gunner is deleted
+```
+
+삭제자를 선언해보자
+
+```cpp
+shared_ptr<Dog> p2 = shared_ptr<Dog>(new Dog("Tank"),
+            [](Dog* p) {cout << "Custom deleteing."; delete p;} );
+
+shared_ptr<Dog> p3(new Dog[3]);     // dog[1], dog[2] is memory leak
+shared_ptr<Dog> p4(new Dog[3], [](Dog* p) {delete[] p;});
+```
+
+get함수
+
+```cpp
+Dog* d = p1.get();
+// Return the raw pointer
+
+// 이건 쓰지말자
+delete d;
+shared_ptr<Dog> p2(d);
+function(d);    // shared_ptr로 보내야 안전
 ```
