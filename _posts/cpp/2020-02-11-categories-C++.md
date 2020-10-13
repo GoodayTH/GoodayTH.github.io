@@ -60,6 +60,8 @@ header:
 
 * [explicit](/cpp/effective/explicit/)
 * [define](/cpp/effective/define/)
+* [const](/cpp/effective/const/)
+* [객체의 초기화](/cpp/effective/initialize/)
 
 ## STL
 
