@@ -62,6 +62,9 @@ header:
 * [define](/cpp/effective/define/)
 * [const](/cpp/effective/const/)
 * [객체의 초기화](/cpp/effective/initialize/)
+* [컴파일러에 의해 생성되는 생성자](/cpp/effective/constructor/)
+
+* [묵시적 함수 사용을 막아보자](/cpp/effective/implied-func/)
 
 ## STL
 
