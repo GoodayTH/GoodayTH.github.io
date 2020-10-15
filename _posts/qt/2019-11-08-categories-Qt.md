@@ -81,3 +81,5 @@ HWND hwnd = HWND(ui->preview->winId());
 ## Etc
 
 * [Qt Etc](/qt/etc/)
+
+* [Qt Creator에서 PlugIn을 못찾는 다면?]() : `QT_PLUGIN_PATH`를 환경변수로 지정해 줘야함. [참고 링크](https://forum.qt.io/topic/82643/application-can-t-start-because-could-not-find-or-load-qt/23)
