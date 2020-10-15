@@ -67,6 +67,7 @@ header:
 * [묵시적 함수 사용을 막아보자](/cpp/effective/implied-func/)
 * [기본 클래스와 가상함수의 정리](/cpp/effective/base-class/)
 * [소멸자에서 발생한 예외](/cpp/effective/exception/)
+* [생성자/소멸자 호출 중 가상함수를 부르면 컴파일 에러](https://www.youtube.com/watch?v=8tlHAkaqNL4&list=PLtb6y_I5vgIT7IPpaUp4r2U0viXw2iFeX&index=9)
 
 ## STL
 
