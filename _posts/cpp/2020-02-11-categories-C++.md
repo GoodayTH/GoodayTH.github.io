@@ -65,6 +65,8 @@ header:
 * [컴파일러에 의해 생성되는 생성자](/cpp/effective/constructor/)
 
 * [묵시적 함수 사용을 막아보자](/cpp/effective/implied-func/)
+* [기본 클래스와 가상함수의 정리](/cpp/effective/base-class/)
+* [소멸자에서 발생한 예외](/cpp/effective/exception/)
 
 ## STL
 
