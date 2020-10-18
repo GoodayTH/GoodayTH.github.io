@@ -15,6 +15,7 @@ tag:
 category:
   - Frame work
 excerpt: ""
+classes: wide
 header:
   teaser: /file/image/cpp-page-teaser.gif
 ---

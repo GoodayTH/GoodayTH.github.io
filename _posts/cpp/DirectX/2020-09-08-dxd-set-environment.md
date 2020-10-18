@@ -15,6 +15,7 @@ tag:
 category:
   - 개발환경
 excerpt: ""
+classes: wide
 header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
