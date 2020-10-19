@@ -138,3 +138,59 @@ CUSTOMVERTEX vertices[] = {
   {50.0f, 250.0f, 0.5f, 1.0f ,0xff00ffff, },
 };
 ```
+
+---
+
+## 정점 버퍼 생성
+
+* [강의](https://www.youtube.com/watch?v=kSTE0_q6p9M&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=12)
+
+```cpp
+LPDIRECT3DVERTEXBUFFER9 pVB;
+if(FAILED(pd3dDevice->CreateVertexBuffer(
+  3*sizeof(CUSTOMVERTEX), 
+  0,
+  D3DFVF_CUSTOMVERTEX,
+  D3DPOOL_DEFAULT,
+  &pVB,
+  NULL
+)));
+```
+
+vertices 버퍼 복사하기
+
+```cpp
+VOID* pVertices;
+if(FAILED(pVB->Lock(0, sizeof(vertices), (void**)&pVertices, 0)))
+  return E_FAIL;
+
+memcpy(pVertices, vertices, sizeof(vertices));
+pVB->Unlock();
+```
+
+여기까지 하면 정점을 그릴 준비가 된 것이다.
+
+렌더링하기 위한 정점 버퍼의 설정
+
+```cpp
+pd3dDevice->SetStreamSource(0, pVB, 0, sizeof(CUSTOMVERTEX));
+```
+
+정점 구조를 설정
+
+```cpp
+pd3dDevice->SetFVF(D3DFVF_CUSTOMVERTEX);
+```
+
+정점출력
+
+```cpp
+d3dD3dDevice->DrawPrimitive(D3DPT_POINTLIST, 0, 6); // 점 단위로 출력
+d3dD3dDevice->DrawPrimitive(D3DPT_LINELIST, 0, 3); // 선 단위로 출력
+d3dD3dDevice->DrawPrimitive(D3DPT_LINESTRIP, 0, 5); // 선 스트림 으로 출력
+d3dD3dDevice->DrawPrimitive(D3DPT_TRIANGLELIST, 0, 2); // 삼각형 으로 출력
+d3dD3dDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 4); // 삼각형 스트림 으로 출력
+d3dD3dDevice->DrawPrimitive(D3DPT_TRIANGLEFAN, 0, 4); // 삼각형 팬 으로 출력
+```
+
+---
