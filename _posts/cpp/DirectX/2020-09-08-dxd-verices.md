@@ -79,3 +79,62 @@ float fNormalize;
 D3DXVec3Normalize(&vResult, &v6);
 fNormalize = D3DXVec3Length(&vResult);
 ```
+
+---
+
+## 벡터의 외적과 내적
+
+* [강의](https://www.youtube.com/watch?v=xYDzdQAUF8E&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=10)
+
+* 내적 : 투영된 길이를 구할때 사용
+
+```cpp
+D3DXVECTOR3 v7(3.0f, 0.0f, 0.0f);
+D3DXVECTOR3 v8(-3.0f, 0.0f, 0.0f);
+float fCos, fDot, fScale;
+
+fDot = D3DXVec3Dot(&v7, &v8);
+fScale = D3DXVec3Length(&v7) * D3DXVec3Length(&v8);
+fCos = fDot / fScale;
+```
+
+* 외적 : 두 벡터가 이루는 평면의 수직 벡터(두 벡터로 이뤄진 한 평면이 앞인지 뒤인지 확인할때 사용)
+
+```cpp
+D3DXVECTOR3 v9(3.0f, 0.0f, 0.0f);
+D3DXVECTOR3 v10(0.0f, 3.0f, 0.0f);
+D3DXVECTOR3 vResult;
+
+D3DXVec3Cross(&vResult, &v1, &v2);
+D3DXVec3Normalize(&vResult, &vResult);
+```
+
+---
+
+## 정점의 구조
+
+* [강의](https://www.youtube.com/watch?v=cPFikK8_GFs&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=11)
+
+vertice는 아래와 같이 구성해야한다.
+
+![](/file/image/dxd-vertices-1.png)
+
+흠... 뭔소린지... 예시를 통해서 설명한다.
+
+* 정점을 넣어주는 방향은 시계방향임을 기억하자.
+
+```cpp
+struct CUSTOMVERTEX
+{
+  FLOAT x, y, z, rhw;
+  DWORD color;
+};
+
+#define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE)
+
+CUSTOMVERTEX vertices[] = {
+  {150.0f, 50.0f, 0.5f, 1.0f ,0xffff0000, },
+  {250.0f, 250.0f, 0.5f, 1.0f ,0xff00ff00, },
+  {50.0f, 250.0f, 0.5f, 1.0f ,0xff00ffff, },
+};
+```
