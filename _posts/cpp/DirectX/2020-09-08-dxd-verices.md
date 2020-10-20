@@ -19,6 +19,7 @@ classes: wide
 header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
+
 * [강의](https://www.youtube.com/watch?v=ExFyJAJMuKo&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=8)
 
 ---
@@ -126,11 +127,11 @@ vertice는 아래와 같이 구성해야한다.
 ```cpp
 struct CUSTOMVERTEX
 {
-  FLOAT x, y, z, rhw;
+  FLOAT x, y, z, rhw; // rhw : 2d 좌표계를 사용하겠다
   DWORD color;
 };
 
-#define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE)
+#define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE)  // diffuse : color를 의미
 
 CUSTOMVERTEX vertices[] = {
   {150.0f, 50.0f, 0.5f, 1.0f ,0xffff0000, },
@@ -194,3 +195,263 @@ d3dD3dDevice->DrawPrimitive(D3DPT_TRIANGLEFAN, 0, 4); // 삼각형 팬 으로 �
 ```
 
 ---
+
+## 직접만들어보자
+
+* [강좌](https://www.youtube.com/watch?v=RZLiP3t_D48&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=13)
+* [Get Code](https://github.com/EasyCoding-7/Direct3DExample/tree/master/Dxd-3-1)
+
+우선 첫 번째 방법은 그냥 CGameEdu01에 그리는 것이다.
+
+```cpp
+#pragma once
+#include <d3d9.h>
+class CD3DApp
+{
+protected:
+	LPDIRECT3D9			m_pD3D;
+	LPDIRECT3DDEVICE9	m_pd3dDevice;
+	HWND				m_hWnd;
+
+	virtual void OnInit() = 0;
+	virtual void OnRender() = 0;
+	virtual void OnUpdate() = 0;
+	virtual void OnRelease() = 0;
+
+public:
+	HRESULT InitD3D(HWND hWnd);
+	void Render();
+	void Update();
+	void Cleanup();
+
+public:
+	CD3DApp(void);
+	~CD3DApp(void);
+};
+```
+
+```cpp
+#include "CD3DApp.h"
+
+CD3DApp::CD3DApp(void)
+{
+
+}
+
+CD3DApp::~CD3DApp(void)
+{
+
+}
+
+HRESULT CD3DApp::InitD3D(HWND hWnd) 
+{
+	// Direct 3D 변수 초기화
+	if (NULL == (m_pD3D = Direct3DCreate9(D3D_SDK_VERSION)))
+		return E_FAIL;
+
+	// Direct 3D 파라미터 선언
+	D3DPRESENT_PARAMETERS d3dpp;
+	ZeroMemory(&d3dpp, sizeof(d3dpp));
+	d3dpp.Windowed = TRUE;
+	d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;	// back, front buffer를 번갈아 써달라
+	d3dpp.BackBufferFormat = D3DFMT_UNKNOWN;	// D3D format을 윈도우와 동일하게 해달라.
+
+	// Direct 3D를 이용해 Direct 3D Device를 생성해 달라
+	if (FAILED(m_pD3D->CreateDevice(D3DADAPTER_DEFAULT,
+		D3DDEVTYPE_HAL,
+		hWnd,
+		D3DCREATE_SOFTWARE_VERTEXPROCESSING,
+		&d3dpp,
+		&m_pd3dDevice)))
+	{
+		return E_FAIL;
+	}
+
+	OnInit();
+
+	return S_OK;
+}
+
+void CD3DApp::Render() 
+{
+	if (NULL == m_pd3dDevice)
+		return;
+
+	// 백버퍼 지우기
+	m_pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET,
+		D3DCOLOR_XRGB(0, 0, 255), 1.0f, 0);
+
+	// 렌더링 준비
+	m_pd3dDevice->BeginScene();
+
+	// Render here
+	OnRender();
+
+	// 렌더링 종료
+	m_pd3dDevice->EndScene();
+
+	// 버퍼 교체(페이지 플리핑)
+	m_pd3dDevice->Present(NULL, NULL, NULL, NULL);
+}
+
+void CD3DApp::Update()
+{
+	OnUpdate();
+}
+
+void CD3DApp::Cleanup()
+{
+	OnRelease();
+
+	if (m_pd3dDevice != NULL)
+		m_pd3dDevice->Release();
+	if (m_pD3D != NULL)
+		m_pD3D->Release();
+}
+```
+
+* [Get Code](https://github.com/EasyCoding-7/Direct3DExample/tree/master/Dxd-3-2)
+
+두 번째 방법은 Triangle 클래스를 새로 만드는 것이다.
+
+```cpp
+#pragma once
+#include <d3d9.h>
+
+struct CUSTOMVERTEX
+{
+	FLOAT x, y, z, rhw;
+	DWORD color;
+};
+#define D3DFVF_CUSTOMVERTEX ( D3DFVF_XYZRHW | D3DFVF_DIFFUSE )
+
+class CTriangle
+{
+	LPDIRECT3DVERTEXBUFFER9 pVB;			// Vertex Buffer
+	LPDIRECT3DDEVICE9 m_pd3dDevice;			// Direct3D device
+
+public:
+
+	void OnInit(LPDIRECT3DDEVICE9 pd3dDevice);
+	void OnRender();
+	void OnUpdate();
+	void OnRelease();
+
+	CTriangle();
+	~CTriangle();
+};
+```
+
+```cpp
+#include "stdafx.h"
+#include "CTriangle.h"
+
+
+CTriangle::CTriangle()
+{
+}
+
+
+CTriangle::~CTriangle()
+{
+}
+
+void CTriangle::OnInit(LPDIRECT3DDEVICE9 pd3dDevice)
+{
+	m_pd3dDevice = pd3dDevice;
+
+	// Vertex info
+	CUSTOMVERTEX vertices[3] =
+	{
+	{ 150.0f, 50.0f, 0.5f, 1.0f, 0xffff0000, },
+	{ 250.0f, 250.0f, 0.5f, 1.0f, 0xff00ff00, },
+	{ 50.0f, 250.0f, 0.5f, 1.0f, 0xff00ffff, },
+	};
+
+	// CreateVertexBuffer for draw Primitive
+	m_pd3dDevice->CreateVertexBuffer(3 * sizeof(CUSTOMVERTEX), 0, D3DFVF_CUSTOMVERTEX,
+		D3DPOOL_DEFAULT, &pVB, NULL);
+
+	// Memory Lock for Vertex Buffer
+	VOID* pVertices;
+	pVB->Lock(0, sizeof(vertices), (void**)&pVertices, 0);
+	memcpy(pVertices, vertices, sizeof(vertices));
+	pVB->Unlock();
+}
+
+void CTriangle::OnRender()
+{
+	// Device stream setting for rendering
+	m_pd3dDevice->SetStreamSource(0, pVB, 0, sizeof(CUSTOMVERTEX));
+	m_pd3dDevice->SetFVF(D3DFVF_CUSTOMVERTEX);
+	m_pd3dDevice->DrawPrimitive(D3DPT_TRIANGLELIST, 0, 1);
+}
+
+void CTriangle::OnUpdate()
+{
+	// Changing of vertex position
+}
+
+void CTriangle::OnRelease()
+{
+	// Release Vertex Buffer
+	if (pVB != NULL)
+		pVB->Release();
+}
+```
+
+```cpp
+#pragma once
+#include "CD3DApp.h"
+#include "CTriangle.h"
+
+class CGameEdu01 : public CD3DApp
+{
+private:
+	CTriangle m_Triangle;
+
+protected:
+	virtual void OnInit();
+	virtual void OnRender();
+	virtual void OnUpdate();
+	virtual void OnRelease();
+
+public:
+	CGameEdu01(void);
+	~CGameEdu01(void);
+};
+```
+
+```cpp
+#include "CGameEdu01.h"
+
+CGameEdu01::CGameEdu01(void)
+{
+
+}
+
+CGameEdu01::~CGameEdu01(void)
+{
+
+}
+
+void CGameEdu01::OnInit()
+{
+	m_Triangle.OnInit(m_pd3dDevice);
+}
+
+void CGameEdu01::OnRender()
+{
+	m_Triangle.OnRender();
+}
+
+void CGameEdu01::OnUpdate()
+{
+
+}
+
+void CGameEdu01::OnRelease()
+{
+	m_Triangle.OnRelease();
+}
+```

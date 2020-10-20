@@ -186,6 +186,7 @@ $ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
  * [Direct3D 개발 환경 조성](/dxd/environment/)
  * [Direct3D Frame work 만들기](/dxd/make-framework/)
  * [Verices](/dxd/verices/)
+ * [Matrix](/dxd/matrix/)
 
 ---
 
