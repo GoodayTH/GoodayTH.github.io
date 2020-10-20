@@ -52,3 +52,70 @@ for(int i = 0; i < 4; i++)
     printf("\n");
 }
 ```
+
+---
+
+## 전치 행렬
+
+* [강의](https://www.youtube.com/watch?v=TEP7djs_pV4&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=15)
+
+```cpp
+D3DXMATRIX matMatrix, matResult;
+
+for(int i = 0; i < 4; i++)
+{
+    for(int j = 0; j < 4; j++)
+    {
+        // matrix에 값 대입
+        matMatrix(i, j) = float(i * 4 + j + 1);
+    }
+}
+
+for(int i = 0; i < 4; i++)
+{
+    for(int j = 0; j < 4; j++)
+    {
+        printf("%7.1f", matMatrix.m[i][j]);
+    }
+    printf("\n");
+}
+
+D3DXMatrixTranspose(&matResult, &matMatrix);
+for(int i = 0; i < 4; i++)
+{
+    for(int j = 0; j < 4; j++)
+    {
+        printf("%7.1f", matResult.m[i][j]);
+    }
+    printf("\n");
+}
+```
+
+## 역행렬
+
+```cpp
+D3DXMATRIX matMatrix, matResult;
+D3DXMatrixRotationX(&matMatrix, 0.3f);
+
+// 회전 행렬
+for(int i = 0; i < 4; i++)
+{
+    for(int j = 0; j < 4; j++)
+    {
+        printf("%7.1f", matMatrix.m[i][j]);
+    }
+    printf("\n");
+}
+
+// 역행렬
+D3DXMatrixInverse(&matResult, NULL, &matMatrix);
+
+for(int i = 0; i < 4; i++)
+{
+    for(int j = 0; j < 4; j++)
+    {
+        printf("%7.1f", matResult.m[i][j]);
+    }
+    printf("\n");
+}
+```
