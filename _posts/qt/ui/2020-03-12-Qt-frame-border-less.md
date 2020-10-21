@@ -14,134 +14,136 @@ last_modified_at: 2020-06-01 00:00:00 -0000
 // Frameless.h
 #pragma once
 
-#include <QtWidgets/QMainWindow>
-#include "ui_Frameless.h"
+#include <qdialog.h>
+#include <QMainWindow>
 
-class Frameless : public QMainWindow
+#define DEFAULT_BORDER_SIZE 5
+
+class QFramelessDialog : public QMainWindow
 {
-	Q_OBJECT
-
 public:
-	Frameless(QWidget *parent = Q_NULLPTR);
+	explicit QFramelessDialog(QWidget *parent = nullptr, 
+								bool _isFrameless = true, 
+								uint8_t _borderwidth = DEFAULT_BORDER_SIZE,
+								bool _useResize = true,
+								float _aspectratio = 0.0f);
+	~QFramelessDialog() {}
 
 private:
-	Ui::FramelessClass ui;
-
-public:
 	bool nativeEvent(const QByteArray &eventType, void *message, long *result);
 	bool event(QEvent *event);
-	void mousePressEvent(QMouseEvent *e);
+
+	virtual const int getTitlebarHeight() = 0;
+	virtual const int getTitlebarWidth() = 0;
+
+	const uint8_t mBorderWidth;
+	const bool mbResize;
+	const float mbAspectRatio;
 };
 ```
 
 ```cpp
 // Frameless.cpp
-#include "Frameless.h"
-#include "qdebug.h"
-#include "windows.h"
-#include "windowsx.h"
-#include "qevent.h"
+#include "QFramelessDialog.h"
 
-Frameless::Frameless(QWidget *parent)
-	: QMainWindow(parent)
+#include <Windows.h>					// for window MSG
+#include <qmouseeventtransition.h>		// for qt-mouse-event
+#include <dwmapi.h>						// for dwm-api
+
+#pragma comment (lib,"Dwmapi.lib")
+
+QFramelessDialog::QFramelessDialog(QWidget *parent, bool _isFrameless, uint8_t _borderwidth, bool _useResize, float _aspectratio)
+	: QMainWindow(parent), mBorderWidth(_borderwidth), mbResize(_useResize), mbAspectRatio(_aspectratio)
 {
-	ui.setupUi(this);
-	ui.newTitlebarLayout->setMenuBar(ui.menuBar);
+	if (_isFrameless) {
+		setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint);
+		setAttribute(Qt::WA_OpaquePaintEvent, false);
+		setAttribute(Qt::WA_PaintOnScreen, true);
+		setAttribute(Qt::WA_DontCreateNativeAncestors, true);
+		setAttribute(Qt::WA_NativeWindow, true);
+		setAttribute(Qt::WA_NoSystemBackground, false);		// UI 작업할때는 풀 것.
+		setAttribute(Qt::WA_MSWindowsUseDirect3D, true);
+		setAutoFillBackground(false);
 
-	// 이 방법말고
-	//HWND hwnd = (HWND)this->winId();
-	//DWORD style = ::GetWindowLong(hwnd, GWL_STYLE);
-	//::SetWindowLong(hwnd, GWL_STYLE, style | WS_MAXIMIZEBOX | WS_THICKFRAME | WS_CAPTION);
-
-	// 이 방법이 더 낫다
-	//setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint | Qt::CustomizeWindowHint);
-	//setAttribute(Qt::WA_NoSystemBackground, true);
-	//setAttribute(Qt::WA_TranslucentBackground); 
-
-	// 최종(이걸 추천)
-	setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-	setAttribute(Qt::WA_OpaquePaintEvent, false);
-	setAttribute(Qt::WA_PaintOnScreen, true);
-	setAttribute(Qt::WA_DontCreateNativeAncestors, true);
-	setAttribute(Qt::WA_NativeWindow, true);
-	setAttribute(Qt::WA_NoSystemBackground, true);
-	setAttribute(Qt::WA_MSWindowsUseDirect3D, true);
-	setAutoFillBackground(false);
-}
-
-bool Frameless::nativeEvent(const QByteArray &eventType, void *message, long *result)
-{
-	if (eventType != "windows_generic_MSG") {
-		return QWidget::nativeEvent(eventType, message, result);
+		// intert shadow
+		const MARGINS shadow = { 1, 1, 1, 1 };
+		DwmExtendFrameIntoClientArea(HWND(winId()), &shadow);
 	}
-
-	const MSG *msg = reinterpret_cast<MSG *>(message);
-
-	// 마우스를 처리하고 싶다면?
-	// long x = GET_X_LPARAM(msg->lParam);
-	// long y = GET_Y_LPARAM(msg->lParam);
-
-	switch (msg->message) {
-		// make frameless window
-		case WM_NCCALCSIZE: {
-			//this kills the window frame and title bar we added with
-			//WS_THICKFRAME and WS_CAPTION
-			if (false)
-				return QWidget::nativeEvent(eventType, message, result);
-			// 여기가 타이틀바를 그리는 부분이긴 한데, 여길 막으면(return하면) 안됨.
-			// 이런식으로 강제로 타이틀바를 그리는 것을 막으면 듀얼모니터 환경에서 모니터간 이동시 UI가 깨질 수 있다
-			//*result = 0;
-			//return true;
-
-			// 여기도 다시 살려야 함.
-			return true;
-		}
-		default: {
-			return QWidget::nativeEvent(eventType, message, result);
-		}
+	else {
 	}
 }
 
-void Frameless::mousePressEvent(QMouseEvent *e)
+bool QFramelessDialog::nativeEvent(const QByteArray &eventType, void *message, long *result) 
 {
-	int x = e->pos().x();
-	int y = e->pos().y();
-	QSize size = this->size();
+#if (QT_VERSION == QT_VERSION_CHECK(5, 11, 1))
+	MSG* msg = *reinterpret_cast<MSG**>(message);
+#else
+	MSG* msg = reinterpret_cast<MSG*>(message);
+#endif
 
-	qDebug() << "\n\n" << x << y << "\n\n";
-	qDebug() << "\n\n" << size.width() << size.height() << "\n\n";
+	switch (msg->message)
+	{
+	case WM_NCCALCSIZE:
+	{
+		NCCALCSIZE_PARAMS& params = *reinterpret_cast<NCCALCSIZE_PARAMS*>(msg->lParam);
+		if (params.rgrc[0].top != 0)
+			params.rgrc[0].top -= 1;
 
-	if (e->button() == Qt::LeftButton) {
-		ReleaseCapture();
-		if (x < 50 && y > size.height() - 50) {
-			this->setCursor(QCursor(Qt::SizeBDiagCursor));
-			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMLEFT, 0);
-		}
-		else if (x > size.width() - 50 && y > size.height() - 50) {
-			this->setCursor(QCursor(Qt::SizeFDiagCursor));
-			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMRIGHT, 0);
-		}
-		else if (x < 50) {
-			this->setCursor(QCursor(Qt::SizeHorCursor));
-			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTLEFT, 0);
-		}
-		else if (y > size.height() - 50) {
-			this->setCursor(QCursor(Qt::SizeVerCursor));
-			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOM, 0);
-		}
-		else if (x > size.width() - 50) {
-			this->setCursor(QCursor(Qt::SizeHorCursor));
-			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTRIGHT, 0);
-		}
-		else if (y < 50) {		// 여기가 titlebar가 된다.
-			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTCAPTION, 0);
+		//this kills the window frame and title bar we added with WS_THICKFRAME and WS_CAPTION
+		//*result = WVR_REDRAW;
+		return true;
+	}
+	case WM_SIZING:
+	{
+		if (mbAspectRatio == 0) break;
+		RECT* rect = (RECT*)msg->lParam;
+		LONG width = rect->right - rect->left;
+		LONG height = rect->bottom - rect->top;
+
+		/*
+		// if you want to setting min or max width, height
+		// try to set below
+		width = std::max(width, minWidth);
+		width = std::min(width, maxWidth);
+		height = std::max(height, minHeight);
+		height = std::min(height, maxHeight);
+		*/
+
+		switch (msg->wParam)
+		{
+		case WMSZ_LEFT:
+		case WMSZ_BOTTOMLEFT:
+			rect->left = rect->right - width;
+			rect->bottom = rect->top + width / mbAspectRatio;
+			break;
+		case WMSZ_RIGHT:
+		case WMSZ_BOTTOMRIGHT:
+			rect->right = rect->left + width;
+			rect->bottom = rect->top + width / mbAspectRatio;
+			break;
+		case WMSZ_TOP:
+		case WMSZ_TOPRIGHT:
+			rect->top = rect->bottom - height;
+			rect->right = rect->left + height * mbAspectRatio;
+			break;
+		case WMSZ_BOTTOM:
+			rect->bottom = rect->top + height;
+			rect->right = rect->left + height * mbAspectRatio;
+			break;
+		case WMSZ_TOPLEFT:
+			rect->left = rect->right - width;
+			rect->top = rect->bottom - width / mbAspectRatio;
+			break;
 		}
 	}
+	default:
+		break;
+	}
+	return QMainWindow::nativeEvent(eventType, message, result);
 }
 
-bool Frameless::event(QEvent *event)
+bool QFramelessDialog::event(QEvent *event)
 {
-
 	QPoint widgetCursorPos = QWidget::mapFromGlobal(QCursor::pos());
 
 	int x = widgetCursorPos.x();
@@ -150,53 +152,31 @@ bool Frameless::event(QEvent *event)
 
 	switch (event->type())
 	{
-	case QEvent::MouseButtonPress:
-		ReleaseCapture();
-		if (x < 50 && y > size.height() - 50) {
-				this->setCursor(QCursor(Qt::SizeBDiagCursor));
-				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMLEFT, 0);
-			}
-			else if (x > size.width() - 50 && y > size.height() - 50) {
-				this->setCursor(QCursor(Qt::SizeFDiagCursor));
-				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMRIGHT, 0);
-			}
-			else if (x < 50) {
-				this->setCursor(QCursor(Qt::SizeHorCursor));
-				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTLEFT, 0);
-			}
-			else if (y > size.height() - 50) {
-				this->setCursor(QCursor(Qt::SizeVerCursor));
-				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOM, 0);
-			}
-			else if (x > size.width() - 50) {
-				this->setCursor(QCursor(Qt::SizeHorCursor));
-				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTRIGHT, 0);
-			}
-			else if (y < 50) {		// 여기가 titlebar가 된다.
-				SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTCAPTION, 0);
-			}
-		}
-		return true;
-		break;
-	// 참고로 DbouleClick Event는 동작하지 않음, 참고할 것.
-	// 더블클릭 처리하고 싶다면 Timer(QSingleshot)를 쓸것
 	case QEvent::HoverEnter:
 	case QEvent::HoverMove:
-		qDebug() << "\n\n HoverEnter \n\n";
-		qDebug() << "\n\n" << widgetCursorPos.x() << widgetCursorPos.y() << "\n\n";
-		if (x < 50 && y > size.height() - 50) {
+		if (!mbResize) break;
+		if (x < mBorderWidth && y > size.height() - mBorderWidth) {
 			this->setCursor(QCursor(Qt::SizeBDiagCursor));
 		}
-		else if (x > size.width() - 50 && y > size.height() - 50) {
+		else if (x > size.width() - mBorderWidth && y > size.height() - mBorderWidth) {
 			this->setCursor(QCursor(Qt::SizeFDiagCursor));
 		}
-		else if (x < 50) {
+		else if (x < mBorderWidth && y < mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeFDiagCursor));
+		}
+		else if (x > size.width() - mBorderWidth && y < mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeBDiagCursor));
+		}
+		else if (x < mBorderWidth) {
 			this->setCursor(QCursor(Qt::SizeHorCursor));
 		}
-		else if (y > size.height() - 50) {
+		else if (y < mBorderWidth) {
 			this->setCursor(QCursor(Qt::SizeVerCursor));
 		}
-		else if (x > size.width() - 50) {
+		else if (y > size.height() - mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeVerCursor));
+		}
+		else if (x > size.width() - mBorderWidth) {
 			this->setCursor(QCursor(Qt::SizeHorCursor));
 		}
 		else {
@@ -205,15 +185,52 @@ bool Frameless::event(QEvent *event)
 		return true;
 		break;
 	case QEvent::HoverLeave:
-		qDebug() << "\n\n HoverLeave \n\n";
 		this->setCursor(QCursor(Qt::ArrowCursor));
 		return true;
 		break;
-
+	case QEvent::MouseButtonPress:
+		if (!mbResize) break;
+		ReleaseCapture();
+		if (x < mBorderWidth && y > size.height() - mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeBDiagCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMLEFT, 0);
+		}
+		else if (x > size.width() - mBorderWidth && y > size.height() - mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeFDiagCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOMRIGHT, 0);
+		}
+		else if (x < mBorderWidth && y < mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeFDiagCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTTOPLEFT, 0);
+		}
+		else if (x > size.width() - mBorderWidth && y < mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeBDiagCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTTOPRIGHT, 0);
+		}
+		else if (y < mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeVerCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTTOP, 0);
+		}
+		else if (x < mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeHorCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTLEFT, 0);
+		}
+		else if (y > size.height() - mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeVerCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTBOTTOM, 0);
+		}
+		else if (x > size.width() - mBorderWidth) {
+			this->setCursor(QCursor(Qt::SizeHorCursor));
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTRIGHT, 0);
+		}
+		else if (y < getTitlebarHeight()) {
+			SendMessage(HWND(winId()), WM_NCLBUTTONDOWN, HTCAPTION, 0);
+		}
+		return true;
+		break;
 	default:
 		break;
 	}
-
 	return QWidget::event(event);
 }
 ```

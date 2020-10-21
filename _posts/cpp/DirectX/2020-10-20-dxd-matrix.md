@@ -21,7 +21,6 @@ header:
 ---
 
 * [강의](https://www.youtube.com/watch?v=RgfjJ3q7CSg&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=14)
-* [Get Code]()
 
 ---
 
@@ -119,3 +118,53 @@ for(int i = 0; i < 4; i++)
     printf("\n");
 }
 ```
+
+---
+
+## 행렬 변환
+
+* [강의](https://www.youtube.com/watch?v=7MVNKxIV3pI&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=16)
+
+## 이동 행렬
+
+```cpp
+D3DXMATRIX matMatrix;
+
+D3DXMatrixTranslation(&matMatrix, 0.5f, 0.5f, 0.5f);
+for(int i = 0; i < 4; i++)
+{
+    for(int j = 0; j < 4; j++)
+    {
+        printf("%7.1f", matMatrix(i, j));
+    }
+    printf("\n");
+}
+```
+
+## 크기 행렬
+
+```cpp
+D3DXMatrixScaling(&matMatrix, 0.5f, 0.5f, 0.5f);
+// for문은 생략
+```
+
+## 회전 행렬
+
+왼손 좌표계라는걸 기억
+
+```cpp
+D3DXMatrixRotationX(&matMatrix, D3DXToRadian(30));
+```
+
+---
+
+## 쿼터니온
+
+* [강의](https://www.youtube.com/watch?v=gCuOJ_vuSfY&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=17)
+
+* 임의의 축을 기준으로 회전 행렬을 구해주는 수학도구
+* 일반 회적 행렬에 비해 계산량이 적다
+* 메모리를 적게 차지함
+
+* 단점 : 직관적 이해가 어렵다.
+
