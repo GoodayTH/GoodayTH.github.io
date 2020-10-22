@@ -180,7 +180,7 @@ $ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
 ## Direct X
 
  * [참고강의](https://www.youtube.com/playlist?list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1)
- * [참고사이트](https://m.blog.naver.com/PostView.nhn?blogId=whdgkks12347&logNo=221334350047&proxyReferer=https:%2F%2Fwww.google.com%2F)
+ * [참고사이트](https://blog.naver.com/PostView.nhn?blogId=whdgkks12347&logNo=221334350047&proxyReferer=https:%2F%2Fwww.google.com%2F)
  * [Get Code](https://github.com/EasyCoding-7/Direct3DExample)
 
  * [Direct3D 개발 환경 조성](/dxd/environment/)
@@ -189,6 +189,7 @@ $ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
  * [Matrix](/dxd/matrix/)
 
  * [Direct3D를 이용한 2D게임 만들기](/dxd/2d-game/) : sprite, 이미지 로딩
+ * [Direct3D를 이용한 2D게임 만들기(실전편)](/dxd/2d-game-1/)
 
 ---
 
