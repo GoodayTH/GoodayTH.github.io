@@ -188,7 +188,8 @@ $ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
  * [Verices](/dxd/verices/)
  * [Matrix](/dxd/matrix/)
 
- * [Direct3D Frameworkd](/dxd/d3d-framework/)
+ * [index buffer](/dxd/d3d-index-buffer/)
+ * [Framework 이용하기](/dxd/d3d-using-framework/)
  * [Direct3D를 이용한 2D게임 만들기](/dxd/2d-game/) : sprite, 이미지 로딩
 
 ---
