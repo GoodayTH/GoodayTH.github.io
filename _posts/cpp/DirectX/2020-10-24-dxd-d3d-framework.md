@@ -206,8 +206,3 @@ INT WINAPI wWinMain( HINSTANCE, HINSTANCE, LPWSTR, int )
 {
   // ...
 ```
-
----
-
-* [강의](https://www.youtube.com/watch?v=iIxwMVEHDpk&list=PLOKPEzlY4JKSZLgY_jH4danTYinRKIPz1&index=56)
-
