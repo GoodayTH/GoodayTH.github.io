@@ -31,6 +31,9 @@ header:
 ### 로그인
 
 * [IDE & Babel](/NodeJS/Elect/1/) : WebStorm이용 Babel 설치
+* [express Backend](/NodeJS/Elect/2/) : 
+
+강좌 이상해서 정리안함. -> 필요할 경우 다시 가서 볼 것
 
 ---
 
