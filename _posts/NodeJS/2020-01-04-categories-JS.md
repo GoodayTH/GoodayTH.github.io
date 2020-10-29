@@ -39,7 +39,15 @@ header:
 * [Tray 모듈 알아보기](/NodeJS/Electron/6/)
 * [dialog 모듈 알아보기](/NodeJS/Electron/7/)
 * [ipcMain, ipcRenderer 모듈 알아보기](/NodeJS/Electron/8/) : 프로세스간 통신 / 동기, 비동기 방식의 ipc처리
-* [remote, shell, process 모듈 알아보기](https://8bitscoding.github.io/E2-8)
+* [remote, shell, process 모듈 알아보기](/NodeJS/Electron/9/)
+
+* [북마크 앱 만들기1](/NodeJS/Electron/10/)
+
+![](/file/image/E2-10-8.png)
+
+* [북마크 앱 만들기2](/NodeJS/Electron/11/)
+
+![](/file/image/E2-11-4.png)
 
 ---
 
