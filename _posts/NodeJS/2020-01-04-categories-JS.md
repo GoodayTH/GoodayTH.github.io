@@ -55,6 +55,7 @@ header:
 ![](/file/image/E2-13-2.png)
 
 * [북마크 앱 만들기5](/NodeJS/Electron/14/)
+* [북마크 앱 만들기6](/NodeJS/Electron/15/) : app의 Renderer process를 React로 변경하기
 
 ---
 
