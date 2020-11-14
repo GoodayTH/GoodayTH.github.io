@@ -1,16 +1,22 @@
 ---
 title: "NodeJS Basic 2강 - Node.js 웹서버 만들기"
-permalink: NodeJS/basic-02/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+permalink: NodeJS/basic-08/                # link 직접 지정
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-05-04 00:00:00 -0000
-last_modified_at: 2020-05-04 00:00:00 -0000
+last_modified_at: 2020-11-14 00:00:00 -0000
+sidebar:
+  title: "Node.js 목차"
+  nav: Node.js
+tag:
+  - Node.js
+category:
+  - 강의 6
+excerpt: ""
+classes: wide
 header:
   teaser: /file/image/nodejs-page-teaser.gif
-sidebar:
-  title: "NodeJS"
-  nav: NodeJS
 ---
 
 * [강좌](https://opentutorials.org/course/3332/21032)
