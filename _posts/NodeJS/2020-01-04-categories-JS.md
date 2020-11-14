@@ -26,6 +26,12 @@ header:
       url: "https://nodejs.org/"
 ---
 
+## Vue.JS 중급
+
+* [1강](/vuejs/mid-1/)
+
+---
+
 ## Electron 기초
 
 우선 ... Electron 자체가 Web을 개발자들이 쉽게 네이티브로 넘어오길 바라면서 만들어진 프레임 워크이기에 Web개발에 대한 지식을 바탕해야한다.<br>
