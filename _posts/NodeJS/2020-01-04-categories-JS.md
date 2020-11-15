@@ -92,7 +92,8 @@ header:
 
 * [Vue.JS 강의 기초 11](/VueJS/1-11/) : Watch
 * [Vue.JS 강의 기초 12](/VueJS/1-12/) : Vue CLI
-* [Vue.JS 강의 기초 13](/VueJS/1-13/) : 
+* [Vue.JS 강의 기초 13](/VueJS/1-13/) : Vue CLI 활용하기
+* [Vue.JS 강의 기초 14](/VueJS/1-14/) : 배운 지식을 기반으로 한 Example
 
 ---
 
