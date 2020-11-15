@@ -103,6 +103,7 @@ header:
 
 * [코드를 정리한 Git](https://github.com/8bitscoding/Nodejs)
 * [1강 : Node.js설치](/nodejs/1/) : 설치 및 확인
+* [참고) Vue.js 개발자 도구 다운로드](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 
 * [2강 : Node.js 웹서버 만들기](/nodejs/2/) : Node.js Example Server 동작해보기
 * [JavaScript - Data type Number](/nodejs/3/) : Number 출력
