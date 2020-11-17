@@ -31,6 +31,8 @@ header:
 * [1강](/vuejs/mid-1/) : 강의목표 및 개발환경 구성
 * [2강](/vuejs/mid-2/) : 프로젝트 만들기
 * [3강](/vuejs/mid-3/) : 컴포넌트 만들기
+* [4강](/vuejs/mid-4/) : TodoHeader, TodoInput 구현
+* [5강](/vuejs/mid-5/) : TodoInput UI 처리
 
 ---
 
