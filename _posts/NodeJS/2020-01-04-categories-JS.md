@@ -34,7 +34,7 @@ header:
 * [4강](/vuejs/mid-4/) : TodoHeader, TodoInput 구현
 * [5강](/vuejs/mid-5/) : TodoInput UI 처리
 
-* [6강](/vuejs/mid-6/) : 
+* [6강](/vuejs/mid-6/) : TodoList.vue
 
 ---
 
