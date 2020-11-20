@@ -35,6 +35,12 @@ header:
 * [5강](/vuejs/mid-5/) : TodoInput UI 처리
 
 * [6강](/vuejs/mid-6/) : TodoList.vue
+* [7강](/vuejs/mid-7/) : Toggle TodoList.vue
+* [8강](/vuejs/mid-8/) : TodoFooter.vue
+
+여기부턴 리팩토링
+
+* [9강](/vuejs/mid-9/) : 
 
 ---
 
