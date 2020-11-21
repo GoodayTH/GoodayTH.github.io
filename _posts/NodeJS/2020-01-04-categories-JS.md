@@ -38,9 +38,10 @@ header:
 * [7강](/vuejs/mid-7/) : Toggle TodoList.vue
 * [8강](/vuejs/mid-8/) : TodoFooter.vue
 
-여기부턴 리팩토링
-
-* [9강](/vuejs/mid-9/) : 
+* [9강](/vuejs/mid-9/) : 리팩토링
+* [10강](/vuejs/mid-10/) : Modal 경고창 나타내기
+* [11강](/vuejs/mid-11/) : 트렌지션
+* [12강](/vuejs/mid-12/) : ES6, Babel
 
 ---
 
