@@ -43,6 +43,12 @@ header:
 * [11강](/vuejs/mid-11/) : 트렌지션
 * [12강](/vuejs/mid-12/) : ES6, Babel
 
+ES6 문법 설명
+
+* [13강](/vuejs/mid-13/) : ES5 특징 정리(const & let)
+* [14강](/vuejs/mid-14/) : const & let 리팩토링
+* [15강](/vuejs/mid-15/) : ES5 특징 정리(화살표 함수)
+
 ---
 
 ## Electron 기초
