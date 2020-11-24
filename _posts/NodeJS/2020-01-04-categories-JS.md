@@ -48,6 +48,12 @@ ES6 문법 설명
 * [13강](/vuejs/mid-13/) : ES5 특징 정리(const & let)
 * [14강](/vuejs/mid-14/) : const & let 리팩토링
 * [15강](/vuejs/mid-15/) : ES5 특징 정리(화살표 함수)
+* [16강](/vuejs/mid-16/) : Enhanced Object Literals
+* [17강](/vuejs/mid-17/) : Modules
+
+Vuex
+
+* [18강](/vuejs/mid-18/) : Vuex
 
 ---
 
