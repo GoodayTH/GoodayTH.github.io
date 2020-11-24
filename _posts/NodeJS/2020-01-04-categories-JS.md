@@ -54,6 +54,7 @@ ES6 문법 설명
 Vuex
 
 * [18강](/vuejs/mid-18/) : Vuex
+* [19강](/vuejs/mid-19/) : Vuex 설치, state와 getters 소개
 
 ---
 
