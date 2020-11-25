@@ -55,6 +55,9 @@ Vuex
 
 * [18강](/vuejs/mid-18/) : Vuex
 * [19강](/vuejs/mid-19/) : Vuex 설치, state와 getters 소개
+* [20강](/vuejs/mid-20/) : mutations, commit
+
+뒷 강의 정리안함 이후에 필요하면 할 것.
 
 ---
 
