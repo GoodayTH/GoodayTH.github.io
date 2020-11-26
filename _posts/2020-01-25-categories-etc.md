@@ -31,6 +31,7 @@ header:
 ## Window Pro.
 
 * [Process Explorer](/winp/pe/)
+* [Windows Service OpenSSL 확인](/winp/service-openssl/)
 
 ---
 
@@ -108,6 +109,8 @@ header:
 ---
 
 ## Jenkins
+
+* [Git SSH Agent가 잘 동작하지 않을 시 환경변수로 SSH-Key 넣기](/jenkins/env-ssh-key/)
 
 * [Windows 기반 MSBuild Jenkins 서버만들기](https://8bitscoding.github.io/jenkins-windows-msbuild/)
 * [Jenkins Window Batch Good Example : MSBuild](/jenkins/windowbatch-goodexample/)
