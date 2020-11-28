@@ -26,6 +26,14 @@ header:
       url: "https://nodejs.org/"
 ---
 
+## Vue.JS 대표 Example : StreamLabs
+
+UI를 어떻게 그리는지만 살펴본다
+
+* [GitHub](https://github.com/stream-labs/streamlabs-obs)
+
+* [StreamLabs 빌드하기](/vuejs/streamlabs/)
+
 ## Vue.JS 중급
 
 * [1강](/vuejs/mid-1/) : 강의목표 및 개발환경 구성
