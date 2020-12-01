@@ -25,6 +25,29 @@ header:
       url: "https://www.qt.io/"
 ---
 
+## Multi-Threading, IPC
+
+우선 Qt Thread에 대해 잘 모른다면 아래의 Thread를 먼저 읽어보자.
+
+* [Get Code](https://github.com/EasyCoding-7/Qt-MultiThread-IPC-Example)
+
+* [Create Thread](/qt/mthread-ipc/create-thread/)
+* [Move To Thread](/qt/mthread-ipc/move-to-thread/)
+* [Subclass QThread](/qt/mthread-ipc/subclass-thread/)
+
+* [QThread asynchronous(Create Thread)](/qt/mthread-ipc/a-create-thread/)
+
+## Thread
+
+> * [Qt Thread](/qt/thread/)
+
+* [Q. std thread냐 QThread냐?]() : 
+  - Thread - 1의 waitcondition예제를 보면 알겠지만 Signal and Slot의 처리에 있어 QThread가 유리하다, manager에서 Thread의 함수 호출을 쉽게 할 수 있다
+
+* [Thread 세부 정리](/qt/thread/)
+* [Qt Thread - 1](/qt/thread/theorem1/)
+* [Qt Thread - 2](/qt/thread/theorem2/) : queue condition에 따라서 어떻게 동작하는지 보여준다.
+
 ## Core
 
 * [Qt Core](/qt/core/)
@@ -62,17 +85,6 @@ HWND hwnd = HWND(ui->preview->winId());
 * [QListWidgetItem 사용](/cpp/qt/qlistwidgetitem)
 
 ![](/file/image/qt-gdi-s6-52-image-1.png)
-
-## Thread
-
-> * [Qt Thread](/qt/thread/)
-
-* [Q. std thread냐 QThread냐?]() : 
-  - Thread - 1의 waitcondition예제를 보면 알겠지만 Signal and Slot의 처리에 있어 QThread가 유리하다, manager에서 Thread의 함수 호출을 쉽게 할 수 있다
-
-* [Thread 세부 정리](/qt/thread/)
-* [Qt Thread - 1](/qt/thread/theorem1/)
-* [Qt Thread - 2](/qt/thread/theorem2/) : queue condition에 따라서 어떻게 동작하는지 보여준다.
 
 ## QML
 
