@@ -36,6 +36,10 @@ header:
 * [Subclass QThread](/qt/mthread-ipc/subclass-thread/)
 
 * [QThread asynchronous(Create Thread)](/qt/mthread-ipc/a-create-thread/)
+* [QThread asynchronous(Move To Thread)](/qt/mthread-ipc/a-move-to-thread/)
+* [QThread asynchronous(Subclass QThread)](/qt/mthread-ipc/a-subclass-thread/)
+
+* [ThreadPool and QRunnuable](/qt/mthread-ipc/threadpool-runnable/)
 
 ## Thread
 
