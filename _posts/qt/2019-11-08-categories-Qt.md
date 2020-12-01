@@ -31,6 +31,8 @@ header:
 
 * [Get Code](https://github.com/EasyCoding-7/Qt-MultiThread-IPC-Example)
 
+Thread
+
 * [Create Thread](/qt/mthread-ipc/create-thread/)
 * [Move To Thread](/qt/mthread-ipc/move-to-thread/)
 * [Subclass QThread](/qt/mthread-ipc/subclass-thread/)
@@ -39,7 +41,13 @@ header:
 * [QThread asynchronous(Move To Thread)](/qt/mthread-ipc/a-move-to-thread/)
 * [QThread asynchronous(Subclass QThread)](/qt/mthread-ipc/a-subclass-thread/)
 
-* [ThreadPool and QRunnuable](/qt/mthread-ipc/threadpool-runnable/)
+* [ThreadPool and QRunnable](/qt/mthread-ipc/threadpool-runnable/)
+* [ThreadPool and QRunnable - Sending feedback to ui](/qt/mthread-ipc/threadpool-runnable-2/)
+* [ThreadPool and QRunnable - Async Code](/qt/mthread-ipc/threadpool-runnable-3/)
+
+* [Custom Type Signal Parameters](/qt/mthread-ipc/custom-type-signal/)
+
+Thread Synchronization
 
 ## Thread
 
