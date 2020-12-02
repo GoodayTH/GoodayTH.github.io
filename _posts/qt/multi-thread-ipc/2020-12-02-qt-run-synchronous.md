@@ -22,7 +22,8 @@ header:
 
 * [Get Code](https://github.com/EasyCoding-7/Qt-MultiThread-IPC-Example/tree/master/RunSync)
 
-우선 QFuture를 쓰긴하지만 메인 Thread에서 돌기에 Pause Cancel Resume등이 되지 않는다
+- 우선 QFuture를 쓰긴하지만 메인 Thread에서 돌기에 Pause Cancel Resume등이 되지 않는다
+- QFuture를 어떻게 쓰는지만 이해하자.
 
 ---
 
@@ -92,7 +93,6 @@ Widget::~Widget()
 
 void Widget::heavyWork()
 {
-
     qDebug() << "Heavy work running in thread : " << QThread::currentThread();
     for(int i{0} ; i < 1000000001 ; i++){
 

@@ -22,6 +22,10 @@ header:
 
 * [Get Code](https://github.com/EasyCoding-7/Qt-MultiThread-IPC-Example/tree/master/RunSync)
 
+- `QFutureWatcher`를 통해 어떻게 `QFuture`를 사용하는지
+- return value를 어떻게 받아오는지
+- 일종에 thread를 나누는 개념이다.
+
 ---
 
 ## 전체코드

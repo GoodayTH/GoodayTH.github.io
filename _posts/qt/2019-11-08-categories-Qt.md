@@ -69,7 +69,13 @@ Thread Safety and Reentrancy(정보수집)
 Qt Concurrent
 
 * [run synchronous](/qt/mthread-ipc/run-synchronous/) : `QFuture` 사용하기(해당 쓰레드를 점유)
-* [Asynchronous Return values](/qt/mthread-ipc/async-return-val/) : `QFuture`, `QFutureWatcher`
+* [Asynchronous Return values](/qt/mthread-ipc/async-return-val/) : `QFuture`, `QFutureWatcher` 등록 방법
+
+* [Concurrent Map](/qt/mthread-ipc/concurrent-map/)
+* [Concurrent Mapped](/qt/mthread-ipc/concurrent-mapped/)
+
+* [Concurrent Filter](/qt/mthread-ipc/concurrent-filter/)
+* [Concurrent Filtered](/qt/mthread-ipc/concurrent-filtered/)
 
 ## Thread
 
