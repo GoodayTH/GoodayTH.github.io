@@ -66,6 +66,11 @@ Thread Safety and Reentrancy(정보수집)
 
 * [Slot In QThread Subclass](/qt/mthread-ipc/slot-qthread/) : thread안에서 signal slot 연결
 
+Qt Concurrent
+
+* [run synchronous](/qt/mthread-ipc/run-synchronous/) : `QFuture` 사용하기(해당 쓰레드를 점유)
+* [Asynchronous Return values](/qt/mthread-ipc/async-return-val/) : `QFuture`, `QFutureWatcher`
+
 ## Thread
 
 > * [Qt Thread](/qt/thread/)
