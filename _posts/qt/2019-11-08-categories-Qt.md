@@ -93,6 +93,14 @@ IPC
 * [FileConsumer](/qt/mthread-ipc/fileconsumer/)
 * [FileProducer](https://github.com/EasyCoding-7/Qt-MultiThread-IPC-Example/tree/master/FileConsumer)
 
+Dbus
+
+당장 필요성을 못느껴서 정리하지 않음 코드만 확인
+
+* [DBus](https://github.com/EasyCoding-7/Qt-MultiThread-IPC-Example/tree/master/DBus)
+
+* [ClientServer](/qt/mthread-ipc/clientserver/) : DBus를 통한 IPC
+
 ## Thread
 
 > * [Qt Thread](/qt/thread/)
