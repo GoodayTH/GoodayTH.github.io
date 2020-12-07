@@ -26,6 +26,27 @@ header:
       url: "https://nodejs.org/"
 ---
 
+## Vue.JS : 기초
+
+* [Vue.JS 강의 기초 1 - 1](/VueJS/1-1/) : Vue를 배우기 위한 준비
+* [Vue.JS 강의 기초 2](/VueJS/1-2/) : Vue소개, MVVM 설명
+* [Vue.JS 강의 기초 3](/VueJS/1-3/) : Vue 인스턴스 설명
+* [Vue.JS 강의 기초 4](/VueJS/1-4/) : 컴포넌트 설명
+* [Vue.JS 강의 기초 5](/VueJS/1-5/) : 컴포넌트 통신 방법, props
+
+* [Vue.JS 강의 기초 6](/VueJS/1-6/) : event emit
+* [Vue.JS 강의 기초 7](/VueJS/1-7/) : 같은 컴포넌트 레벨간의 통신
+* [Vue.JS 강의 기초 8](/VueJS/1-8/) : Vue Router
+* [Vue.JS 강의 기초 9](/VueJS/1-9/) : http통신 라이브러리 axios
+* [Vue.JS 강의 기초 10](/VueJS/1-10/) : 템플릿 문법
+
+* [Vue.JS 강의 기초 11](/VueJS/1-11/) : Watch
+* [Vue.JS 강의 기초 12](/VueJS/1-12/) : Vue CLI
+* [Vue.JS 강의 기초 13](/VueJS/1-13/) : Vue CLI 활용하기
+* [Vue.JS 강의 기초 14](/VueJS/1-14/) : 배운 지식을 기반으로 한 Example
+
+---
+
 ## Vue.JS 대표 Example : StreamLabs
 
 UI를 어떻게 그리는지만 살펴본다
@@ -110,27 +131,6 @@ Vuex
 * [express Backend](/NodeJS/Elect/2/) : 
 
 강좌 이상해서 정리안함. -> 필요할 경우 다시 가서 볼 것
-
----
-
-## Vue.JS : 기초
-
-* [Vue.JS 강의 기초 1 - 1](/VueJS/1-1/) : Vue를 배우기 위한 준비
-* [Vue.JS 강의 기초 2](/VueJS/1-2/) : Vue소개, MVVM 설명
-* [Vue.JS 강의 기초 3](/VueJS/1-3/) : Vue 인스터스 설명
-* [Vue.JS 강의 기초 4](/VueJS/1-4/) : 컴포넌트 설명
-* [Vue.JS 강의 기초 5](/VueJS/1-5/) : 컴포넌트 통신 방법, props
-
-* [Vue.JS 강의 기초 6](/VueJS/1-6/) : event emit
-* [Vue.JS 강의 기초 7](/VueJS/1-7/) : 같은 컴포넌트 레벨간의 통신
-* [Vue.JS 강의 기초 8](/VueJS/1-8/) : Vue Router
-* [Vue.JS 강의 기초 9](/VueJS/1-9/) : http통신 라이브러리 axios
-* [Vue.JS 강의 기초 10](/VueJS/1-10/) : 템플릿 문법
-
-* [Vue.JS 강의 기초 11](/VueJS/1-11/) : Watch
-* [Vue.JS 강의 기초 12](/VueJS/1-12/) : Vue CLI
-* [Vue.JS 강의 기초 13](/VueJS/1-13/) : Vue CLI 활용하기
-* [Vue.JS 강의 기초 14](/VueJS/1-14/) : 배운 지식을 기반으로 한 Example
 
 ---
 
