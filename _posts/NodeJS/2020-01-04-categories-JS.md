@@ -49,6 +49,10 @@ header:
 
 ## Vue.JS 중급
 
+* [Get Code](https://github.com/EasyCoding-7/vue-intermediate) : Private Code라 접속불가, 강의를 수강후 받자
+
+### todo-app components-implementation Branch
+
 * [1강](/vuejs/mid-1/) : 강의목표 및 개발환경 구성
 * [2강](/vuejs/mid-2/) : 프로젝트 만들기
 * [3강](/vuejs/mid-3/) : 컴포넌트 만들기
@@ -58,6 +62,8 @@ header:
 * [6강](/vuejs/mid-6/) : TodoList.vue
 * [7강](/vuejs/mid-7/) : Toggle TodoList.vue
 * [8강](/vuejs/mid-8/) : TodoFooter.vue
+
+### todo-app components-refactoring Branch
 
 * [9강](/vuejs/mid-9/) : 리팩토링
 * [10강](/vuejs/mid-10/) : Modal 경고창 나타내기
