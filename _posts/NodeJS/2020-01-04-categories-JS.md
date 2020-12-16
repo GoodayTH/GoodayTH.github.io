@@ -66,6 +66,9 @@ header:
 ### todo-app components-refactoring Branch
 
 * [9강](/vuejs/mid-9/) : 리팩토링
+
+### todo-app components-ux Branch
+
 * [10강](/vuejs/mid-10/) : Modal 경고창 나타내기
 * [11강](/vuejs/mid-11/) : 트렌지션
 * [12강](/vuejs/mid-12/) : ES6, Babel
