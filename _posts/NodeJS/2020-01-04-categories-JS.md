@@ -94,6 +94,13 @@ Vuex
 Helper function
 
 * [22강](/vuejs/mid-22/) : helper
+* [23강](/vuejs/mid-23/) : mapState, mapGetters
+* [24강](/vuejs/mid-24/) : mapMutations, mapActions
+* [25강](/vuejs/mid-25/) : 헬퍼의 편리함 정리
+
+스토어 모듈화
+
+* [26강](/vuejs/mid-26/)
 
 ---
 
