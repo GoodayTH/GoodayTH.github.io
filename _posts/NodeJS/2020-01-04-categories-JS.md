@@ -84,10 +84,16 @@ ES6 문법 설명
 Vuex
 
 * [18강](/vuejs/mid-18/) : Vuex
+
+### es6 const-let Branch
+
 * [19강](/vuejs/mid-19/) : Vuex 설치, state와 getters 소개
 * [20강](/vuejs/mid-20/) : mutations, commit
+* [21강](/vuejs/mid-21/) : actions
 
-뒷 강의 정리안함 이후에 필요하면 할 것.
+Helper function
+
+* [22강](/vuejs/mid-22/) : helper
 
 ---
 
