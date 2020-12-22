@@ -30,7 +30,11 @@ header:
 
 * [1강](/webpack/1/) : 개발환경구성
 * [2강](/webpack/2/) : npm install
-* [2강](/webpack/3/) : webpack
+* [3강](/webpack/3/) : webpack 세팅
+* [4강](/webpack/4/) : webpack 사용
+* [5강](/webpack/5/) : babel과 ES6
+
+* [6강](/webpack/6/) : webpack의 주요 속성
 
 ---
 
