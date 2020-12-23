@@ -35,6 +35,7 @@ header:
 * [5강](/webpack/5/) : babel과 ES6
 
 * [6강](/webpack/6/) : webpack의 주요 속성
+* [7강](/webpack/7/) : dev-server
 
 ---
 
