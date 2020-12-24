@@ -25,6 +25,14 @@ header:
       url: "https://www.qt.io/"
 ---
 
+## Qt Desing Patterns
+
+* [GetCode](https://github.com/EasyCoding-7/qt-desing-patterns)
+
+* [SOLID(Single responsibility principle)](/qt/desing-patterns/solid/)
+
+---
+
 ## Multi-Threading, IPC
 
 우선 Qt Thread에 대해 잘 모른다면 아래의 Thread를 먼저 읽어보자.
