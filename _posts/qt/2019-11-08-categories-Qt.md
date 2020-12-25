@@ -30,6 +30,8 @@ header:
 * [GetCode](https://github.com/EasyCoding-7/qt-desing-patterns)
 
 * [SOLID(Single responsibility principle)](/qt/desing-patterns/solid/)
+* [각종 principle](/qt/desing-patterns/kis/) : kis, dry ...
+* [Qt Property System](/qt/desing-patterns/property-system/)
 
 ---
 
