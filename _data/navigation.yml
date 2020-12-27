@@ -12,8 +12,8 @@ main:
     url: /NodeJS/
   - title: "etc"
     url: /etc/
-  - title: "Resume"
-    url: /resume/
+  - title: "강좌"
+    url: /course/
 
 # for sidebar
 

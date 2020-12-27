@@ -25,6 +25,14 @@ header:
       url: "https://www.qt.io/"
 ---
 
+## Qt Settings
+
+qt ide settings 관련
+
+* [Qt_KMS](/qt/settings/kms/) : 키보드 단축키 세팅
+
+---
+
 ## Qt Desing Patterns
 
 * [GetCode](https://github.com/EasyCoding-7/qt-desing-patterns)
