@@ -40,6 +40,7 @@ qt ide settings 관련
 * [SOLID(Single responsibility principle)](/qt/desing-patterns/solid/)
 * [각종 principle](/qt/desing-patterns/kis/) : kis, dry ...
 * [Qt Property System](/qt/desing-patterns/property-system/)
+* [Code deprecation](/qt/desing-patterns/code-deprecation/) : 빌드에서 코드막기
 
 ---
 
