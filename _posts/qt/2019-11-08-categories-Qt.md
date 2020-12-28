@@ -43,6 +43,7 @@ qt ide settings 관련
 * [Code deprecation](/qt/desing-patterns/code-deprecation/) : 빌드에서 코드막기
 
 * [Qt Thread Patterns](/qt/desing-patterns/thread-patterns/)
+* [Memory Pattern](/qt/desing-patterns/memory-patterns/)
 
 ---
 
