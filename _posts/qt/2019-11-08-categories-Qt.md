@@ -42,6 +42,8 @@ qt ide settings 관련
 * [Qt Property System](/qt/desing-patterns/property-system/)
 * [Code deprecation](/qt/desing-patterns/code-deprecation/) : 빌드에서 코드막기
 
+* [Qt Thread Patterns](/qt/desing-patterns/thread-patterns/)
+
 ---
 
 ## Multi-Threading, IPC
