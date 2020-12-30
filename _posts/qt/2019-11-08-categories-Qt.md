@@ -44,6 +44,7 @@ qt ide settings 관련
 
 * [Qt Thread Patterns](/qt/desing-patterns/thread-patterns/)
 * [Memory Pattern](/qt/desing-patterns/memory-patterns/)
+* [Signals and Slots](/qt/desing-patterns/signals-slots/)
 
 ---
 
