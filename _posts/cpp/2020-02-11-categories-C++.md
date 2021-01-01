@@ -25,6 +25,12 @@ header:
       url: "http://www.cplusplus.com/reference/"
 ---
 
+## C++20 정리
+
+* [lambda](/cpp/cpp20/lambda/)
+
+---
+
 ## C++ 문법
 
 * [Basic C++(11이전) 문법](/cpp/basic/)
