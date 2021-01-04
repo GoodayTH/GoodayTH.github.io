@@ -28,6 +28,9 @@ header:
 ## C++20 정리
 
 * [lambda](/cpp/cpp20/lambda/)
+* [attributes](/cpp/cpp20/attributes/)
+* [three way comparison](/cpp/cpp20/three-way-comparison/)
+* [MICS](/cpp/cpp20/misc/)
 
 ---
 
