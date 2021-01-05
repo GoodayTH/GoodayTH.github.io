@@ -32,6 +32,9 @@ header:
 * [three way comparison](/cpp/cpp20/three-way-comparison/)
 * [MICS](/cpp/cpp20/misc/)
 
+* [concept1](/cpp/cpp20/concept1/)
+* [concept2](/cpp/cpp20/concept2/)
+
 ---
 
 ## C++ 문법
