@@ -35,6 +35,7 @@ header:
 * [concept1](/cpp/cpp20/concept1/)
 * [concept2](/cpp/cpp20/concept2/)
 * [ranges1](/cpp/cpp20/ranges1/)
+* [ranges2](/cpp/cpp20/ranges2/)
 
 ---
 
