@@ -47,6 +47,8 @@ qt ide settings 관련
 * [Signals and Slots](/qt/desing-patterns/signals-slots/)
 * [library patterns](/qt/desing-patterns/library/)
 
+* [Template Patterns](/qt/desing-patterns/template/)
+
 ---
 
 ## Multi-Threading, IPC
