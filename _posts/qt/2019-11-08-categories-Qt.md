@@ -48,6 +48,7 @@ qt ide settings 관련
 * [library patterns](/qt/desing-patterns/library/)
 
 * [Template Patterns](/qt/desing-patterns/template/)
+* [Creational Patterns](/qt/desing-patterns/creational/)
 
 ---
 
