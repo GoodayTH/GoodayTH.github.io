@@ -1,7 +1,7 @@
 ---
 title: "NodeJS"
 permalink: NodeJS/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-01-04 00:00:00 -0000
@@ -24,6 +24,12 @@ header:
   actions:
     - label: "NodeJS HomePage"
       url: "https://nodejs.org/"
+---
+
+## Vue.JS : 상급
+
+* [Vue.JS 상급 1](/VueJS/adv-1/) : 프로젝트 설정 / 셋업
+
 ---
 
 ## WebPack
