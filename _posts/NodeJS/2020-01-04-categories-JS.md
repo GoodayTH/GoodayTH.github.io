@@ -29,6 +29,8 @@ header:
 ## Vue.JS : 상급
 
 * [Vue.JS 상급 1](/VueJS/adv-1/) : 프로젝트 설정 / 셋업
+* [Vue.JS 상급 2](/VueJS/adv-2/) : 라우터
+* [Vue.JS 상급 3](/VueJS/adv-3/) : API
 
 ---
 
