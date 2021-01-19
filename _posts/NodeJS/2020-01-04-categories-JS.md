@@ -32,6 +32,8 @@ header:
 * [Vue.JS 상급 2](/VueJS/adv-2/) : 라우터
 * [Vue.JS 상급 3](/VueJS/adv-3/) : API
 * [Vue.JS 상급 4](/VueJS/adv-4/) : Mutations, State
+* [Vue.JS 상급 5](/VueJS/adv-5/) : 라우터2
+* [Vue.JS 상급 6](/VueJS/adv-6/) : 리팩토링1
 
 ---
 
