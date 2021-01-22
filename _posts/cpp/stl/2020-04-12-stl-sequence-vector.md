@@ -5,11 +5,21 @@ toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-12 00:00:00 -0000
-last_modified_at: 2020-04-12 00:00:00 -0000
+last_modified_at: 2021-01-20 00:00:00 -0000
 sidebar:
   title: "C++"
   nav: cpp
+tag:
+  - C++
+category:
+  - vector
+excerpt: ""
+classes: wide
+header:
+  teaser: /file/image/cpp-page-teaser.gif
 ---
+
+## 초기화
 
 ```cpp
 #include <iostream>
@@ -56,6 +66,10 @@ int main()
 }
 ```
 
+---
+
+## 맴버삽입
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -89,6 +103,10 @@ int main()
     cout << v.capacity() << endl;       // 10 ~ 11 : 1.5배로 할당하게 된다.
 }
 ```
+
+---
+
+## 초기화2
 
 * vector와 c스타일 호환
 
@@ -172,4 +190,41 @@ int main()
 vector<list<int>> h(10);
 h[0].push_back(10);
 h[0].push_back(20);
+```
+
+---
+
+## foreach 활용
+
+* [참고사이트](https://hycszero.tistory.com/81)
+
+```cpp
+// 과거 스타일 for문
+for (int i = 0; i < 10; i++)
+{
+    std::cout << i << std::endl;
+}
+
+// C++11 스타일 for문
+for(int i : {0, 1, 2, 3, 4, 5})
+{
+    std::cout << i << std::endl;
+}
+
+std::vector<std::string> name_vector;       // 아마 보통이 방법을 많이 쓸 듯!
+for(const auto& element : name_vector)
+{
+    std::cout << element << std::endl;
+}
+
+// std::for_each 활용
+std::vector<std::string> name_vector{ "test1", "test2", "test3" };
+std::for_each(name_vector.begin(), name_vector.end(), [](auto& input) {std::cout << input << std::endl; });
+
+void print(std::string& input)
+{
+    std::cout << input << std::endl;
+}
+std::vector<std::string> name_vector{ "test1", "test2", "test3" };
+std::for_each(name_vector.begin(), name_vector.end(), print);
 ```
