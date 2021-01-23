@@ -39,7 +39,11 @@ header:
 * [Vue.JS 상급 3](/VueJS/adv-3/) : API
 * [Vue.JS 상급 4](/VueJS/adv-4/) : Mutations, State
 * [Vue.JS 상급 5](/VueJS/adv-5/) : 라우터2
+
+여기서부턴 Example 더 필요할 경우 정리
+
 * [Vue.JS 상급 6](/VueJS/adv-6/) : 리팩토링1
+* [Vue.JS 상급 7](/VueJS/adv-7/) : 리팩토링2
 
 ---
 
