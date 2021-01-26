@@ -39,7 +39,9 @@ std::optional<std::string> GetValueFromMap(const std::map<int, std::string>& m,
 }
 
 int main() {
-  std::map<int, std::string> data = {{1, "hi"}, {2, "hello"}, {3, "hiroo"}};
+  std::map<int, std::string> data = {
+    {1, "hi"}, {2, "hello"}, {3, "hiroo"}
+    };
   std::cout << "맵에서 2 에 대응되는 값은? " << GetValueFromMap(data, 2).value()
             << std::endl;
   std::cout << "맵에 4 는 존재하나요 " << std::boolalpha
