@@ -25,6 +25,13 @@ header:
       url: "http://www.cplusplus.com/reference/"
 ---
 
+## 추가
+
+* [not_null](/cpp/not_null/)
+* [std::optional](/cpp/optional/)
+
+---
+
 ## C++20 정리
 
 * [lambda](/cpp/cpp20/lambda/)
