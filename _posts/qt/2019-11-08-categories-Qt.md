@@ -44,6 +44,10 @@ qt ide settings 관련
 
 ![](/file/image/telegram-fade-widget-1.gif)
 
+* [Slide Widget](/opens/telegram/slide-widget/)
+
+![](/file/image/telegram-slide-widget-1.gif)
+
 ---
 
 ## Qt Desing Patterns
