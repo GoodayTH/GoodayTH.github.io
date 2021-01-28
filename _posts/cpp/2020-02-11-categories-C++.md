@@ -32,6 +32,15 @@ header:
 
 ---
 
+## C++ 게임만들기
+
+Part1 - C++
+
+* [1 - 개발환경 구성](/cpp/game/p1/1/) : sasm
+* [2 - 데이터 란](/cpp/game/p1/2/)
+
+---
+
 ## C++20 정리
 
 * [lambda](/cpp/cpp20/lambda/)
