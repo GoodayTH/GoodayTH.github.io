@@ -20,9 +20,16 @@ header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
 
-## main 부터 시작 ...
+## main 부터 시작
 
-전달아규먼트 처리, 필요하다면 볼 것..
+* [전달아규먼트 처리, 필요하다면 볼 것](cpp/nwebrtc/server/#1)
+* [WinSock을 열고 지정한 port로 대기한다](cpp/nwebrtc/server/#2)
+
+### 1
+
+[Top](cpp/nwebrtc/server/#main-부터-시작)
+
+전달아규먼트 처리, 필요하다면 볼 것
 
 ```cpp
 int main(int argc, char* argv[]) {
@@ -45,6 +52,10 @@ int main(int argc, char* argv[]) {
   }
 ```
 
+### 2
+
+[Top](cpp/nwebrtc/server/#main-부터-시작)
+
 WinSock을 열고 지정한 port로 대기한다
 
 ```cpp
@@ -56,10 +67,6 @@ WinSock을 열고 지정한 port로 대기한다
     printf("Failed to listen on server socket\n");
     return -1;
   }
-```
-
-```cpp
-
 ```
 
 ### 전체코드
