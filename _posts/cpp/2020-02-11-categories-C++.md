@@ -56,6 +56,10 @@ Part1 - C++
 * [7 - 반복문](/cpp/game/p1/7/)
 * [8 - 배열과 주소](/cpp/game/p1/8/)
 * [9 - 함수 기초](/cpp/game/p1/9/)
+* [10 - 스택 메모리](/cpp/game/p1/10/)
+
+* [11 - 개발환경 구성](https://visualstudio.microsoft.com/ko/) : VisualStudio, C++ 콘솔 앱
+* [12 - 정수](/cpp/game/p1/12/)
 
 ---
 
