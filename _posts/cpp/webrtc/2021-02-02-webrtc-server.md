@@ -22,12 +22,12 @@ header:
 
 ## main 부터 시작
 
-* [전달아규먼트 처리, 필요하다면 볼 것](cpp/nwebrtc/server/#1)
-* [WinSock을 열고 지정한 port로 대기한다](cpp/nwebrtc/server/#2)
+* [전달아규먼트 처리, 필요하다면 볼 것](#1)
+* [WinSock을 열고 지정한 port로 대기한다](#2)
 
 ### 1
 
-[Top](cpp/nwebrtc/server/#main-부터-시작)
+[Top](#main-부터-시작)
 
 전달아규먼트 처리, 필요하다면 볼 것
 
@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 
 ### 2
 
-[Top](cpp/nwebrtc/server/#main-부터-시작)
+[Top](#main-부터-시작)
 
 WinSock을 열고 지정한 port로 대기한다
 
