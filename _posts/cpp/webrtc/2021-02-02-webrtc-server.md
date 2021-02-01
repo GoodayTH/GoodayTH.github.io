@@ -20,14 +20,18 @@ header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
 
-## main 부터 시작
+## Top
+
+Main부터 시작함
 
 * [전달아규먼트 처리, 필요하다면 볼 것](#1)
 * [WinSock을 열고 지정한 port로 대기한다](#2)
 
+* [전체코드](#전체코드)
+
 ### 1
 
-[Top](#main-부터-시작)
+[Top](#Top)
 
 전달아규먼트 처리, 필요하다면 볼 것
 
@@ -54,7 +58,7 @@ int main(int argc, char* argv[]) {
 
 ### 2
 
-[Top](#main-부터-시작)
+[Top](#Top)
 
 WinSock을 열고 지정한 port로 대기한다
 
