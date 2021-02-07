@@ -25,6 +25,28 @@ header:
       url: "https://www.qt.io/"
 ---
 
+## QML
+
+* [Qt QML](/qt/qml/)
+
+{{ Interfacing to C++ }}
+
+* [String List Model From C++](/qt/qml/1/)
+
+![](/file/image/qml-cpp-interfacing-1-1.png)
+
+* [Object List Model From C++](/qt/qml/2/)
+
+![](/file/image/qml-cpp-interfacing-2-1.png)
+
+* [Editable Object List Model From C++](/qt/qml/3/)
+
+![](/file/image/qml-cpp-interfacing-3-1.png)
+
+* [Editable Object List Model From C++(QPROPERTY)](/qt/qml/4/)
+
+---
+
 ## Qt Settings
 
 qt ide settings 관련
@@ -193,10 +215,6 @@ HWND hwnd = HWND(ui->preview->winId());
 * [QListWidgetItem 사용](/cpp/qt/qlistwidgetitem)
 
 ![](/file/image/qt-gdi-s6-52-image-1.png)
-
-## QML
-
-* [Qt QML](/qt/qml/)
 
 ## Etc
 

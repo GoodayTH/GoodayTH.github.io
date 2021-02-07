@@ -62,7 +62,8 @@ Part1 - C++
 
 * [11 - 개발환경 구성](https://visualstudio.microsoft.com/ko/) : VisualStudio, C++ 콘솔 앱
 * [12 - 정수](/cpp/game/p1/12/)
-* [13 - 불리언과 부동소수점](/cpp/game/p1/13/)
+
+나머지는 C++에 대한 내용이라 별도로 정리하지 앟음
 
 ---
 
