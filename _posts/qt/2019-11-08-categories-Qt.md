@@ -45,6 +45,10 @@ header:
 
 * [Editable Object List Model From C++(QPROPERTY)](/qt/qml/4/)
 
+* [Abstract Item Model From C++](/qt/qml/5/)
+
+![](/file/image/qml-cpp-interfacing-5-1.png)
+
 ---
 
 ## Qt Settings
