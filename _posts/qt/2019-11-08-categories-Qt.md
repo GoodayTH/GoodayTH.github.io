@@ -77,6 +77,10 @@ header:
 
 ![](/file/image/qml-cpp-interfacing-11-1.png)
 
+* [Rest Api Client](/qt/qml/12/)
+
+![](/file/image/qml-cpp-interfacing-12-1.png)
+
 ---
 
 ## Qt Settings
