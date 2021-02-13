@@ -27,6 +27,8 @@ header:
 
 ## QML
 
+* [Custom QML Document](https://doc.qt.io/qt-5/qtquickcontrols2-customize.html#customizing-a-control)
+
 * [Qt QML](/qt/qml/)
 
 ### Interfacing to C++ 
