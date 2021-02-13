@@ -29,7 +29,7 @@ header:
 
 * [Qt QML](/qt/qml/)
 
-{{ Interfacing to C++ }}
+### Interfacing to C++ 
 
 * [String List Model From C++](/qt/qml/1/)
 
@@ -48,6 +48,32 @@ header:
 * [Abstract Item Model From C++](/qt/qml/5/)
 
 ![](/file/image/qml-cpp-interfacing-5-1.png)
+
+* [Decoupling Data Source and Model](/qt/qml/6/)
+
+![](/file/image/qml-cpp-interfacing-6-1.png)
+
+* [Using Object List Properties](/qt/qml/7/)
+
+![](/file/image/qml-cpp-interfacing-7-1.png)
+
+### Custom Visual Types
+
+* [Custom Painted Types : Images-Demo](/qt/qml/8/)
+
+![](/file/image/qml-cpp-interfacing-8-1.png)
+
+* [Custom Painted Types : Draw a Bar chart](/qt/qml/9/)
+
+![](/file/image/qml-cpp-interfacing-9-1.png)
+
+* [Enhance Stair Chart with List Properties](/qt/qml/10/)
+
+![](/file/image/qml-cpp-interfacing-10-1.png)
+
+* [Pure QML Custom Shapes](/qt/qml/11/)
+
+![](/file/image/qml-cpp-interfacing-11-1.png)
 
 ---
 
