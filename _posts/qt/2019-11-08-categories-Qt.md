@@ -81,6 +81,24 @@ header:
 
 ![](/file/image/qml-cpp-interfacing-12-1.png)
 
+### Digging QML From C++
+
+* [Loading QML Objects from C++](/qt/qml/13/)
+
+* [Custom FootBalleam Project](/qt/qml/14/)
+
+![](/file/image/qml-cpp-interfacing-14-1.png)
+
+* [Parsing a Custom C++ Type from QML](/qt/qml/15/)
+
+* [Loading Visual Types with QQuickView](/qt/qml/16/)
+
+* [QqmlApplicationEngine : The Convenience](/qt/qml/17/)
+
+* [Invoking QML Methods](/qt/qml/18/)
+
+* [Handling a QML Signal in C++](/qt/qml/19/)
+
 ---
 
 ## Qt Settings
