@@ -25,6 +25,10 @@ header:
       url: "https://www.qt.io/"
 ---
 
+## Qt with OpenCV
+
+* [Qt with OpenCV](/qt/opencv/1/)
+
 ## QML
 
 * [Custom QML Document](https://doc.qt.io/qt-5/qtquickcontrols2-customize.html#customizing-a-control)
