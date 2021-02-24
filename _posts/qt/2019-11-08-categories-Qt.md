@@ -25,6 +25,10 @@ header:
       url: "https://www.qt.io/"
 ---
 
+## Shot Know-How!
+
+* [qpinter로 Text를 그리더라도 qss에 폰트가 지정이 되어 있다면 qss폰트가 우선한다]()
+
 ## Qt with OpenCV
 
 * [Qt with OpenCV](/qt/opencv/1/)
