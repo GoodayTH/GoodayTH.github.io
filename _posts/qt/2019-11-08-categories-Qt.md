@@ -29,6 +29,26 @@ header:
 
 * [qpinter로 Text를 그리더라도 qss에 폰트가 지정이 되어 있다면 qss폰트가 우선한다]()
 
+---
+
+## Telegram Qt UI
+
+* [Build](/opens/telegram/build/) : 만약 UI만 확인할거면 꼭 Build하지 않아도 된다. (코드만 분석하면 된다.)
+* [DPI Setting](/opens/telegram/dpiset/)
+* [Ripple Button](/opens/telegram/ripple-btn/)
+
+![](/file/image/telegram-ripple-btn-1.gif)
+
+* [Fade Widget](/opens/telegram/fade-widget/)
+
+![](/file/image/telegram-fade-widget-1.gif)
+
+* [Slide Widget](/opens/telegram/slide-widget/)
+
+![](/file/image/telegram-slide-widget-1.gif)
+
+---
+
 ## Qt with OpenCV
 
 * [Qt with OpenCV](/qt/opencv/1/)
@@ -114,23 +134,6 @@ header:
 qt ide settings 관련
 
 * [Qt_KMS](/qt/settings/kms/) : 키보드 단축키 세팅
-
----
-
-## Telegram Qt UI
-
-* [Build](/opens/telegram/build/) : 만약 UI만 확인할거면 꼭 Build하지 않아도 된다. (코드만 분석하면 된다.)
-* [Ripple Button](/opens/telegram/ripple-btn/)
-
-![](/file/image/telegram-ripple-btn-1.gif)
-
-* [Fade Widget](/opens/telegram/fade-widget/)
-
-![](/file/image/telegram-fade-widget-1.gif)
-
-* [Slide Widget](/opens/telegram/slide-widget/)
-
-![](/file/image/telegram-slide-widget-1.gif)
 
 ---
 
