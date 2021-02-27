@@ -32,6 +32,16 @@ header:
 
 ---
 
+## DirectX
+
+* [강좌](https://www.youtube.com/watch?v=_4FArgOX1I4&list=PLqCJpWy5Fohd3S7ICFXwUomYW0Wv67pDD)
+* [Get Code](https://github.com/EasyCoding-7/DirectX-basic-Tutorial)
+
+* [Win32 : project setting](/cpp/directx/basic/1/)
+* [Win32 : make window](/cpp/directx/basic/2/)
+
+---
+
 ## Unreal
 
 * [언리얼 설치하기](/cpp/unreal/2-1/)
