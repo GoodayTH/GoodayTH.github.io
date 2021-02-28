@@ -46,6 +46,12 @@ header:
 * [Win32 : Error Handling](/cpp/directx/basic/7/)
 * [Win32 : Keyboard/WM_SYSKEYDOWN](/cpp/directx/basic/8/)
 
+* [D3D : Architecture/SwapChain](/cpp/directx/basic/12/)
+* [D3D : Fill Screen/Present](/cpp/directx/basic/13/)
+* [D3D : ComPrt Smart Pointer](/cpp/directx/basic/15/)
+
+* [D3D : Tutorial Triangle Pt1](/cpp/directx/basic/16/)
+
 ---
 
 ## Unreal
