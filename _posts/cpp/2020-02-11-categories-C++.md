@@ -42,6 +42,9 @@ header:
 * [Win32 : WndProc](/cpp/directx/basic/3/)
 * [Win32 : Window Message](/cpp/directx/basic/4/)
 * [Win32 : WM_CHAR/Mouse](/cpp/directx/basic/5/)
+* [Win32 : Window Framework](/cpp/directx/basic/6/)
+* [Win32 : Error Handling](/cpp/directx/basic/7/)
+* [Win32 : Keyboard/WM_SYSKEYDOWN](/cpp/directx/basic/8/)
 
 ---
 
