@@ -39,6 +39,9 @@ header:
 
 * [Win32 : project setting](/cpp/directx/basic/1/)
 * [Win32 : make window](/cpp/directx/basic/2/)
+* [Win32 : WndProc](/cpp/directx/basic/3/)
+* [Win32 : Window Message](/cpp/directx/basic/4/)
+* [Win32 : WM_CHAR/Mouse](/cpp/directx/basic/5/)
 
 ---
 
