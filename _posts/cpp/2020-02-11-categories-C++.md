@@ -32,6 +32,13 @@ header:
 
 ---
 
+## Coding Test
+
+* [코딩테스트 : 문제 풀이](/cpp/quize/)
+* [코딩테스트 : Good Pattern](/cpp/good-pattern/)
+
+---
+
 ## DirectX
 
 * [강좌](https://www.youtube.com/watch?v=_4FArgOX1I4&list=PLqCJpWy5Fohd3S7ICFXwUomYW0Wv67pDD)
@@ -182,11 +189,6 @@ Part1 - C++
 ## Thread
 
 * [C++11 Thread](/cpp/thread/)
-
-## Coding Test
-
-* [코딩테스트 : 문제 풀이](/cpp/quize/)
-* [코딩테스트 : Good Pattern](/cpp/good-pattern/)
 
 ## WIN32, MFC
 
