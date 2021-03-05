@@ -1,11 +1,11 @@
 ---
 title: "STL : sequence container1 - vector"
 permalink: cpp/stl/sequence/vector/                # link 직접 지정
-toc: true                       # for Sub-title (On this page)
+#toc: true                       # for Sub-title (On this page)
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-12 00:00:00 -0000
-last_modified_at: 2021-01-20 00:00:00 -0000
+last_modified_at: 2021-03-05 00:00:00 -0000
 sidebar:
   title: "C++"
   nav: cpp
@@ -17,6 +17,40 @@ excerpt: ""
 classes: wide
 header:
   teaser: /file/image/cpp-page-teaser.gif
+---
+
+## iterator 활용
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class MyClass
+{
+public:
+	int a = 0;
+	int b = 0;
+};
+
+int main()
+{
+	vector<MyClass*> vec;
+
+	MyClass* mc = new MyClass;
+	vec.push_back(mc);
+
+	MyClass* mc2 = new MyClass;
+	vec.push_back(mc2);
+
+	auto it = vec.begin();
+
+	int aa = (*it)->a;
+	int bb = (*it)->b;
+}
+```
+
 ---
 
 ## 초기화
