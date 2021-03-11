@@ -46,7 +46,7 @@ vector<string> Zigzag(string str,int num,string &ret)
 {
   vector<string> split;
   vector<string> v;
-  if(num==1) 
+  if(num==1)  // 1단만 남았다면 리턴
   {
     ret += str;
     return v;
@@ -55,10 +55,21 @@ vector<string> Zigzag(string str,int num,string &ret)
   if(num<1) return v;
 
   int interval = 2*(num-1);
+  /*
+  Input: {"kaamvjjfl", "4"}
+  Output: kjajfavlm
+  k      j
+   a    j f
+    a  v   l
+     m
+  하나의 v자를 interval이라 정의
+  */
   size_t p = 0;
   while(p<str.length())
   {
-    string sub = str.substr(p,interval);
+    string sub = str.substr(p,interval);  
+    // 첫 루프 :  6글자 "kaamvjj"을 넣는다
+    // 두 번째 루프 : 남은 글자를 넣는다. "jfl"
 
     split.push_back(sub);
     if(p<str.length())
@@ -68,12 +79,14 @@ vector<string> Zigzag(string str,int num,string &ret)
 
   for(size_t i=0;i<split.size();i++)
   {
-    ret += split[i][0];
+    ret += split[i][0];   // 첫 번째 라인인 k j 가 들어간다.
   }
 
   for(size_t i=0;i<split.size();i++)
   {
     v.push_back(split[i].substr(1,split[i].length()-1));
+    // 남은 글자를 리턴으로 넘긴다
+    // aamvjj, fl 이 넘어갈 예정
   }
 
   return v;
