@@ -29,6 +29,7 @@ header:
 
 * [not_null](/cpp/not_null/)
 * [std::optional](/cpp/optional/)
+* [Windows IPC](/cpp/windows/ipc/)
 
 ---
 
