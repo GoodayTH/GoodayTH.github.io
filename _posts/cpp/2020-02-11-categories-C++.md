@@ -30,6 +30,9 @@ header:
 * [not_null](/cpp/not_null/)
 * [std::optional](/cpp/optional/)
 * [Windows IPC](/cpp/windows/ipc/)
+* [(다시정리) unique_ptr](/cpp/stl/spointer/unique_ptr/)
+* [(다시정리) shared_ptr](/cpp/stl/spointer/shared_ptr/)
+* [(다시정리) weak_ptr](/cpp/stl/spointer/weak_ptr/)
 
 ---
 
@@ -174,10 +177,6 @@ Part1 - C++
 ## STL
 
 * [STL](/cpp/stl/)
-
-* [unique_ptr](/cpp/stl/spointer/unique_ptr/)
-* [shared_ptr](/cpp/stl/spointer/shared_ptr/)
-* [weak_ptr](/cpp/stl/spointer/weak_ptr/)
 
 ## Template
 

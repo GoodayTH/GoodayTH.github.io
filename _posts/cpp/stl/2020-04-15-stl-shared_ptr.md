@@ -19,6 +19,85 @@ header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
 
+## 언제쓰냐에 제일 좋은 답변
+
+* 어쨋든 스마트 포인터가 사용자가 delete를 안하게 하고 싶다는게 핵심이다.
+
+```cpp
+#include <iostream>
+#include <memory>
+#include <vector>
+using namespace std;
+
+class Car
+{
+    int color;
+    int speed;
+public:
+    ~Car() { cout << "~Car()" << endl; }
+ 
+    void Go() { cout << "Car go" << endl; }
+};
+
+void foo(Car* p)
+{
+    cout << "Delete Car" << endl;
+}
+
+int main() {
+	vector<shared_ptr<Car>> m_carVec;
+
+	for(int i =0 ; i < 10; i++)
+	{
+		m_carVec.push_back(make_shared<Car>());
+	}
+
+    // ~Car() 10번 호출됨.
+    // 이런식으로 delete를 직접해주지 않아도 된다.
+
+	return 0;
+}
+```
+
+```cpp
+#include <iostream>
+#include <memory>
+#include <vector>
+using namespace std;
+
+class Car
+{
+    int color;
+    int speed;
+public:
+    ~Car() { cout << "~Car()" << endl; }
+ 
+    void Go() { cout << "Car go" << endl; }
+};
+
+void foo(Car* p)
+{
+    cout << "Delete Car" << endl;
+}
+
+int main() {
+	vector<shared_ptr<Car>> m_carVec;
+
+	for(int i =0 ; i < 10; i++)
+	{
+		m_carVec.push_back(make_shared<Car>());
+	}
+
+	m_carVec.pop_back();        // pop_back을 해도 역시하 소멸이 된다.
+
+	cout << " New Line" << endl;
+
+	return 0;
+}
+```
+
+---
+
 ## 1
 
 ```cpp

@@ -5,7 +5,7 @@ permalink: cpp/stl/spointer/unique_ptr/                # link 직접 지정
 comments: true                  # for disqus Comments
 categories:                     # for categories
 date: 2020-04-15 00:00:00 -0000
-last_modified_at: 2020-09-24 00:00:00 -0000
+last_modified_at: 2021-03-15 00:00:00 -0000
 sidebar:
   title: "목차"
   nav: cpp
@@ -19,7 +19,10 @@ header:
   teaser: /file/image/cpp-page-teaser.gif
 ---
 
-## 1
+## unique_ptr이란?
+
+* 메모리주소의 참조를 독점할 수 있는 포인터
+* 왜쓰나? 굳이 소멸자를 호출하지 않아도 되는 장점이 있다!
 
 ```cpp
 #include <iostream>
@@ -45,6 +48,8 @@ int main()
     unique_ptr<Car> up2 = up1;      // error
 ```
 
+## 그런데 그래도 옮겨야할 때가 발생한다면?? (move이용)
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -57,6 +62,10 @@ int main()
     unique_ptr<int> up2 = move(up1);        // ok.
 }
 ```
+
+## 그래도 소멸자를 호출하고 싶다면? 
+
+* 자동 소멸자를 생성해 보자(삭제자)
 
 ```cpp
 #include <iostream>
