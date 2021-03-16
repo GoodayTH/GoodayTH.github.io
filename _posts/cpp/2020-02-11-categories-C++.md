@@ -30,9 +30,17 @@ header:
 * [not_null](/cpp/not_null/)
 * [std::optional](/cpp/optional/)
 * [Windows IPC](/cpp/windows/ipc/)
-* [(다시정리) unique_ptr](/cpp/stl/spointer/unique_ptr/)
-* [(다시정리) shared_ptr](/cpp/stl/spointer/shared_ptr/)
-* [(다시정리) weak_ptr](/cpp/stl/spointer/weak_ptr/)
+
+### 다시정리 시리즈
+
+* [unique_ptr](/cpp/stl/spointer/unique_ptr/)
+* [shared_ptr](/cpp/stl/spointer/shared_ptr/)
+* [weak_ptr](/cpp/stl/spointer/weak_ptr/)
+
+* [thread 시작](/cpp/cpp11-thread/start/)
+* [thread 도우미 함수](/cpp/cpp11-thread/help-func/)
+* [mutex](/cpp/cpp11-thread/mutex/)
+* [notify, wait](/cpp/cpp11-thread/notify-wait/)
 
 ---
 
