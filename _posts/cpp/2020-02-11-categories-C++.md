@@ -42,6 +42,10 @@ header:
 * [mutex](/cpp/cpp11-thread/mutex/)
 * [notify, wait](/cpp/cpp11-thread/notify-wait/)
 
+### Advanced C++
+
+* [const, constexpr](/cpp/cpp11/const-constexpr/)
+
 ---
 
 ## Coding Test
